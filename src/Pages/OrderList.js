@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OrderHistory = () => {
+const OrderList = () => {
   return (
     <div>
       <h1>과거 주문 조회</h1>
@@ -8,4 +8,4 @@ const OrderHistory = () => {
   );
 };
 
-export default OrderHistory;
+export default OrderList;
