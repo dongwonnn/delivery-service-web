@@ -1,0 +1,117 @@
+div,
+header,
+h1,
+main,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.loginPage {
+  margin: 0 auto;
+  padding: 0 35.016px;
+  width: 460px;
+
+  .login-title {
+    text-align: center;
+
+    .login-logo {
+      margin-top: 47.234px;
+      img {
+        width: 195px;
+        height: 46px;
+      }
+    }
+  }
+
+  .login-main {
+    .login-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      input {
+        border: none;
+        background-color: #ffffff;
+        border: 0.5px #cccccc solid;
+        margin-top: 13.328px;
+        padding: 15px;
+        height: 20px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .login-message {
+      display: flex;
+      justify-content: space-between;
+      .login-checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+          margin: 0;
+          height: 21px;
+          margin-right: 5px;
+        }
+      }
+      .login-search {
+        color: #0073e9;
+        cursor: pointer;
+      }
+    }
+
+    .login-submit {
+      display: flex;
+      flex-direction: column;
+
+      .login-login {
+        background-color: #0074e9;
+        border-bottom: 2px #004890 solid;
+        color: #ffffff;
+        height: 52px;
+        padding: 16px 0;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .login-register {
+        a {
+          text-decoration-color: #0074e9;
+          background-color: #ffffff;
+          height: 50px;
+          border: 0.5px #cccccc solid;
+          border-bottom: 2px #cccccc solid;
+          cursor: pointer;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: #0074e9;
+          font-size: 17px;
+          font-weight: bold;
+          p {
+            text-align: center;
+          }
+        }
+      }
+
+      .login-line {
+        margin: 15px 0;
+        border-bottom: 1px #cccccc solid;
+      }
+    }
+  }
+
+  .login-footer {
+    .login-copy {
+      text-align: center;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}

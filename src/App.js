@@ -9,6 +9,7 @@ import { singIn } from './modules/auth';
 import AuthRoute from './compoentns/AuthRoute';
 import LogoutButton from './compoentns/LogoutButton';
 import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/search" component={SearchPage} />
         <Route path="/order" component={OrderPage} />
         <Route path="/favorite" component={FavoritePage} />
+        <Route path="/register" component={RegisterPage} />
         <AuthRoute
           authenticated={authenticated}
           path="/profile"
