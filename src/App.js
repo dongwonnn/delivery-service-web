@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage';
 import OrderPage from './pages/OrderPage';
 import ProfilePage from './pages/ProfilePage';
 import SearchPage from './pages/SearchPage';
-import { singIn } from './modules/auth';
+import { singIn, register } from './modules/auth';
 import AuthRoute from './compoentns/AuthRoute';
 import LogoutButton from './compoentns/LogoutButton';
 import LoginPage from './pages/LoginPage';
@@ -22,6 +22,13 @@ const App = () => {
     <div>
       <ul>
         <li>
+          {authenticated ? (
+            <LogoutButton logout={logout} />
+          ) : (
+            <Link to="/login">로그인</Link>
+          )}
+        </li>
+        <li>
           <Link to="/">홈</Link>
         </li>
         <li>
@@ -36,13 +43,6 @@ const App = () => {
         <li>
           <Link to="/profile">프로필</Link>
         </li>
-        <li>
-          {authenticated ? (
-            <LogoutButton logout={logout} />
-          ) : (
-            <Link to="/login">로그인</Link>
-          )}
-        </li>
       </ul>
       <hr />
       <Switch>
@@ -50,7 +50,11 @@ const App = () => {
         <Route path="/search" component={SearchPage} />
         <Route path="/order" component={OrderPage} />
         <Route path="/favorite" component={FavoritePage} />
-        <Route path="/register" component={RegisterPage} />
+        {/* <Route path="/register" component={RegisterPage} /> */}
+        <Route
+          path="/register"
+          render={(props) => <RegisterPage register={register} {...props} />}
+        />
         <AuthRoute
           authenticated={authenticated}
           path="/profile"

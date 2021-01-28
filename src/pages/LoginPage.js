@@ -49,7 +49,7 @@ const LoginPage = ({ authenticated, login, location, history }) => {
           <div className="login-message">
             <div className="login-checkbox">
               <input type="checkbox" id="auto-login" />
-              <label for="auto-login">자동로그인</label>
+              <label htmlFor="auto-login">자동로그인</label>
             </div>
             <p className="login-search">아이디(이메일)/비밀번호 찾기</p>
           </div>
