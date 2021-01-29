@@ -1,0 +1,284 @@
+{
+  "stores": [
+    {
+      "id": 1,
+      "name": "만랩커피 강남점",
+      "franchise": true,
+      "category": "카페",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "블랙 피넛 커피",
+          "price": "4,800원",
+          "detail": "블랙 피넛 커피임"
+        },
+        {
+          "id": 2,
+          "name": "스트로베리 밀크",
+          "price": "4,800원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "플랫 화이트",
+          "price": "4,800원",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "내가찜한닭 강남역점",
+      "franchise": true,
+      "category": "찜",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "안동찜닭",
+          "price": "20,000원",
+          "detail": "안동찜닭임"
+        },
+        {
+          "id": 2,
+          "name": "순살안동찜닭",
+          "price": "20,000원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "매콤순살고추장찜닭",
+          "price": "23,000원",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "호떡당",
+      "franchise": false,
+      "category": "분식",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "블랙 피넛 커피",
+          "price": "4,800원",
+          "detail": "블랙 피넛 커피임"
+        },
+        {
+          "id": 2,
+          "name": "스트로베리 밀크",
+          "price": "4,800원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "플랫 화이트",
+          "price": "4,800원",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "그 우동집 강남점",
+      "franchise": true,
+      "category": "분식",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "안동찜닭",
+          "price": "20,000원",
+          "detail": "안동찜닭임"
+        },
+        {
+          "id": 2,
+          "name": "순살안동찜닭",
+          "price": "20,000원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "매콤순살고추장찜닭",
+          "price": "23,000원",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "아우어커피 강남점",
+      "franchise": false,
+      "category": "카페",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "블랙 피넛 커피",
+          "price": "4,800원",
+          "detail": "블랙 피넛 커피임"
+        },
+        {
+          "id": 2,
+          "name": "스트로베리 밀크",
+          "price": "4,800원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "플랫 화이트",
+          "price": "4,800원",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "맘스터치 논현아이파크점",
+      "franchise": true,
+      "category": "패스트푸드",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "안동찜닭",
+          "price": "20,000원",
+          "detail": "안동찜닭임"
+        },
+        {
+          "id": 2,
+          "name": "순살안동찜닭",
+          "price": "20,000원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "매콤순살고추장찜닭",
+          "price": "23,000원",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "용봉대반점 서초점",
+      "franchise": true,
+      "category": "중식",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "블랙 피넛 커피",
+          "price": "4,800원",
+          "detail": "블랙 피넛 커피임"
+        },
+        {
+          "id": 2,
+          "name": "스트로베리 밀크",
+          "price": "4,800원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "플랫 화이트",
+          "price": "4,800원",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "파스파스타 강남역점",
+      "franchise": false,
+      "category": "양식",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "안동찜닭",
+          "price": "20,000원",
+          "detail": "안동찜닭임"
+        },
+        {
+          "id": 2,
+          "name": "순살안동찜닭",
+          "price": "20,000원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "매콤순살고추장찜닭",
+          "price": "23,000원",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "돈카살롱 강남점",
+      "franchise": true,
+      "category": "돈가스",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "블랙 피넛 커피",
+          "price": "4,800원",
+          "detail": "블랙 피넛 커피임"
+        },
+        {
+          "id": 2,
+          "name": "스트로베리 밀크",
+          "price": "4,800원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "플랫 화이트",
+          "price": "4,800원",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "나무인생초밥 삼성타운점",
+      "franchise": true,
+      "category": "일식",
+      "grade": "4.8",
+      "feeNum": "2,526",
+      "menu": [
+        {
+          "id": 1,
+          "name": "안동찜닭",
+          "price": "20,000원",
+          "detail": "안동찜닭임"
+        },
+        {
+          "id": 2,
+          "name": "순살안동찜닭",
+          "price": "20,000원",
+          "detail": null
+        },
+        {
+          "id": 3,
+          "name": "매콤순살고추장찜닭",
+          "price": "23,000원",
+          "detail": null
+        }
+      ]
+    }
+  ]
+}

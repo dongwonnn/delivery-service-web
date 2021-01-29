@@ -1,0 +1,31 @@
+.hp-items {
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  margin: 10px;
+
+  .item-card {
+    margin-right: 20px;
+    cursor: pointer;
+    .card-img {
+      width: 180px;
+      height: 180px;
+      background-color: #cccccc;
+    }
+
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      .card-detail {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        svg {
+          font-size: 1.5em;
+          color: yellow;
+          border: 0.1 yellow solid;
+        }
+      }
+    }
+  }
+}

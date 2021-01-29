@@ -1,0 +1,55 @@
+.hp-recommand {
+  margin: 10px;
+
+  .hp-recommand-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    p {
+      font-weight: bold;
+    }
+    .arrow-right {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+
+  .hp-recommand-lists {
+    display: flex;
+    overflow: hidden;
+
+    .hp-recommand-list {
+      .list-img {
+        width: 110px;
+        height: 110px;
+        background-color: rgb(173, 173, 173);
+        margin-right: 10px;
+        text-align: center;
+      }
+      .list-name {
+        margin: 0;
+        margin-top: 5px;
+        width: 110px;
+        font-size: 0.7em;
+        font-weight: bold;
+      }
+      .list-detail {
+        width: 110px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 0.5em;
+
+        svg {
+          font-size: 1.5em;
+          color: yellow;
+          border: 0.1 yellow solid;
+        }
+      }
+      cursor: pointer;
+    }
+  }
+}

@@ -1,55 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './HomePage.scss';
+import Categories from '../compoentns/Categories';
+import Franchises from '../compoentns/Franchises';
+import Stores from '../compoentns/Stores';
+import Sort from '../modules/Sort';
+import Search from '../compoentns/Search';
+import Address from '../compoentns/Address';
+import Banner from '../compoentns/Banner';
+import axios from 'axios';
 
 const HomePage = () => {
+  // json-server ./data.json --port 4000
+
+  const [stores, setStores] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:4000/stores');
+        setStores(response.data);
+        console.log(response.data);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
-    <div className="hp">
+    <div className="hompage">
       <div className="hp-header">
-        <div className="hp-address">서울특별시 강남구 강남대로92길 15</div>
-        <div>search button</div>
-
-        <div>배너자리</div>
+        <Address />
+        <Search />
       </div>
-
-      <div className="hp-main">
-        <div className="hp-header">
-          <ul>
-            <li>한식</li>
-            <li>일식</li>
-            <li>중식</li>
-            <li>양식</li>
-          </ul>
-        </div>
-
-        <hr />
-
-        <div className="hp-category">
-          <ul>
-            <li>만랩커피</li>
-            <li>찜닭</li>
-            <li>모모스테이크</li>
-          </ul>
-        </div>
-
-        <div className="hp-sort">
-          <ul>
-            <li>추천순</li>
-            <li>치타배달</li>
-            <li>배달비</li>
-            <li>최수주문</li>
-          </ul>
-        </div>
-
-        <div className="hp-items">
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-          </ul>
-        </div>
-      </div>
+      <Banner />
+      <Categories />
+      <Franchises />
+      <hr />
+      <Sort />
+      <Stores stores={stores} />
     </div>
   );
 };

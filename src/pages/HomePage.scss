@@ -1,3 +1,14 @@
-.hp {
-  max-width: 1280px;
+.hompage {
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 640px;
+
+  .hp-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

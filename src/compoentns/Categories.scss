@@ -1,0 +1,23 @@
+.hp-categorys {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+
+  .hp-category {
+    margin: 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+    div {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgb(173, 173, 173);
+    }
+    p {
+      font-size: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}

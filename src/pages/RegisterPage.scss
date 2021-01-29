@@ -15,8 +15,9 @@ ul {
 }
 
 .registerPage {
+  background-color: white;
   margin: 0 auto;
-  padding: 0 35.016px;
+  padding: 30px 35.016px;
   width: 460px;
 
   .reg-title {
@@ -39,8 +40,11 @@ ul {
       font-weight: bold;
     }
     .reg-form {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 1;
       input {
-        width: 100%;
+        width: 428px;
         height: 20px;
         padding: 16px 15px 12px 15px;
         margin-bottom: 15px;
