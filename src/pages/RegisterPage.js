@@ -32,7 +32,7 @@ const RegisterPage = ({ register, history }) => {
     if (password === passwordCheck) {
       // 생성 로직
       register(email, password, name, phoneNum);
-      history('/');
+      history.push('/login');
     } else {
       alert('비밀번호가 다릅니다.');
     }

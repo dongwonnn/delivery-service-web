@@ -5,8 +5,8 @@
       "name": "만랩커피 강남점",
       "franchise": true,
       "category": "카페",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "2.1",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -33,8 +33,8 @@
       "name": "내가찜한닭 강남역점",
       "franchise": true,
       "category": "찜",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "3.3",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -61,8 +61,8 @@
       "name": "호떡당",
       "franchise": false,
       "category": "분식",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "4.9",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -89,8 +89,8 @@
       "name": "그 우동집 강남점",
       "franchise": true,
       "category": "분식",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "1.8",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -117,8 +117,8 @@
       "name": "아우어커피 강남점",
       "franchise": false,
       "category": "카페",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "3.2",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -145,8 +145,8 @@
       "name": "맘스터치 논현아이파크점",
       "franchise": true,
       "category": "패스트푸드",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "2.7",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -173,8 +173,8 @@
       "name": "용봉대반점 서초점",
       "franchise": true,
       "category": "중식",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "3.7",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -201,8 +201,8 @@
       "name": "파스파스타 강남역점",
       "franchise": false,
       "category": "양식",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "2.6",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -229,8 +229,8 @@
       "name": "돈카살롱 강남점",
       "franchise": true,
       "category": "돈가스",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "4.5",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -257,8 +257,8 @@
       "name": "나무인생초밥 삼성타운점",
       "franchise": true,
       "category": "일식",
-      "grade": "4.8",
-      "feeNum": "2,526",
+      "grade": "4.2",
+      "feedNum": "2,526",
       "menu": [
         {
           "id": 1,
@@ -279,6 +279,45 @@
           "detail": null
         }
       ]
+    }
+  ],
+
+  "categories": [
+    {
+      "name": "kor",
+      "text": "한식"
+    },
+    {
+      "name": "jap",
+      "text": "일식"
+    },
+    {
+      "name": "chn",
+      "text": "중식"
+    },
+    {
+      "name": "west",
+      "text": "양식"
+    },
+    {
+      "name": "alone",
+      "text": "1인분"
+    },
+    {
+      "name": "chicken",
+      "text": "치킨"
+    },
+    {
+      "name": "snack",
+      "text": "분식"
+    },
+    {
+      "name": "pork",
+      "text": "돈가스"
+    },
+    {
+      "name": "pork-feet",
+      "text": "족발"
     }
   ]
 }

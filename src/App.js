@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import FavoritePage from './pages/FavoritePage';
 import HomePage from './pages/HomePage';
@@ -10,13 +10,46 @@ import AuthRoute from './compoentns/AuthRoute';
 import LogoutButton from './compoentns/LogoutButton';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import DetailPage from './pages/DetailPage';
+import CategoryPage from './pages/CategoryPage';
+import AddressPage from './pages/AddressPage';
+import axios from 'axios';
 
 const App = () => {
   const [user, setUser] = useState(null);
-  const authenticated = user != null; // user가 존재하지 않으면 false, 존재하면 true
+  const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true
 
   const login = ({ email, password }) => setUser(singIn({ email, password }));
   const logout = () => setUser(null);
+
+  const [stores, setStores] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:4000/stores');
+
+        setStores(response.data);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:4000/categories');
+        setCategories(response.data);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div>
@@ -46,11 +79,27 @@ const App = () => {
       </ul>
       <hr />
       <Switch>
-        <Route path="/" exact={true} component={HomePage} />
+        {/* <Route path="/" exact={true} component={HomePage} /> */}
+        <Route
+          path="/"
+          exact={true}
+          render={(props) => (
+            <HomePage stores={stores} categories={categories} {...props} />
+          )}
+        />
+        <Route path="/detail/:store" component={DetailPage} />
         <Route path="/search" component={SearchPage} />
         <Route path="/order" component={OrderPage} />
         <Route path="/favorite" component={FavoritePage} />
-        {/* <Route path="/register" component={RegisterPage} /> */}
+        <Route
+          path="/category/:foodMenu"
+          render={(props) => (
+            <CategoryPage categories={categories} {...props} />
+          )}
+        />
+        <Route path="/address" component={AddressPage} />
+
+        {/*로그인, 회원 가입*/}
         <Route
           path="/register"
           render={(props) => <RegisterPage register={register} {...props} />}

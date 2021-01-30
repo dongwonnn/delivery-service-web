@@ -20,7 +20,6 @@ export const register = (email, password, name, phoneNum) => {
     name: name,
     phoneNum: phoneNum,
   });
-  console.log(users);
 };
 
 export const singIn = ({ email, password }) => {

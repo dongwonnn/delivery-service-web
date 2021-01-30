@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './HomePage.scss';
 import Categories from '../compoentns/Categories';
 import Franchises from '../compoentns/Franchises';
@@ -7,35 +7,22 @@ import Sort from '../modules/Sort';
 import Search from '../compoentns/Search';
 import Address from '../compoentns/Address';
 import Banner from '../compoentns/Banner';
-import axios from 'axios';
+import { Link } from 'react-router-dom';
 
-const HomePage = () => {
-  // json-server ./data.json --port 4000
-
-  const [stores, setStores] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:4000/stores');
-        setStores(response.data);
-        console.log(response.data);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, []);
-
+const HomePage = ({ stores, categories }) => {
   return (
     <div className="hompage">
       <div className="hp-header">
-        <Address />
-        <Search />
+        <Link to="/address">
+          <Address />
+        </Link>
+        <Link to="/search">
+          <Search />
+        </Link>
       </div>
       <Banner />
-      <Categories />
-      <Franchises />
+      <Categories categories={categories} />
+      <Franchises stores={stores} />
       <hr />
       <Sort />
       <Stores stores={stores} />
