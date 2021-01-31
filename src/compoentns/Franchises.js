@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiFillStar } from 'react-icons/ai';
 import { BsArrowRight } from 'react-icons/bs';
 import './Franchises.scss';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
-const Franchises = ({ stores }) => {
+const Franchises = () => {
+  const [stores, setStores] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:4000/stores');
+
+        setStores(response.data);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <div className="hp-recommand">
       <div className="hp-recommand-header">

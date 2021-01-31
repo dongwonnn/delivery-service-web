@@ -67,7 +67,7 @@ const Stores = ({ stores }) => {
               <div className="card-detail">
                 <AiFillStar />
                 <p>
-                  {store.grade} ({store.feedNum})
+                  {store.grade} {store.feedNum} / ({store.deliveryCost}원)
                 </p>
               </div>
             </div>

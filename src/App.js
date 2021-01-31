@@ -22,21 +22,6 @@ const App = () => {
   const login = ({ email, password }) => setUser(singIn({ email, password }));
   const logout = () => setUser(null);
 
-  const [stores, setStores] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:4000/stores');
-
-        setStores(response.data);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, []);
-
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -79,13 +64,10 @@ const App = () => {
       </ul>
       <hr />
       <Switch>
-        {/* <Route path="/" exact={true} component={HomePage} /> */}
         <Route
           path="/"
           exact={true}
-          render={(props) => (
-            <HomePage stores={stores} categories={categories} {...props} />
-          )}
+          render={(props) => <HomePage categories={categories} {...props} />}
         />
         <Route path="/detail/:store" component={DetailPage} />
         <Route path="/search" component={SearchPage} />
