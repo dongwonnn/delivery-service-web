@@ -14,6 +14,7 @@ import DetailPage from './pages/DetailPage';
 import CategoryPage from './pages/CategoryPage';
 import AddressPage from './pages/AddressPage';
 import axios from 'axios';
+import ReviewPage from './pages/ReviewPage';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -69,7 +70,8 @@ const App = () => {
           exact={true}
           render={(props) => <HomePage categories={categories} {...props} />}
         />
-        <Route path="/detail/:store" component={DetailPage} />
+        <Route path="/detail/:store" exact={true} component={DetailPage} />
+        <Route path="/detail/:store/review" component={ReviewPage} />
         <Route path="/search" component={SearchPage} />
         <Route path="/order" component={OrderPage} />
         <Route path="/favorite" component={FavoritePage} />

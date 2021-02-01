@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 const DetailPage = ({ match }) => {
   const { store } = match.params;
 
@@ -29,6 +30,8 @@ const DetailPage = ({ match }) => {
             <div>별점 : {detail.grade}</div>
             <div>리뷰 개수 : {detail.feedNum}</div>
             <div>배달비 : {detail.deliveryCost}</div>
+            {/* 후기 이동 */}
+            <Link to={`/detail/${store}/review`}>리뷰</Link>
             <div>
               메뉴 :
               {detail.menu.map((food) => (
