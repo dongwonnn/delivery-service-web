@@ -13,27 +13,138 @@
           "id": 1,
           "name": "블랙 피넛 커피",
           "price": "4,800원",
-          "detail": "블랙 피넛 커피임"
+          "detail": "블랙 피넛 커피",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "스트로베리 밀크",
           "price": "4,800원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "플랫 화이트",
           "price": "4,800원",
-          "detail": null
+          "detail": "호주식라떼 : 리스트레토 샷 + 우유, 기본 2샷",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
-          "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
+          "orderdMenu": "아인슈페너 (Small Size)"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     },
@@ -50,27 +161,138 @@
           "id": 1,
           "name": "안동찜닭",
           "price": "20,000원",
-          "detail": "안동찜닭임"
+          "detail": "안동찜닭임",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "순살안동찜닭",
           "price": "20,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "매콤순살고추장찜닭",
           "price": "23,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
           "text": "맛있어요",
           "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     },
@@ -87,27 +309,138 @@
           "id": 1,
           "name": "블랙 피넛 커피",
           "price": "4,800원",
-          "detail": "블랙 피넛 커피임"
+          "detail": "블랙 피넛 커피임",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "스트로베리 밀크",
           "price": "4,800원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "플랫 화이트",
           "price": "4,800원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
           "text": "맛있어요",
           "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     },
@@ -124,27 +457,138 @@
           "id": 1,
           "name": "안동찜닭",
           "price": "20,000원",
-          "detail": "안동찜닭임"
+          "detail": "안동찜닭임",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "순살안동찜닭",
           "price": "20,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "매콤순살고추장찜닭",
           "price": "23,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
           "text": "맛있어요",
           "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     },
@@ -161,27 +605,138 @@
           "id": 1,
           "name": "블랙 피넛 커피",
           "price": "4,800원",
-          "detail": "블랙 피넛 커피임"
+          "detail": "블랙 피넛 커피임",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "스트로베리 밀크",
           "price": "4,800원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "플랫 화이트",
           "price": "4,800원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
           "text": "맛있어요",
           "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     },
@@ -198,27 +753,138 @@
           "id": 1,
           "name": "안동찜닭",
           "price": "20,000원",
-          "detail": "안동찜닭임"
+          "detail": "안동찜닭임",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "순살안동찜닭",
           "price": "20,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "매콤순살고추장찜닭",
           "price": "23,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
           "text": "맛있어요",
           "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     },
@@ -235,27 +901,138 @@
           "id": 1,
           "name": "블랙 피넛 커피",
           "price": "4,800원",
-          "detail": "블랙 피넛 커피임"
+          "detail": "블랙 피넛 커피임",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "스트로베리 밀크",
           "price": "4,800원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "플랫 화이트",
           "price": "4,800원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
           "text": "맛있어요",
           "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     },
@@ -272,27 +1049,138 @@
           "id": 1,
           "name": "안동찜닭",
           "price": "20,000원",
-          "detail": "안동찜닭임"
+          "detail": "안동찜닭임",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "순살안동찜닭",
           "price": "20,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "매콤순살고추장찜닭",
           "price": "23,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
           "text": "맛있어요",
           "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     },
@@ -309,27 +1197,138 @@
           "id": 1,
           "name": "블랙 피넛 커피",
           "price": "4,800원",
-          "detail": "블랙 피넛 커피임"
+          "detail": "블랙 피넛 커피임",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "스트로베리 밀크",
           "price": "4,800원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "플랫 화이트",
           "price": "4,800원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
           "text": "맛있어요",
           "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     },
@@ -346,27 +1345,138 @@
           "id": 1,
           "name": "안동찜닭",
           "price": "20,000원",
-          "detail": "안동찜닭임"
+          "detail": "안동찜닭임",
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "순살안동찜닭",
           "price": "20,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         },
         {
           "id": 3,
           "name": "매콤순살고추장찜닭",
           "price": "23,000원",
-          "detail": null
+          "detail": null,
+          "favor": [
+            {
+              "id": 1,
+              "text": "순한맛"
+            },
+            {
+              "id": 2,
+              "text": "보통맛"
+            },
+            {
+              "id": 3,
+              "text": "매운맛"
+            }
+          ],
+          "addComponent": [
+            {
+              "id": 1,
+              "text": "스콘"
+            },
+            {
+              "id": 2,
+              "text": "쿠키"
+            }
+          ]
         }
       ],
       "review": [
         {
           "id": 1,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
           "photoCheck": true,
           "text": "맛있어요",
           "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 5,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
     }
