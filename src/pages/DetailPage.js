@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const DetailPage = ({ match }) => {
+const DetailPage = ({ match, setDetailFromApp }) => {
   const { store } = match.params;
 
   const [detail, setDetail] = useState();
@@ -13,53 +13,54 @@ const DetailPage = ({ match }) => {
         const response = await axios.get(
           `http://localhost:4000/stores/?name=${store}`,
         );
-        console.log(response.data);
+        console.log('1', response.data[0]);
         setDetail(response.data[0]);
+        setDetailFromApp(response.data[0]);
       } catch (e) {
         console.log(e);
       }
     };
     fetchData();
-  }, [store]);
+  }, [store, setDetailFromApp]);
 
-  console.log(detail);
+  if (detail === undefined) {
+    return <div>로딩중</div>;
+  }
 
   return (
     <div>
       <h2>디테일 페이지</h2>
-      {detail && (
+      <div>
         <div>
+          <div>가게 이름 : {detail.name}</div>
+          <div>별점 : {detail.grade}</div>
+          <div>리뷰 개수 : {detail.feedNum}</div>
+          <div>배달비 : {detail.deliveryCost}</div>
+          {/* 후기 이동 */}
+          <Link to={`/detail/${store}/review`}>
+            <hr />
+            리뷰
+            <hr />
+          </Link>
           <div>
-            <div>가게 이름 : {detail.name}</div>
-            <div>별점 : {detail.grade}</div>
-            <div>리뷰 개수 : {detail.feedNum}</div>
-            <div>배달비 : {detail.deliveryCost}</div>
-            {/* 후기 이동 */}
-            <Link to={`/detail/${store}/review`}>
-              <hr />
-              리뷰
-              <hr />
-            </Link>
-            <div>
-              메뉴 :
-              {detail.menu.map((food) => (
-                <Link to={`/detail/${store}/${food.name}`} key={food.id}>
-                  <div>
-                    <div>음식 이름 : {food.name}</div>
-                    <div>음식 가격 : {food.price}</div>
-                    <div>음식 설명 : {food.detail}</div>
-                    {/* <div>맛 선택</div>
+            메뉴 :
+            {detail.menu.map((food) => (
+              <Link to={`/detail/${store}/${food.name}`} key={food.id}>
+                <div>
+                  <div>음식 이름 : {food.name}</div>
+                  <div>음식 가격 : {food.price}</div>
+                  <div>음식 설명 : {food.detail}</div>
+                  {/* <div>맛 선택</div>
                     {food.favor.map((fav) => (
                       <div key={fav.text}>맛 : {fav.text}</div>
                     ))} */}
-                    <hr />
-                  </div>
-                </Link>
-              ))}
-            </div>
+                  <hr />
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };

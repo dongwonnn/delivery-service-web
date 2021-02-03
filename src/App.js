@@ -26,6 +26,8 @@ const App = () => {
 
   const [categories, setCategories] = useState([]);
 
+  const [detail, setDetailFromApp] = useState(undefined);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -71,7 +73,13 @@ const App = () => {
           exact={true}
           render={(props) => <HomePage categories={categories} {...props} />}
         />
-        <Route path="/detail/:store" exact={true} component={DetailPage} />
+        <Route
+          path="/detail/:store"
+          exact={true}
+          render={(props) => (
+            <DetailPage setDetailFromApp={setDetailFromApp} {...props} />
+          )}
+        />
 
         <Route
           path="/detail/:store/review"
@@ -81,7 +89,7 @@ const App = () => {
         <Route
           path="/detail/:store/:food"
           exact={true}
-          render={(props) => <OrderListPage {...props} />}
+          render={(props) => <OrderListPage detail={detail} {...props} />}
         />
 
         <Route path="/search" component={SearchPage} />

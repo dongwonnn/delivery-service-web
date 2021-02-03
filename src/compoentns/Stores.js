@@ -1,10 +1,7 @@
 import React from 'react';
 import './Stores.scss';
 import { AiFillStar } from 'react-icons/ai';
-import { Link, Route, Switch } from 'react-router-dom';
-import DetailPage from '../pages/DetailPage';
-import OrderListPage from '../pages/OrderListPage';
-import ReviewPage from '../pages/ReviewPage';
+import { Link } from 'react-router-dom';
 
 const Stores = ({ stores }) => {
   return (
@@ -29,9 +26,6 @@ const Stores = ({ stores }) => {
           </div>
         </Link>
       ))}
-      <Switch>
-        <Route path="/detail/:store" exact={true} component={DetailPage} />
-      </Switch>
     </div>
   );
 };
