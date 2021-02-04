@@ -31,7 +31,15 @@ const DetailPage = ({ match, setDetailFromApp, orderList }) => {
       <h2>디테일 페이지</h2>
       <div>
         <div>
-          {orderList && <div>체큰</div>}
+          {orderList.length > 0 && (
+            <Link to={`/detail/${store}/cart`}>
+              <div>
+                <div>{orderList.length}</div>
+                <div>카트보기</div>
+                <div>{}</div>
+              </div>
+            </Link>
+          )}
           <div>가게 이름 : {detail.name}</div>
           <div>별점 : {detail.grade}</div>
           <div>리뷰 개수 : {detail.feedNum}</div>

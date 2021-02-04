@@ -10,7 +10,7 @@ import Banner from '../compoentns/Banner';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const HomePage = ({ categories }) => {
+const HomePage = ({ categories, orderList }) => {
   const [stores, setStores] = useState([]);
 
   useEffect(() => {
@@ -58,6 +58,12 @@ const HomePage = ({ categories }) => {
       </div>
       <Banner />
       <Categories categories={categories} />
+      {orderList.totalPrice && (
+        <div>
+          <div>카트보기</div>
+          <div>{orderList.totalPrice}</div>
+        </div>
+      )}
       <Franchises />
       <hr />
       <Sort

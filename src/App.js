@@ -16,12 +16,13 @@ import AddressPage from './pages/AddressPage';
 import axios from 'axios';
 import ReviewPage from './pages/ReviewPage';
 import OrderListPage from './pages/OrderListPage';
+import CartPage from './pages/CartPage';
 
 const App = () => {
   const [user, setUser] = useState(null);
   const [categories, setCategories] = useState([]);
   const [detail, setDetailFromApp] = useState(undefined);
-  const [orderList, setOrderList] = useState({});
+  const [orderList, setOrderList] = useState([]);
 
   const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true
 
@@ -71,7 +72,13 @@ const App = () => {
         <Route
           path="/"
           exact={true}
-          render={(props) => <HomePage categories={categories} {...props} />}
+          render={(props) => (
+            <HomePage
+              categories={categories}
+              orderList={orderList}
+              {...props}
+            />
+          )}
         />
 
         {/* 음식점의 디테일 페이지로 가는 Route */}
@@ -88,6 +95,12 @@ const App = () => {
         />
 
         <Route
+          path="/detail/:store/cart"
+          exact={true}
+          render={(props) => <CartPage orderList={orderList} {...props} />}
+        />
+
+        <Route
           path="/detail/:store/review"
           exact={true}
           component={ReviewPage}
@@ -98,6 +111,7 @@ const App = () => {
           render={(props) => (
             <OrderListPage
               detail={detail}
+              orderList={orderList}
               setOrderList={setOrderList}
               {...props}
             />

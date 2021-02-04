@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './OrderListPage.scss';
 
-const OrderListPage = ({ match, detail, setOrderList }) => {
+const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
   const { food } = match.params;
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(undefined);
@@ -57,7 +57,6 @@ const OrderListPage = ({ match, detail, setOrderList }) => {
   };
 
   const onSubmitBtn = () => {
-    console.log('onSubmitBtn');
     const reqMenu = foodMenu.reqMenu
       .filter((v) => v.check === true)
       .map((el) => el.text);
@@ -74,7 +73,7 @@ const OrderListPage = ({ match, detail, setOrderList }) => {
       selMenu: selMenu,
     };
 
-    setOrderList(nextOrderList);
+    setOrderList([...orderList, nextOrderList]);
   };
 
   return (
