@@ -19,14 +19,14 @@ import OrderListPage from './pages/OrderListPage';
 
 const App = () => {
   const [user, setUser] = useState(null);
+  const [categories, setCategories] = useState([]);
+  const [detail, setDetailFromApp] = useState(undefined);
+  const [orderList, setOrderList] = useState({});
+
   const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true
 
   const login = ({ email, password }) => setUser(singIn({ email, password }));
   const logout = () => setUser(null);
-
-  const [categories, setCategories] = useState([]);
-
-  const [detail, setDetailFromApp] = useState(undefined);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -73,11 +73,17 @@ const App = () => {
           exact={true}
           render={(props) => <HomePage categories={categories} {...props} />}
         />
+
+        {/* 음식점의 디테일 페이지로 가는 Route */}
         <Route
           path="/detail/:store"
           exact={true}
           render={(props) => (
-            <DetailPage setDetailFromApp={setDetailFromApp} {...props} />
+            <DetailPage
+              setDetailFromApp={setDetailFromApp}
+              orderList={orderList}
+              {...props}
+            />
           )}
         />
 
@@ -89,7 +95,13 @@ const App = () => {
         <Route
           path="/detail/:store/:food"
           exact={true}
-          render={(props) => <OrderListPage detail={detail} {...props} />}
+          render={(props) => (
+            <OrderListPage
+              detail={detail}
+              setOrderList={setOrderList}
+              {...props}
+            />
+          )}
         />
 
         <Route path="/search" component={SearchPage} />

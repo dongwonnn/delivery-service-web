@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const DetailPage = ({ match, setDetailFromApp }) => {
+const DetailPage = ({ match, setDetailFromApp, orderList }) => {
   const { store } = match.params;
 
   const [detail, setDetail] = useState();
@@ -13,7 +13,6 @@ const DetailPage = ({ match, setDetailFromApp }) => {
         const response = await axios.get(
           `http://localhost:4000/stores/?name=${store}`,
         );
-        console.log('1', response.data[0]);
         setDetail(response.data[0]);
         setDetailFromApp(response.data[0]);
       } catch (e) {
@@ -32,6 +31,7 @@ const DetailPage = ({ match, setDetailFromApp }) => {
       <h2>디테일 페이지</h2>
       <div>
         <div>
+          {orderList && <div>체큰</div>}
           <div>가게 이름 : {detail.name}</div>
           <div>별점 : {detail.grade}</div>
           <div>리뷰 개수 : {detail.feedNum}</div>

@@ -1,0 +1,63 @@
+.orderList {
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 640px;
+  .orderList-header {
+    .food-img {
+      width: 100%;
+      height: 200px;
+      background-color: burlywood;
+    }
+    .food-name {
+      font-weight: bold;
+    }
+    .food-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .food-count {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .count-text {
+        font-weight: bold;
+      }
+      .count-btn {
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        button {
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
+  .orderList-add {
+    .add-text {
+      font-weight: bold;
+      width: 100%;
+      height: 50px;
+      background-color: cadetblue;
+    }
+
+    .add-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .orderList-cart {
+    button {
+      background-color: rgb(113, 203, 255);
+      width: 100%;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

@@ -7,7 +7,7 @@ import Sort from '../modules/Sort';
 import Search from '../compoentns/Search';
 import Address from '../compoentns/Address';
 import Banner from '../compoentns/Banner';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const HomePage = ({ categories }) => {
