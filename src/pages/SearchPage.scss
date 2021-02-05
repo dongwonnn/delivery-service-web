@@ -1,0 +1,43 @@
+.searchPage {
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 640px;
+
+  .sp-header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    input {
+      margin-top: 20px;
+      background-color: #cccccc;
+      border-radius: 30px;
+      width: 500px;
+      height: 50px;
+      p {
+        margin: 10px;
+      }
+    }
+    // svg {
+    //   width: 7%;
+    //   height: 7%;
+    // }
+  }
+
+  .sp-categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+
+    .category-img {
+      margin-right: 20px;
+      width: 180px;
+      height: 180px;
+      background-color: #cccccc;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

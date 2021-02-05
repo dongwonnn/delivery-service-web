@@ -97,7 +97,9 @@ const App = () => {
         <Route
           path="/detail/:store/cart"
           exact={true}
-          render={(props) => <CartPage orderList={orderList} {...props} />}
+          render={(props) => (
+            <CartPage orderList={orderList} detail={detail} {...props} />
+          )}
         />
 
         <Route
@@ -118,11 +120,14 @@ const App = () => {
           )}
         />
 
-        <Route path="/search" component={SearchPage} />
+        <Route
+          path="/search"
+          render={(props) => <SearchPage categories={categories} {...props} />}
+        />
         <Route path="/order" component={OrderPage} />
         <Route path="/favorite" component={FavoritePage} />
         <Route
-          path="/category/:foodMenu"
+          path="/category/:category"
           render={(props) => (
             <CategoryPage categories={categories} {...props} />
           )}

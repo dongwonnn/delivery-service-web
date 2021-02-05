@@ -1779,6 +1779,184 @@
           "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
         }
       ]
+    },
+    {
+      "id": 10,
+      "name": "만랩커피 논현점",
+      "franchise": true,
+      "category": "카페",
+      "grade": 2.1,
+      "feedNum": 2526,
+      "deliveryCost": 2000,
+      "menu": [
+        {
+          "id": 0,
+          "name": "블랙 피넛 커피",
+          "price": 4800,
+          "detail": "블랙 피넛 커피",
+          "reqMenu": [
+            {
+              "id": 0,
+              "text": "순한맛",
+              "addCost": 0,
+              "check": false
+            },
+            {
+              "id": 1,
+              "text": "보통맛",
+              "addCost": 0,
+              "check": false
+            },
+            {
+              "id": 2,
+              "text": "매운맛",
+              "addCost": 0,
+              "check": false
+            }
+          ],
+          "selectMenu": [
+            {
+              "id": 0,
+              "text": "스콘",
+              "addCost": 1000,
+              "check": false
+            },
+            {
+              "id": 1,
+              "text": "쿠키",
+              "addCost": 1500,
+              "check": false
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "스트로베리 밀크",
+          "price": 4800,
+          "detail": null,
+          "reqMenu": [
+            {
+              "id": 0,
+              "text": "순한맛",
+              "addCost": 0,
+              "check": false
+            },
+            {
+              "id": 1,
+              "text": "보통맛",
+              "addCost": 0,
+              "check": false
+            },
+            {
+              "id": 2,
+              "text": "매운맛",
+              "addCost": 0,
+              "check": false
+            }
+          ],
+          "selectMenu": [
+            {
+              "id": 0,
+              "text": "스콘",
+              "addCost": 1000,
+              "check": false
+            },
+            {
+              "id": 1,
+              "text": "쿠키",
+              "addCost": 1500,
+              "check": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "플랫 화이트",
+          "price": 4800,
+          "detail": "호주식라떼 : 리스트레토 샷 + 우유, 기본 2샷",
+          "reqMenu": [
+            {
+              "id": 0,
+              "text": "순한맛",
+              "addCost": 0,
+              "check": false
+            },
+            {
+              "id": 1,
+              "text": "보통맛",
+              "addCost": 0,
+              "check": false
+            },
+            {
+              "id": 2,
+              "text": "매운맛",
+              "addCost": 0,
+              "check": false
+            }
+          ],
+          "selectMenu": [
+            {
+              "id": 0,
+              "text": "스콘",
+              "addCost": 1000,
+              "check": false
+            },
+            {
+              "id": 1,
+              "text": "쿠키",
+              "addCost": 1500,
+              "check": false
+            }
+          ]
+        }
+      ],
+      "review": [
+        {
+          "id": 0,
+          "user": "최땡땡",
+          "date": "2021-02-01",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
+          "orderdMenu": "아인슈페너 (Small Size)"
+        },
+        {
+          "id": 1,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 2,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 3,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        },
+        {
+          "id": 4,
+          "user": "김땡땡",
+          "date": "2021-01-30",
+          "grade": 4.5,
+          "photoCheck": true,
+          "text": "굿굿",
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+        }
+      ]
     }
   ],
 
@@ -1818,6 +1996,18 @@
     {
       "name": "pork-feet",
       "text": "족발"
+    },
+    {
+      "name": "cafe",
+      "text": "카페"
+    },
+    {
+      "name": "steam",
+      "text": "찜"
+    },
+    {
+      "name": "fast-food",
+      "text": "패스트푸드"
     }
   ]
 }

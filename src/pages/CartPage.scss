@@ -1,0 +1,106 @@
+.cart {
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 640px;
+  .cart-header {
+    h1 {
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .header-building {
+      font-weight: bold;
+      margin: 5px 0 0 20px;
+    }
+    .header-address {
+      margin: 5px 0 0 20px;
+      font-size: 13px;
+      color: #cccccc;
+    }
+  }
+  .cart-main {
+    margin: 0 20px;
+
+    .main-addMenu {
+      color: rgb(113, 203, 255);
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .cart-coupon {
+    margin: 0 20px;
+    .coupon-title {
+      font-weight: bold;
+    }
+    .coupon-card {
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+      background-color: #f7f7f7;
+      .card-title {
+        margin: 10px 20px 10px;
+      }
+
+      .coupon-inner {
+        margin: 0 20px 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          background-color: white;
+          width: 500px;
+          margin-right: 20px;
+          border-radius: 10px;
+
+          p {
+            margin-left: 20px;
+          }
+        }
+
+        button {
+          width: 120px;
+          background-color: white;
+          border: 1px solid rgb(113, 203, 255);
+          border-radius: 10px;
+          color: rgb(113, 203, 255);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .cart-list {
+    padding: 0 20px;
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      .list-amount {
+        font-weight: bold;
+      }
+    }
+  }
+  .cart-request {
+    padding: 0 20px;
+
+    .request-header {
+      font-weight: bold;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
+
+  .cart-payment {
+    button {
+      background-color: rgb(113, 203, 255);
+      width: 100%;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const DetailPage = ({ match, setDetailFromApp, orderList }) => {
   const { store } = match.params;
-
   const [detail, setDetail] = useState();
+  const [payment, setPayment] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,9 +22,22 @@ const DetailPage = ({ match, setDetailFromApp, orderList }) => {
     fetchData();
   }, [store, setDetailFromApp]);
 
+  useEffect(() => {
+    if (orderList.length > 1) {
+      let sum = 0;
+      for (let i = 0; i < orderList.length; i++) {
+        sum += orderList[i].totalPrice;
+      }
+      setPayment(sum);
+    } else if (orderList.length === 1) {
+      setPayment(orderList[0].totalPrice);
+    }
+  }, [orderList]);
+
   if (detail === undefined) {
     return <div>로딩중</div>;
   }
+  console.log('1', detail);
 
   return (
     <div>
@@ -36,7 +49,7 @@ const DetailPage = ({ match, setDetailFromApp, orderList }) => {
               <div>
                 <div>{orderList.length}</div>
                 <div>카트보기</div>
-                <div>{}</div>
+                <div>{payment}</div>
               </div>
             </Link>
           )}

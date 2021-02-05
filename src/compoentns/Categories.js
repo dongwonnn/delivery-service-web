@@ -6,7 +6,7 @@ const Categories = ({ categories }) => {
   return (
     <div className="hp-categorys">
       {categories.map((category) => (
-        <Link to={`/category/${category.name}`} key={category.name}>
+        <Link to={`/category/${category.text}`} key={category.name}>
           <div className="hp-category">
             <div></div>
             <p>{category.text}</p>
