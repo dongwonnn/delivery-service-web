@@ -3,6 +3,7 @@ import { BsSearch } from 'react-icons/bs';
 import './SearchPage.scss';
 import axios from 'axios';
 import Stores from '../compoentns/Stores';
+import { Link } from 'react-router-dom';
 
 const SearchPage = ({ categories }) => {
   const [inputValue, setInputValue] = useState('');
@@ -28,18 +29,15 @@ const SearchPage = ({ categories }) => {
 
       const nextStores = stores.filter(
         (store) => store.name.substring(0, valueLen) === inputValue,
-        // (name) => name.spilit('').substring(0, valueLen) === inputValue,
       );
 
       setSortStores(nextStores);
     }
-  }, [inputValue]);
+  }, [inputValue, stores]);
 
   const onChangeInput = (e) => {
     setInputValue(e.target.value);
   };
-
-  console.log(stores);
 
   return (
     <div className="searchPage">
@@ -56,13 +54,15 @@ const SearchPage = ({ categories }) => {
 
       {inputValue === '' ? (
         <div className="sp-categories">
-          {categories.map((ct) => (
-            <div key={ct.name}>
-              <div className="category-card">
-                <div className="category-img"></div>
-                <p className="category-text">{ct.text}</p>
+          {categories.map((cat) => (
+            <Link to={`/category/${cat.text}`} key={cat.name}>
+              <div key={cat.name}>
+                <div className="category-card">
+                  <div className="category-img"></div>
+                  <p className="category-text">{cat.text}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       ) : (

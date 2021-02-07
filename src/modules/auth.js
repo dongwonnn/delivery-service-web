@@ -4,12 +4,16 @@ const users = [
     password: '123',
     name: 'dongwon',
     phoneNum: '01063666585',
+    like: null,
+    orderHistory: [],
   },
   {
     email: 'letuin@gmail.com',
     password: '234',
     name: 'letuin',
     phoneNum: '01012345678',
+    like: null,
+    orderHistory: [],
   },
 ];
 

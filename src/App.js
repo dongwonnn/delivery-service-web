@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import FavoritePage from './pages/FavoritePage';
 import HomePage from './pages/HomePage';
-import OrderPage from './pages/OrderPage';
 import ProfilePage from './pages/ProfilePage';
 import SearchPage from './pages/SearchPage';
 import { singIn, register } from './modules/auth';
@@ -17,6 +16,7 @@ import axios from 'axios';
 import ReviewPage from './pages/ReviewPage';
 import OrderListPage from './pages/OrderListPage';
 import CartPage from './pages/CartPage';
+import OrderHistoryPage from './pages/OrderHistoryPage';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -98,7 +98,14 @@ const App = () => {
           path="/detail/:store/cart"
           exact={true}
           render={(props) => (
-            <CartPage orderList={orderList} detail={detail} {...props} />
+            <CartPage
+              orderList={orderList}
+              detail={detail}
+              setOrderList={setOrderList}
+              setUser={setUser}
+              user={user}
+              {...props}
+            />
           )}
         />
 
@@ -124,8 +131,20 @@ const App = () => {
           path="/search"
           render={(props) => <SearchPage categories={categories} {...props} />}
         />
-        <Route path="/order" component={OrderPage} />
-        <Route path="/favorite" component={FavoritePage} />
+        <AuthRoute
+          authenticated={authenticated}
+          path="/order"
+          render={(props) => (
+            <OrderHistoryPage user={user} detail={detail} {...props} />
+          )}
+        />
+
+        <AuthRoute
+          authenticated={authenticated}
+          path="/favorite"
+          render={(props) => <FavoritePage user={user} {...props} />}
+        />
+
         <Route
           path="/category/:category"
           render={(props) => (

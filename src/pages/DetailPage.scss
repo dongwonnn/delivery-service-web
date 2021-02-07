@@ -1,0 +1,24 @@
+.detail-page {
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 640px;
+
+  .dp-cart {
+    button {
+      display: flex;
+      text-align: center;
+      background-color: rgb(113, 203, 255);
+      width: 100%;
+      height: 50px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .dp-review {
+  }
+
+  .dp-subMenu {
+  }
+}

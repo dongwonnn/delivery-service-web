@@ -1,15 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CartPage.scss';
 import { GrFormClose } from 'react-icons/gr';
 
-const CartPage = ({ orderList, detail }) => {
+const CartPage = ({ orderList, detail, setOrderList, history, user }) => {
+  const [lists, setLists] = useState(orderList);
+
+  const onCloseBtn = (idx) => {
+    if (lists.length > 1) {
+      const newLists = lists.filter((_, index) => index !== idx);
+      setLists(newLists);
+      setOrderList(lists);
+    } else {
+      alert('최소 한가지 선택');
+    }
+  };
+
+  const onAddMenu = () => {
+    setOrderList(lists);
+    history.go(-1);
+  };
+
+  const payment = lists.reduce((acc, cur) => {
+    return acc + cur.totalPrice;
+  }, 0);
+
+  const onPayBtn = () => {
+    // 이 로직은 주문-> 배달 완료일 때 가능한 로직
+    // 임시로 결제하기 눌렀을 때 배달이 완료됐다고 가정
+
+    const orderInfo = {
+      orderMenu: lists,
+      orderDate: getFormatDate(),
+      delivCheck: true,
+    };
+
+    user.orderHistory.push(orderInfo);
+    console.log(lists);
+    setOrderList([]);
+    history.push('/');
+  };
+
   if (orderList.length === 0) return <div></div>;
-
-  let payment = 0;
-  for (let i = 0; i < orderList.length; i++) {
-    payment = payment + orderList[i].totalPrice;
-  }
-
   return (
     <div className="cart">
       <div className="cart-header">
@@ -21,19 +52,19 @@ const CartPage = ({ orderList, detail }) => {
 
       <div className="cart-main">
         <div>
-          {orderList.map((list, idx) => (
+          {lists.map((list, idx) => (
             <div key={idx}>
               <p>{list.mainMenu}</p>
               <p>{list.reqMunu}</p>
               <p>{list.selMenu}</p>
               <p>{list.totalPrice}</p>
-              <GrFormClose />
+              <GrFormClose onClick={() => onCloseBtn(idx)} />
             </div>
           ))}
         </div>
         <hr />
         <div className="main-addMenu">
-          <p>+메뉴추가</p>
+          <p onClick={onAddMenu}>+메뉴추가</p>
         </div>
       </div>
       <hr />
@@ -86,10 +117,29 @@ const CartPage = ({ orderList, detail }) => {
         </div>
       </div>
       <div className="cart-payment">
-        <button>{detail.deliveryCost + payment}원 결제하기</button>
+        <button onClick={onPayBtn}>
+          {detail.deliveryCost + payment}원 결제하기
+        </button>
       </div>
     </div>
   );
 };
 
 export default CartPage;
+
+function getFormatDate() {
+  const date = new Date();
+  let year = date.getFullYear(); //yyyy
+  let month = 1 + date.getMonth(); //M
+  month = month >= 10 ? month : '0' + month; //month 두자리로 저장
+  let day = date.getDate(); //d
+  day = day >= 10 ? day : '0' + day; //day 두자리로 저장
+
+  let hours = date.getHours();
+  hours = hours >= 10 ? hours : '0' + hours; //day 두자리로 저장
+
+  let min = date.getMinutes();
+  min = min >= 10 ? min : '0' + min; //day 두자리로 저장
+
+  return `${year}-${month}-${day} ${hours}:${min}`; //'-' 추가하여 yyyy-mm-dd 형태 생성 가능
+}

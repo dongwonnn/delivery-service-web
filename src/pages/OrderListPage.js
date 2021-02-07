@@ -7,6 +7,7 @@ const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(undefined);
   const foodMenu = detail?.menu.find((m) => m.name === food);
+  // detail?.menu : detail == false면 뒤에 실행 안함
 
   useEffect(() => {
     setTotalPrice(foodMenu.price);
@@ -19,33 +20,28 @@ const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
   const defaultPrice = foodMenu.price;
 
   const onMinusBtn = () => {
-    if (count > 1) setCount(() => count - 1);
+    if (count > 1) {
+      setCount(count - 1);
+    }
+    // console.log('1', count);
     const nextTotalPrice = defaultPrice * (count - 1);
     setTotalPrice(nextTotalPrice);
   };
 
   const onPlusBtn = () => {
-    if (count < 20) setCount(() => count + 1);
+    if (count < 20) setCount(count + 1);
     const nextTotalPrice = defaultPrice * (count + 1);
     setTotalPrice(nextTotalPrice);
   };
 
   const onToggleReqBtn = (e) => {
-    const addCost = foodMenu.reqMenu[e.target.id].addCost;
-
     if (e.target.checked) {
-      setTotalPrice(totalPrice + addCost);
       foodMenu.reqMenu[e.target.id].check = true;
-    } else {
-      setTotalPrice(totalPrice - addCost);
-      foodMenu.reqMenu[e.target.id].check = false;
     }
   };
 
   const onToggleSelBtn = (e) => {
     const addCost = foodMenu.selectMenu[e.target.id].addCost;
-
-    console.log(foodMenu.selectMenu);
 
     if (e.target.checked) {
       setTotalPrice(totalPrice + addCost);
@@ -57,6 +53,9 @@ const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
   };
 
   const onSubmitBtn = () => {
+    console.log(detail.name);
+    console.log(orderList.store);
+
     const reqMenu = foodMenu.reqMenu
       .filter((v) => v.check === true)
       .map((el) => el.text);
@@ -71,6 +70,7 @@ const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
       totalPrice: totalPrice,
       reqMenu: reqMenu,
       selMenu: selMenu,
+      store: detail.name,
     };
 
     setOrderList([...orderList, nextOrderList]);
