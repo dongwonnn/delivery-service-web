@@ -5,9 +5,12 @@ const OrderHistoryPage = ({ user, detail }) => {
   const [modal, setModal] = useState(false);
 
   const onModalBtn = () => {
-    console.log(modal);
     setModal(!modal);
   };
+
+  if (user.orderHistory.length === 0) {
+    return <div>주문 기록 없음</div>;
+  }
 
   return (
     <div>

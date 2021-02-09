@@ -12,6 +12,8 @@ import axios from 'axios';
 
 const HomePage = ({ categories, orderList }) => {
   const [stores, setStores] = useState([]);
+  const [recommand, setRecommand] = useState(false);
+  const [cost, setCost] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,8 +28,6 @@ const HomePage = ({ categories, orderList }) => {
     fetchData();
   }, []);
 
-  const [recommand, setRecommand] = useState(false);
-
   const onRecommand = useCallback(() => {
     recommand
       ? setStores([...stores.sort((a, b) => b.grade - a.grade)])
@@ -35,8 +35,6 @@ const HomePage = ({ categories, orderList }) => {
 
     setRecommand((recommand) => !recommand);
   }, [stores, recommand]);
-
-  const [cost, setCost] = useState(false);
 
   const onDeliveryCost = useCallback(() => {
     cost

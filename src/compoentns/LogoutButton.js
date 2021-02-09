@@ -7,7 +7,7 @@ const LogoutButton = ({ logout, history }) => {
     history.push('/');
   };
 
-  return <button onClick={handleClick}>logout</button>;
+  return <button onClick={handleClick}>로그아웃</button>;
 };
 
 export default withRouter(LogoutButton);

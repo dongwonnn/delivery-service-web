@@ -6,7 +6,6 @@ import ProfilePage from './pages/ProfilePage';
 import SearchPage from './pages/SearchPage';
 import { singIn, register } from './modules/auth';
 import AuthRoute from './compoentns/AuthRoute';
-import LogoutButton from './compoentns/LogoutButton';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import DetailPage from './pages/DetailPage';
@@ -17,6 +16,9 @@ import ReviewPage from './pages/ReviewPage';
 import OrderListPage from './pages/OrderListPage';
 import CartPage from './pages/CartPage';
 import OrderHistoryPage from './pages/OrderHistoryPage';
+import SettingPage from './pages/SettingPage';
+import SetAddressPage from './pages/SetAddressPage';
+//import LogoutButton from './compoentns/LogoutButton';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -44,13 +46,13 @@ const App = () => {
   return (
     <div>
       <ul>
-        <li>
+        {/* <li>
           {authenticated ? (
             <LogoutButton logout={logout} />
           ) : (
             <Link to="/login">로그인</Link>
           )}
-        </li>
+        </li> */}
         <li>
           <Link to="/">홈</Link>
         </li>
@@ -89,6 +91,7 @@ const App = () => {
             <DetailPage
               setDetailFromApp={setDetailFromApp}
               orderList={orderList}
+              user={user}
               {...props}
             />
           )}
@@ -152,6 +155,11 @@ const App = () => {
           )}
         />
         <Route path="/address" component={AddressPage} />
+        <Route path="/setAddress" component={SetAddressPage} />
+        <Route
+          path="/setting"
+          render={(props) => <SettingPage logout={logout} {...props} />}
+        />
 
         {/*로그인, 회원 가입*/}
         <Route

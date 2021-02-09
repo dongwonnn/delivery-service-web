@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './DetailPage.scss';
+import LikeList from '../compoentns/LikeList';
+import { AiOutlineHeart } from 'react-icons/ai';
 
-const DetailPage = ({ match, setDetailFromApp, orderList }) => {
+const DetailPage = ({ match, setDetailFromApp, orderList, user }) => {
   const { store } = match.params;
   const [detail, setDetail] = useState();
   const [payment, setPayment] = useState(0);
@@ -38,6 +40,11 @@ const DetailPage = ({ match, setDetailFromApp, orderList }) => {
   return (
     <div className="detail-page">
       <h2>디테일 페이지</h2>
+      {user ? (
+        <LikeList user={user} store={store} detail={detail} />
+      ) : (
+        <AiOutlineHeart />
+      )}
       <div className="dp-cart">
         {orderList.length > 0 && (
           <Link to={`/detail/${store}/cart`}>
