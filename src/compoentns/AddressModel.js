@@ -64,7 +64,6 @@ class AddressModal extends Component {
             <DaumPostCode onComplete={this.handleAddress} autoClose />
           ) : null}
           <div className="address">{fullAddress}</div>
-          {fullAddress && <div onClick={onAddBtn}>완료</div>}
         </div>
       </div>
     );

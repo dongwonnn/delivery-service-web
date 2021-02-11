@@ -1,22 +1,65 @@
 import React, { useState } from 'react';
-import AddressModal from '../compoentns/AddressModel';
+import { Link } from 'react-router-dom';
+import Postcode from '../compoentns/Postcode';
 
-const SetAddressPage = () => {
-  const [focus, setFocus] = useState(false);
+const SetAddressPage = ({ user }) => {
+  const [addr, setAddr] = useState('');
   const [text, setText] = useState('');
-
-  const onFocus = () => {
-    setFocus(!focus);
-  };
+  const [addressCat, setAddressCat] = useState('');
 
   const onInputText = (e) => {
     setText(e.target.value);
   };
 
+  const onAddAddress = () => {
+    const nextAddr = addr.split(', ');
+
+    const idx = nextAddr[0].indexOf('(');
+
+    const address = nextAddr[0].slice(0, idx);
+    const subAddress = text;
+    const building =
+      nextAddr[1] !== undefined
+        ? nextAddr[1].slice(0, nextAddr[1].length - 1)
+        : null;
+    const addrCat = addressCat === '' ? '기타' : addressCat;
+    user.addrList.push({
+      address,
+      subAddress,
+      building,
+      addrCat,
+    });
+
+    console.log(user.addrList);
+  };
+
+  const onAddrCat = (e) => {
+    setAddressCat(e.target.innerText);
+  };
+
   return (
     <div>
-      <h1>배달지 주소 설정</h1>
-      <AddressModal />
+      <h1>배달지 상세 정보</h1>
+      <Postcode setAddr={setAddr} />
+      <div>{addr}</div>
+      <div>메인 주소</div>
+      <input
+        type="text"
+        placeholder="상세주소(아파트/동/호)"
+        value={text}
+        onChange={onInputText}
+      />
+      <div>상세 주소</div>
+      <ul onClick={onAddrCat}>
+        <li>집</li>
+        <li>회사</li>
+        <li>기타</li>
+      </ul>
+      <div>지도에서 확인하기</div>
+
+      <Link to="/">
+        <button onClick={onAddAddress}>완료</button>
+      </Link>
     </div>
   );
 };

@@ -10,7 +10,7 @@ import Banner from '../compoentns/Banner';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const HomePage = ({ categories, orderList }) => {
+const HomePage = ({ categories, orderList, user }) => {
   const [stores, setStores] = useState([]);
   const [recommand, setRecommand] = useState(false);
   const [cost, setCost] = useState(false);
@@ -48,7 +48,7 @@ const HomePage = ({ categories, orderList }) => {
     <div className="hompage">
       <div className="hp-header">
         <Link to="/address">
-          <Address />
+          <Address user={user} />
         </Link>
         <Link to="/search">
           <Search />

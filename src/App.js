@@ -78,6 +78,7 @@ const App = () => {
             <HomePage
               categories={categories}
               orderList={orderList}
+              user={user}
               {...props}
             />
           )}
@@ -154,8 +155,14 @@ const App = () => {
             <CategoryPage categories={categories} {...props} />
           )}
         />
-        <Route path="/address" component={AddressPage} />
-        <Route path="/setAddress" component={SetAddressPage} />
+        <Route
+          path="/address"
+          render={(props) => <AddressPage user={user} />}
+        />
+        <Route
+          path="/setAddress"
+          render={(props) => <SetAddressPage user={user} {...props} />}
+        />
         <Route
           path="/setting"
           render={(props) => <SettingPage logout={logout} {...props} />}
