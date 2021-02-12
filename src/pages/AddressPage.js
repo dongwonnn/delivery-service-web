@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const AddressPage = ({ user }) => {
   const hasHomeAddress = user.addrList.find((addr) => addr.addrCat === '집');
   const hasWorkAddress = user.addrList.find((addr) => addr.addrCat === '회사');
-
+  //
   return (
     <div>
       <h1>주소 페이지</h1>
