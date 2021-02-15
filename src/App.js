@@ -107,6 +107,8 @@ const App = () => {
           exact={true}
           render={(props) => (
             <DetailPage
+              AuthRoute={AuthRoute}
+              authenticated={authenticated}
               setDetail={setDetail}
               orderList={orderList}
               user={user}
@@ -155,6 +157,7 @@ const App = () => {
             <SearchPage categories={categories} stores={stores} {...props} />
           )}
         />
+
         <AuthRoute
           authenticated={authenticated}
           path="/order"
@@ -175,7 +178,8 @@ const App = () => {
             <CategoryPage categories={categories} stores={stores} {...props} />
           )}
         />
-        <Route
+        <AuthRoute
+          authenticated={authenticated}
           path="/address"
           render={(props) => <AddressPage user={user} />}
         />

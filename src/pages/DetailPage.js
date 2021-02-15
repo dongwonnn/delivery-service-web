@@ -3,8 +3,17 @@ import { Link } from 'react-router-dom';
 import './DetailPage.scss';
 import LikeList from '../compoentns/LikeList';
 import { AiOutlineHeart } from 'react-icons/ai';
+import { Redirect } from 'react-router-dom';
 
-const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
+const DetailPage = ({
+  match,
+  setDetail,
+  orderList,
+  user,
+  stores,
+  authenticated,
+  AuthRoute,
+}) => {
   const { store } = match.params;
   const [detailItem, setDetailItem] = useState([]);
   const [payment, setPayment] = useState(0);
@@ -35,8 +44,16 @@ const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
       {user ? (
         <LikeList user={user} store={store} detailItem={detailItem} />
       ) : (
-        <AiOutlineHeart />
+        <Link to="/login">
+          <AiOutlineHeart />
+        </Link>
       )}
+
+      {/* {user ? (
+        <LikeList user={user} store={store} detailItem={detailItem} />
+      ) : (
+        <AiOutlineHeart />
+      )} */}
       <div className="dp-cart">
         {orderList.length > 0 && (
           <Link to={`/detail/${store}/cart`}>

@@ -17,7 +17,7 @@ const LoginPage = ({ authenticated, login, location, history }) => {
   const handleClick = () => {
     try {
       login({ email, password });
-      history.push('/');
+      history.go(-1);
     } catch (e) {
       alert('다시 입력해주세요.');
       setEmail('');
