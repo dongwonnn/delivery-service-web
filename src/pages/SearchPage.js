@@ -1,27 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import './SearchPage.scss';
-import axios from 'axios';
 import Stores from '../compoentns/Stores';
 import { Link } from 'react-router-dom';
 
-const SearchPage = ({ categories }) => {
+const SearchPage = ({ categories, stores }) => {
   const [inputValue, setInputValue] = useState('');
-  const [stores, setStores] = useState([]);
   const [sortStores, setSortStores] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:4000/stores');
-
-        setStores(response.data);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, []);
 
   useEffect(() => {
     if (inputValue !== '') {

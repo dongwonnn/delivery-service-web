@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ProfilePage = ({ user }) => {
-  const { email, phoneNum, name } = user || {};
+  const { phoneNum, name } = user || {};
   return (
     <div>
       <h1>profile</h1>

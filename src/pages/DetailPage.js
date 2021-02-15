@@ -1,29 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './DetailPage.scss';
 import LikeList from '../compoentns/LikeList';
 import { AiOutlineHeart } from 'react-icons/ai';
 
-const DetailPage = ({ match, setDetailFromApp, orderList, user }) => {
+const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
   const { store } = match.params;
-  const [detail, setDetail] = useState();
+  const [detailItem, setDetailItem] = useState([]);
   const [payment, setPayment] = useState(0);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          `http://localhost:4000/stores/?name=${store}`,
-        );
-        setDetail(response.data[0]);
-        setDetailFromApp(response.data[0]);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, [store, setDetailFromApp]);
+    const detail = stores.find((value) => value.name === store);
+    if (detail !== undefined) {
+      setDetailItem(detail);
+      setDetail(detail);
+    }
+  }, [store, setDetail, stores]);
 
   useEffect(() => {
     const sum = orderList.reduce((acc, cur) => {
@@ -33,7 +25,7 @@ const DetailPage = ({ match, setDetailFromApp, orderList, user }) => {
     setPayment(sum);
   }, [orderList]);
 
-  if (detail === undefined) {
+  if (detailItem.length === 0) {
     return <div>로딩중</div>;
   }
 
@@ -41,7 +33,7 @@ const DetailPage = ({ match, setDetailFromApp, orderList, user }) => {
     <div className="detail-page">
       <h2>디테일 페이지</h2>
       {user ? (
-        <LikeList user={user} store={store} detail={detail} />
+        <LikeList user={user} store={store} detailItem={detailItem} />
       ) : (
         <AiOutlineHeart />
       )}
@@ -57,10 +49,10 @@ const DetailPage = ({ match, setDetailFromApp, orderList, user }) => {
         )}
       </div>
       <div className="dp-info">
-        <div>가게 이름 : {detail.name}</div>
-        <div>별점 : {detail.grade}</div>
-        <div>리뷰 개수 : {detail.feedNum}</div>
-        <div>배달비 : {detail.deliveryCost}</div>
+        <div>가게 이름 : {detailItem.name}</div>
+        <div>별점 : {detailItem.grade}</div>
+        <div>리뷰 개수 : {detailItem.feedNum}</div>
+        <div>배달비 : {detailItem.deliveryCost}</div>
       </div>
 
       <div className="dp-review">
@@ -74,16 +66,17 @@ const DetailPage = ({ match, setDetailFromApp, orderList, user }) => {
       <div className="dp-subMenu">
         <div>
           메뉴 :
-          {detail.menu.map((food) => (
-            <Link to={`/detail/${store}/${food.name}`} key={food.id}>
-              <div>
-                <div>음식 이름 : {food.name}</div>
-                <div>음식 가격 : {food.price}</div>
-                <div>음식 설명 : {food.detail}</div>
-                <hr />
-              </div>
-            </Link>
-          ))}
+          {detailItem.menu.length > 0 &&
+            detailItem.menu.map((food) => (
+              <Link to={`/detail/${store}/${food.name}`} key={food.id}>
+                <div>
+                  <div>음식 이름 : {food.name}</div>
+                  <div>음식 가격 : {food.price}</div>
+                  <div>음식 설명 : {food.detail}</div>
+                  <hr />
+                </div>
+              </Link>
+            ))}
         </div>
       </div>
     </div>

@@ -23,13 +23,28 @@ import SetAddressPage from './pages/SetAddressPage';
 const App = () => {
   const [user, setUser] = useState(null);
   const [categories, setCategories] = useState([]);
-  const [detail, setDetailFromApp] = useState(undefined);
+  const [detail, setDetail] = useState(undefined);
   const [orderList, setOrderList] = useState([]);
+  const [stores, setStores] = useState([]);
+  // const [stores, setStores] = useState(createBulkStores);
 
   const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true
 
   const login = ({ email, password }) => setUser(singIn({ email, password }));
   const logout = () => setUser(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:4000/stores');
+
+        setStores(response.data);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -79,6 +94,8 @@ const App = () => {
               categories={categories}
               orderList={orderList}
               user={user}
+              stores={stores}
+              setStores={setStores}
               {...props}
             />
           )}
@@ -90,9 +107,10 @@ const App = () => {
           exact={true}
           render={(props) => (
             <DetailPage
-              setDetailFromApp={setDetailFromApp}
+              setDetail={setDetail}
               orderList={orderList}
               user={user}
+              stores={stores}
               {...props}
             />
           )}
@@ -116,7 +134,7 @@ const App = () => {
         <Route
           path="/detail/:store/review"
           exact={true}
-          component={ReviewPage}
+          render={(props) => <ReviewPage stores={stores} {...props} />}
         />
         <Route
           path="/detail/:store/:food"
@@ -133,7 +151,9 @@ const App = () => {
 
         <Route
           path="/search"
-          render={(props) => <SearchPage categories={categories} {...props} />}
+          render={(props) => (
+            <SearchPage categories={categories} stores={stores} {...props} />
+          )}
         />
         <AuthRoute
           authenticated={authenticated}
@@ -152,7 +172,7 @@ const App = () => {
         <Route
           path="/category/:category"
           render={(props) => (
-            <CategoryPage categories={categories} {...props} />
+            <CategoryPage categories={categories} stores={stores} {...props} />
           )}
         />
         <Route
@@ -191,3 +211,47 @@ const App = () => {
 };
 
 export default App;
+
+// function createBulkStores() {
+//   const array = [];
+//   for (let i = 1; i <= 2500; i++) {
+//     array.push({
+//       id: i,
+//       name: `${i}번째 가게`,
+//       franchise: true,
+//       category: `${i} 임시 가게`,
+//       grade: i,
+//       feedNum: i,
+//       deliveryCost: i + 500,
+//       menu: {
+//         id: i,
+//         name: `${i} 임시 메뉴`,
+//         price: 3000,
+//         detail: `${i} 임시 세부 메뉴`,
+//         reqMenu: {
+//           id: i,
+//           text: `${i} 임시 맛`,
+//           addCost: 0,
+//           check: false,
+//         },
+//         selMenu: {
+//           id: i,
+//           text: `${i} 스콘`,
+//           addCost: 1000,
+//           check: false,
+//         },
+//       },
+//       review: {
+//         id: i,
+//         user: '최 땡땡',
+//         date: '2021-02-01',
+//         grade: 4.4,
+//         photoCheck: true,
+//         text: `${i} 후기`,
+//         orderMenu: `${i} 아인슈페너`,
+//       },
+//     });
+//   }
+
+//   return array;
+// }

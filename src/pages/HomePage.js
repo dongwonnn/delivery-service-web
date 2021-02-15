@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import './HomePage.scss';
 import Categories from '../compoentns/Categories';
 import Franchises from '../compoentns/Franchises';
@@ -8,25 +8,10 @@ import Search from '../compoentns/Search';
 import Address from '../compoentns/Address';
 import Banner from '../compoentns/Banner';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 
-const HomePage = ({ categories, orderList, user }) => {
-  const [stores, setStores] = useState([]);
+const HomePage = ({ categories, orderList, user, setStores, stores }) => {
   const [recommand, setRecommand] = useState(false);
   const [cost, setCost] = useState(false);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:4000/stores');
-
-        setStores(response.data);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, []);
 
   const onRecommand = useCallback(() => {
     recommand
@@ -34,7 +19,7 @@ const HomePage = ({ categories, orderList, user }) => {
       : setStores([...stores.sort((a, b) => a.grade - b.grade)]);
 
     setRecommand((recommand) => !recommand);
-  }, [stores, recommand]);
+  }, [stores, recommand, setStores]);
 
   const onDeliveryCost = useCallback(() => {
     cost
@@ -42,7 +27,7 @@ const HomePage = ({ categories, orderList, user }) => {
       : setStores([...stores.sort((a, b) => a.deliveryCost - b.deliveryCost)]);
 
     setCost((cost) => !cost);
-  }, [stores, cost]);
+  }, [stores, cost, setStores]);
 
   return (
     <div className="hompage">
@@ -75,4 +60,4 @@ const HomePage = ({ categories, orderList, user }) => {
   );
 };
 
-export default HomePage;
+export default React.memo(HomePage);

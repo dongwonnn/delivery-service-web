@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const Stores = ({ stores }) => {
   return (
     <div className="hp-items">
+      {/* <div style={{ height: '150vh', textAlign: 'center' }}> */}
       {stores.map((store) => (
         <Link to={`/detail/${store.name}`} key={store.name}>
           <div className="item-card" key={store.name}>

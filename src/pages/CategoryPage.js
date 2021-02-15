@@ -1,26 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Categories from '../compoentns/Categories';
 import './CategoryPage.scss';
-import axios from 'axios';
 import Stores from '../compoentns/Stores';
 
-const CategoryPage = ({ match, categories }) => {
+const CategoryPage = ({ match, categories, stores }) => {
   const { category } = match.params;
-  const [stores, setStores] = useState([]);
   const [catStores, setCatStores] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:4000/stores');
-
-        setStores(response.data);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, []);
 
   useEffect(() => {
     const sortCat = stores.filter((store) => store.category === category);
