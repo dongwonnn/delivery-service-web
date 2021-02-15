@@ -6,6 +6,7 @@ const SetAddressPage = ({ user }) => {
   const [addr, setAddr] = useState('');
   const [text, setText] = useState('');
   const [addressCat, setAddressCat] = useState('');
+  const [apiToggle, setApiToggle] = useState(true);
 
   const onInputText = (e) => {
     setText(e.target.value);
@@ -40,26 +41,31 @@ const SetAddressPage = ({ user }) => {
   return (
     <div>
       <h1>배달지 상세 정보</h1>
-      <Postcode setAddr={setAddr} />
-      <div>{addr}</div>
-      <div>메인 주소</div>
-      <input
-        type="text"
-        placeholder="상세주소(아파트/동/호)"
-        value={text}
-        onChange={onInputText}
-      />
-      <div>상세 주소</div>
-      <ul onClick={onAddrCat}>
-        <li>집</li>
-        <li>회사</li>
-        <li>기타</li>
-      </ul>
-      <div>지도에서 확인하기</div>
+      {apiToggle ? (
+        <Postcode setAddr={setAddr} setApiToggle={setApiToggle} />
+      ) : (
+        <div>
+          <div>{addr}</div>
+          <div>메인 주소</div>
+          <input
+            type="text"
+            placeholder="상세주소(아파트/동/호)"
+            value={text}
+            onChange={onInputText}
+          />
+          <div>상세 주소</div>
+          <ul onClick={onAddrCat}>
+            <li>집</li>
+            <li>회사</li>
+            <li>기타</li>
+          </ul>
+          <div>지도에서 확인하기</div>
 
-      <Link to="/">
-        <button onClick={onAddAddress}>완료</button>
-      </Link>
+          <Link to="/">
+            <button onClick={onAddAddress}>완료</button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
