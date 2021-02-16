@@ -4,8 +4,6 @@ import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 const LikeList = ({ user, store, detailItem }) => {
   const [like, setLike] = useState(false);
 
-  console.log(detailItem);
-
   //사용자가 이 store에 like를 눌렀는지 체크
   useEffect(() => {
     const hasUserLikedStore = !!user.likesList.find(

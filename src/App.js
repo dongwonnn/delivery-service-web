@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
+import './App.css';
 import FavoritePage from './pages/FavoritePage';
 import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
@@ -28,7 +29,7 @@ const App = () => {
   const [stores, setStores] = useState([]);
   // const [stores, setStores] = useState(createBulkStores);
 
-  const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true
+  const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true\
 
   const login = ({ email, password }) => setUser(singIn({ email, password }));
   const logout = () => setUser(null);
@@ -59,15 +60,8 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <ul>
-        {/* <li>
-          {authenticated ? (
-            <LogoutButton logout={logout} />
-          ) : (
-            <Link to="/login">로그인</Link>
-          )}
-        </li> */}
+    <div className="app">
+      <ul className="app-nav">
         <li>
           <Link to="/">홈</Link>
         </li>

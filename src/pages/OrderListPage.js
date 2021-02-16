@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './OrderListPage.scss';
 
-const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
+const OrderListPage = ({ match, detail, orderList, setOrderList, history }) => {
   const { food } = match.params;
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(undefined);
+  const [overlap, setOverlap] = useState(false);
   const foodMenu = detail?.menu.find((m) => m.name === food);
+  const defaultPrice = foodMenu.price;
   // detail?.menu : detail == false면 뒤에 실행 안함
 
   useEffect(() => {
@@ -14,16 +16,13 @@ const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
   }, [foodMenu]);
 
   if (foodMenu === undefined || totalPrice === undefined) {
-    return <></>;
+    return <>로딩중</>;
   }
-
-  const defaultPrice = foodMenu.price;
 
   const onMinusBtn = () => {
     if (count > 1) {
       setCount(count - 1);
     }
-    // console.log('1', count);
     const nextTotalPrice = defaultPrice * (count - 1);
     setTotalPrice(nextTotalPrice);
   };
@@ -52,9 +51,12 @@ const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
     }
   };
 
-  const onSubmitBtn = () => {
-    console.log(detail.name);
-    console.log(orderList.store);
+  const onCancle = () => {
+    setOverlap(false);
+  };
+
+  const onChangeOrderList = () => {
+    orderList.splice(0, orderList.length);
 
     const reqMenu = foodMenu.reqMenu
       .filter((v) => v.check === true)
@@ -74,6 +76,37 @@ const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
     };
 
     setOrderList([...orderList, nextOrderList]);
+
+    history.go(-1);
+  };
+
+  const onSubmitBtn = () => {
+    if (orderList.length > 0) {
+      if (orderList[0].store !== detail.name) {
+        setOverlap(true);
+      }
+    } else {
+      const reqMenu = foodMenu.reqMenu
+        .filter((v) => v.check === true)
+        .map((el) => el.text);
+
+      const selMenu = foodMenu.selectMenu
+        .filter((v) => v.check === true)
+        .map((el) => el.text);
+
+      const nextOrderList = {
+        mainMenu: food,
+        count: count,
+        totalPrice: totalPrice,
+        reqMenu: reqMenu,
+        selMenu: selMenu,
+        store: detail.name,
+      };
+
+      setOrderList([...orderList, nextOrderList]);
+
+      history.go(-1);
+    }
   };
 
   return (
@@ -133,11 +166,18 @@ const OrderListPage = ({ match, detail, orderList, setOrderList }) => {
         </div>
       </div>
 
-      <Link to={`/detail/${detail.name}`}>
-        <div className="orderList-cart" onClick={onSubmitBtn}>
-          <button>카트에 담기</button>
+      <div className="orderList-cart" onClick={onSubmitBtn}>
+        <button>카트에 담기</button>
+      </div>
+
+      {overlap && (
+        <div>
+          <p>같은 가게의 메뉴만을 담을 수 있습니다.</p>
+          <p>주문할 가게를 변경하실 경우 이전에 담은 메뉴가 삭제됩니다.</p>
+          <button onClick={onCancle}>취소</button>
+          <button onClick={onChangeOrderList}>새로담기</button>
         </div>
-      </Link>
+      )}
     </div>
   );
 };
