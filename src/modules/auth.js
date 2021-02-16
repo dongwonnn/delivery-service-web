@@ -34,7 +34,7 @@ const users = [
     phoneNum: '01012345678',
     likesList: [],
     orderHistory: [],
-    addrssList: [],
+    addrList: [],
   },
 ];
 

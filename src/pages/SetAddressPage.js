@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Postcode from '../compoentns/Postcode';
 
-const SetAddressPage = ({ user }) => {
+const SetAddressPage = ({ user, setDefaultAddress }) => {
   const [addr, setAddr] = useState('');
   const [text, setText] = useState('');
   const [addressCat, setAddressCat] = useState('');
@@ -10,6 +10,10 @@ const SetAddressPage = ({ user }) => {
 
   const onInputText = (e) => {
     setText(e.target.value);
+  };
+
+  const onAddrCat = (e) => {
+    setAddressCat(e.target.innerText);
   };
 
   const onAddAddress = () => {
@@ -31,18 +35,17 @@ const SetAddressPage = ({ user }) => {
       addrCat,
     });
 
-    console.log(user.addrList);
-  };
-
-  const onAddrCat = (e) => {
-    setAddressCat(e.target.innerText);
+    setDefaultAddress(address);
   };
 
   return (
     <div>
       <h1>배달지 상세 정보</h1>
       {apiToggle ? (
-        <Postcode setAddr={setAddr} setApiToggle={setApiToggle} />
+        <Postcode
+          onAddressChange={setAddr}
+          onClose={() => setApiToggle(false)}
+        />
       ) : (
         <div>
           <div>{addr}</div>

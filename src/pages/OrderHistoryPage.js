@@ -8,6 +8,8 @@ const OrderHistoryPage = ({ user, detail }) => {
     setModal(!modal);
   };
 
+  const onReviewBtn = () => {};
+
   if (user.orderHistory.length === 0) {
     return <div>주문 기록 없음</div>;
   }
@@ -33,6 +35,7 @@ const OrderHistoryPage = ({ user, detail }) => {
             }, 0)}
           </p>
 
+          <p onClick={onReviewBtn}>후기 쓰기</p>
           <p>재주문하기</p>
           <button onClick={onModalBtn}>영수증보기</button>
           <Recept modal={modal} order={order} detail={detail} />

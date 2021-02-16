@@ -1,16 +1,16 @@
 ## Deliver Service Web Version
 
+### props와 state 만으로 구현한 react 웹 서비스 입니다.
+
 ### json 서버 : json-server ./data.json --port 4000.
 
 ### react 서버 : yarn start
 
 ### test용 아이디/비밀번호 : kkum9408@gmail.com / 123
 
-- TodoList
-
-  - [] 재주문 기능
-  - [] 기본 주소 설정
-
+- 구현 안된 기능
+  - [ ] 필수 메뉴 선택
+  - [ ] 재주문 기능
 - [21.02.11]
 
   - [x] 다음 주소 API 사용해 주소 설정.

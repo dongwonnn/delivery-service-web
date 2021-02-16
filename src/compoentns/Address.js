@@ -1,15 +1,13 @@
 import React from 'react';
 
-const Address = ({ user }) => {
-  let lastNum = 0;
+const Address = ({ user, defaultAddress }) => {
+  // let lastNum = 0;
 
-  if (user) {
-    lastNum = user.addrList.length - 1;
-  }
+  // if (user) {
+  //   lastNum = user.addrList.length - 1;
+  // }
 
-  return (
-    <div>{user ? <p>{user.addrList[lastNum].address}</p> : <p>주소</p>}</div>
-  );
+  return <div>{user ? <p>{defaultAddress}</p> : <p>잠실 8동 </p>}</div>;
 };
 
 export default Address;

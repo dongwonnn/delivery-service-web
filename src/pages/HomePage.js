@@ -9,7 +9,14 @@ import Address from '../compoentns/Address';
 import Banner from '../compoentns/Banner';
 import { Link } from 'react-router-dom';
 
-const HomePage = ({ categories, orderList, user, setStores, stores }) => {
+const HomePage = ({
+  categories,
+  orderList,
+  user,
+  setStores,
+  stores,
+  defaultAddress,
+}) => {
   const [recommand, setRecommand] = useState(false);
   const [cost, setCost] = useState(false);
 
@@ -33,7 +40,7 @@ const HomePage = ({ categories, orderList, user, setStores, stores }) => {
     <div className="hompage">
       <div className="hp-header">
         <Link to="/address">
-          <Address user={user} />
+          <Address user={user} defaultAddress={defaultAddress} />
         </Link>
         <Link to="/search">
           <Search />

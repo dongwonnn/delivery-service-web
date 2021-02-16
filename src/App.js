@@ -27,6 +27,7 @@ const App = () => {
   const [detail, setDetail] = useState(undefined);
   const [orderList, setOrderList] = useState([]);
   const [stores, setStores] = useState([]);
+  const [defaultAddress, setDefaultAddress] = useState('설정');
   // const [stores, setStores] = useState(createBulkStores);
 
   const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true\
@@ -90,6 +91,7 @@ const App = () => {
               user={user}
               stores={stores}
               setStores={setStores}
+              defaultAddress={defaultAddress}
               {...props}
             />
           )}
@@ -175,11 +177,19 @@ const App = () => {
         <AuthRoute
           authenticated={authenticated}
           path="/address"
-          render={(props) => <AddressPage user={user} />}
+          render={(props) => (
+            <AddressPage user={user} setDefaultAddress={setDefaultAddress} />
+          )}
         />
         <Route
           path="/setAddress"
-          render={(props) => <SetAddressPage user={user} {...props} />}
+          render={(props) => (
+            <SetAddressPage
+              user={user}
+              setDefaultAddress={setDefaultAddress}
+              {...props}
+            />
+          )}
         />
         <Route
           path="/setting"

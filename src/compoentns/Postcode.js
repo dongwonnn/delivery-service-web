@@ -1,7 +1,7 @@
 import React from 'react';
 import DaumPostcode from 'react-daum-postcode';
 
-const Postcode = ({ setAddr, setApiToggle }) => {
+const Postcode = ({ onAddressChange, onClose }) => {
   const handleComplete = (data) => {
     let fullAddress = data.address;
     let extraAddress = '';
@@ -17,12 +17,15 @@ const Postcode = ({ setAddr, setApiToggle }) => {
       fullAddress += extraAddress !== '' ? ` (${extraAddress})` : '';
     }
 
-    console.log(fullAddress);
-    setAddr(fullAddress);
-    setApiToggle(false);
+    onAddressChange(fullAddress);
+    onClose();
   };
 
-  return <DaumPostcode onComplete={handleComplete} autoClose />;
+  return (
+    <div>
+      <DaumPostcode onComplete={handleComplete} />;
+    </div>
+  );
 };
 
 export default Postcode;
