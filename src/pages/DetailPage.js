@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './DetailPage.scss';
+// import './DetailPage.scss';
 import LikeList from '../compoentns/LikeList';
 import { AiOutlineHeart } from 'react-icons/ai';
 

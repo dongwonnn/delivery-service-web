@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import './HomePage.scss';
+//import './HomePage.scss';
 import Categories from '../compoentns/Categories';
 import Franchises from '../compoentns/Franchises';
 import Stores from '../compoentns/Stores';

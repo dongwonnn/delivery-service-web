@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Link, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import FavoritePage from './pages/FavoritePage';
 import HomePage from './pages/HomePage';
@@ -19,7 +19,8 @@ import CartPage from './pages/CartPage';
 import OrderHistoryPage from './pages/OrderHistoryPage';
 import SettingPage from './pages/SettingPage';
 import SetAddressPage from './pages/SetAddressPage';
-//import LogoutButton from './compoentns/LogoutButton';
+import Navigation from './compoentns/Navigation';
+import './App.scss';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -28,7 +29,6 @@ const App = () => {
   const [orderList, setOrderList] = useState([]);
   const [stores, setStores] = useState([]);
   const [defaultAddress, setDefaultAddress] = useState('설정');
-  // const [stores, setStores] = useState(createBulkStores);
 
   const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true\
 
@@ -62,23 +62,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <ul className="app-nav">
-        <li>
-          <Link to="/">홈</Link>
-        </li>
-        <li>
-          <Link to="/search">검색</Link>
-        </li>
-        <li>
-          <Link to="/order">주문</Link>
-        </li>
-        <li>
-          <Link to="/favorite">즐겨찾기</Link>
-        </li>
-        <li>
-          <Link to="/profile">프로필</Link>
-        </li>
-      </ul>
+      <Navigation />
       <hr />
       <Switch>
         <Route
@@ -97,7 +81,6 @@ const App = () => {
           )}
         />
 
-        {/* 음식점의 디테일 페이지로 가는 Route */}
         <Route
           path="/detail/:store"
           exact={true}
@@ -134,6 +117,7 @@ const App = () => {
           exact={true}
           render={(props) => <ReviewPage stores={stores} {...props} />}
         />
+
         <Route
           path="/detail/:store/:food"
           exact={true}
@@ -196,7 +180,6 @@ const App = () => {
           render={(props) => <SettingPage logout={logout} {...props} />}
         />
 
-        {/*로그인, 회원 가입*/}
         <Route
           path="/register"
           render={(props) => <RegisterPage register={register} {...props} />}
@@ -219,6 +202,8 @@ const App = () => {
 };
 
 export default App;
+
+// const [stores, setStores] = useState(createBulkStores);
 
 // function createBulkStores() {
 //   const array = [];
