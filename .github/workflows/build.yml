@@ -38,14 +38,10 @@ jobs:
       - name: Remove .gitignore
         run: rm .gitignore
 
-      - name: Pushes test file
-        uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      - name: Push to built branch
+        uses: Automattic/action-commit-to-branch@master
         with:
-          source_file: 'build'
-          destination_repo: 'release'
-          destination_folder: 'build'
-          user_email: 'build-bot@hello.com'
-          user_name: 'build-bot'
-          commit_message: 'build done!'
+          branch: 'release'
+          commit_message: 'Build done!'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
