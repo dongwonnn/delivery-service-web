@@ -1,42 +1,123 @@
-a {
-  text-decoration: none;
-  color: black;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-a:focus {
-  text-decoration: none;
-}
-a:hover,
-a:active {
-  text-decoration: none;
-}
-
-.detail-page {
+.detail {
   background-color: white;
   box-sizing: border-box;
-  margin: 0 auto;
-  width: 640px;
+  padding-bottom: 87.8px;
 
-  .dp-cart {
-    button {
-      display: flex;
+  .detail-img {
+    width: 100%;
+    height: 200px;
+    background-color: #eeeeee;
+  }
+
+  .detail-info {
+    border: 1px black solid;
+    height: 96.8px;
+    padding: 10px 0;
+
+    .info-name {
+      font-size: 1.5rem;
+      font-weight: 550;
       text-align: center;
-      background-color: rgb(113, 203, 255);
-      width: 100%;
-      height: 50px;
-      color: white;
-      cursor: pointer;
+    }
+
+    .info-detail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      vertical-align: middle;
+      svg {
+        font-size: 1.5em;
+        color: rgb(237, 240, 105);
+        border: 0.1 rgb(237, 240, 105) solid;
+      }
+
+      .info-grade {
+        font-size: 1.2rem;
+      }
+
+      a {
+        font-size: 0.8rem;
+        color: #4ca6eb;
+      }
     }
   }
 
-  .dp-review {
+  .detail-delivery-info {
+    .delivery-info-header {
+      display: flex;
+      margin: 10px 0;
+    }
   }
 
-  .dp-subMenu {
+  .detail-cart {
+    position: fixed;
+    bottom: 57.8px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+
+    .detail-addBtn {
+      background-color: #4eacf8;
+      width: 100%;
+      height: 70px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .order-length {
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border-radius: 100%;
+        color: #4eacf8;
+        margin-right: 10px;
+      }
+
+      .order-price {
+        text-align: end;
+      }
+
+      p {
+        color: white;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .detail-review {
+  }
+
+  .detail-subMenu {
+    .subMenu {
+      display: flex;
+      justify-content: space-between;
+      .subMenu-info {
+        p {
+          margin-bottom: 5px;
+        }
+        .food-name {
+          font-size: 1.2rem;
+          font-weight: 900;
+        }
+        .food-price {
+        }
+        .food-detail {
+          font-weight: bold;
+          font-size: 0.8rem;
+          color: #939daa;
+        }
+      }
+      .subMenu-img {
+        width: 100px;
+        height: 100px;
+
+        flex-shrink: 1;
+        background-color: #eeeeee;
+      }
+    }
   }
 }

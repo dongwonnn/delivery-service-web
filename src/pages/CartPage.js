@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import './CartPage.scss';
 import { GrFormClose } from 'react-icons/gr';
+import { BiCaretRight } from 'react-icons/bi';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-const CartPage = ({ orderList, detail, setOrderList, history, user }) => {
+const CartPage = ({
+  orderList,
+  detail,
+  setOrderList,
+  history,
+  user,
+  defaultAddress,
+}) => {
   const [lists, setLists] = useState(orderList);
 
   const onCloseBtn = (idx) => {
@@ -42,86 +53,196 @@ const CartPage = ({ orderList, detail, setOrderList, history, user }) => {
 
   if (orderList.length === 0) return <div></div>;
   return (
-    <div className="cart">
-      <div className="cart-header">
-        <h1>카트</h1>
-        <p className="header-building">대승빌딩 (으)로 배달</p>
-        <p className="header-address">주소</p>
-      </div>
-      <hr />
-
-      <div className="cart-main">
-        <div>
-          {lists.map((list, idx) => (
-            <div key={idx}>
-              <p>{list.mainMenu}</p>
-              <p>{list.reqMunu}</p>
-              <p>{list.selMenu}</p>
-              <p>{list.totalPrice}</p>
-              <GrFormClose onClick={() => onCloseBtn(idx)} />
-            </div>
-          ))}
-        </div>
-        <hr />
-        <div className="main-addMenu">
-          <p onClick={onAddMenu}>+메뉴추가</p>
-        </div>
-      </div>
-      <hr />
-      <div className="cart-coupon">
-        <p className="coupon-title">할인쿠폰</p>
-        <div className="coupon-card">
-          <p className="card-title">사용가능 쿠폰 0장</p>
-          <div className="coupon-inner">
-            <div>
-              <p>쿠폰을 선택해 주세요</p>
-            </div>
-            <button>선택</button>
+    <Container className="cart">
+      <Row>
+        <Col>
+          <div className="cart-header">
+            <h4>카트</h4>
+            <p className="header-building">{defaultAddress} (으)로 배달</p>
+            <p className="header-address">주소</p>
           </div>
-        </div>
-      </div>
-      <hr />
-      <div className="cart-list">
-        <div>
-          <p>주문금액</p>
-          <p>{payment}원</p>
-        </div>
-        <div>
-          <p>배달비</p>
-          <p>{detail.deliveryCost}원</p>
-        </div>
-        <div>
-          <p className="list-amount">총 결제금액</p>
-          <p>{detail.deliveryCost + payment}원</p>
-        </div>
-      </div>
-      <hr />
+          <hr />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <div className="cart-main">
+            <p className="main-name">{detail.name}</p>
+            <hr />
+            {lists.map((list, idx) => (
+              <div key={idx}>
+                <div className="main-cancel">
+                  <p>{list.mainMenu}</p>
+                  <GrFormClose onClick={() => onCloseBtn(idx)} />
+                </div>
+                <p>{list.reqMunu}</p>
+                <p>{list.selMenu}</p>
+                <p>{list.totalPrice}원</p>
+              </div>
+            ))}
+            <hr />
+            <div className="main-addMenu">
+              <p onClick={onAddMenu}>+메뉴추가</p>
+            </div>
+            <hr />
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <div className="cart-coupon">
+            <p className="coupon-title">할인쿠폰</p>
+            <div className="coupon-card">
+              <p className="card-title">
+                사용가능 쿠폰{' '}
+                <span>
+                  0장 <BiCaretRight />
+                </span>
+              </p>
+              <div className="coupon-inner">
+                <div>
+                  <p>쿠폰을 선택해 주세요</p>
+                </div>
+                <button>선택</button>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <div className="cart-list">
+            <div>
+              <p>주문금액</p>
+              <p>{payment}원</p>
+            </div>
+            <div>
+              <p>배달비</p>
+              <p>{detail.deliveryCost}원</p>
+            </div>
+            <hr />
+            <div className="list-amount">
+              <p>총 결제금액</p>
+              <p>{detail.deliveryCost + payment}원</p>
+            </div>
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <div className="block"></div>
+      </Row>
+      <Row>
+        <Col>
+          <div className="cart-request">
+            <p className="request-header">요청사항</p>
+            <div>
+              <p>가게 사장님에게</p>
+              <textarea placeholder="예) 견과류는 빼주세요"></textarea>
+              <input type="checkbox" />
+              <label htmlFor="request">일회용 수저, 포크는 빼주세요</label>
+            </div>
+            <div>
+              <p>배달 기사님에게</p>
+              <textarea placeholder="초인종 누르고 문 앞"></textarea>
+            </div>
+            <hr />
 
-      <div className="cart-request">
-        <p className="request-header">요청사항</p>
-        <div>
-          <p>가게 사장님에게</p>
-          <textarea placeholder="예) 견과류는 빼주세요"></textarea>
-          <input type="checkbox" />
-          <label htmlFor="request">일회용 수저, 포크는 빼주세요</label>
+            <div>
+              <p className="pay-select">결제수단</p>
+              <p>KB국민카드 ********</p>
+            </div>
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <div className="cart-payment">
+          <button onClick={onPayBtn}>
+            <p>{detail.deliveryCost + payment}원 결제하기</p>
+          </button>
         </div>
-        <div>
-          <p>배달 기사님에게</p>
-          <textarea placeholder="초인종 누르고 문 앞"></textarea>
-        </div>
-        <hr />
+      </Row>
+    </Container>
+    // <div className="cart">
+    //   <div className="cart-header">
+    //     <h1>카트</h1>
+    //     <p className="header-building">대승빌딩 (으)로 배달</p>
+    //     <p className="header-address">주소</p>
+    //   </div>
+    //   <hr />
 
-        <div>
-          <p>결제수단</p>
-          <p>KB국민카드 ********</p>
-        </div>
-      </div>
-      <div className="cart-payment">
-        <button onClick={onPayBtn}>
-          {detail.deliveryCost + payment}원 결제하기
-        </button>
-      </div>
-    </div>
+    //   <div className="cart-main">
+    //     <div>
+    //       {lists.map((list, idx) => (
+    //         <div key={idx}>
+    //           <p>{list.mainMenu}</p>
+    //           <p>{list.reqMunu}</p>
+    //           <p>{list.selMenu}</p>
+    //           <p>{list.totalPrice}</p>
+    //           <GrFormClose onClick={() => onCloseBtn(idx)} />
+    //         </div>
+    //       ))}
+    //     </div>
+    //     <hr />
+    //     <div className="main-addMenu">
+    //       <p onClick={onAddMenu}>+메뉴추가</p>
+    //     </div>
+    //   </div>
+    //   <hr />
+    //   <div className="cart-coupon">
+    //     <p className="coupon-title">할인쿠폰</p>
+    //     <div className="coupon-card">
+    //       <p className="card-title">사용가능 쿠폰 0장</p>
+    //       <div className="coupon-inner">
+    //         <div>
+    //           <p>쿠폰을 선택해 주세요</p>
+    //         </div>
+    //         <button>선택</button>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <hr />
+    //   <div className="cart-list">
+    //     <div>
+    //       <p>주문금액</p>
+    //       <p>{payment}원</p>
+    //     </div>
+    //     <div>
+    //       <p>배달비</p>
+    //       <p>{detail.deliveryCost}원</p>
+    //     </div>
+    //     <div>
+    //       <p className="list-amount">총 결제금액</p>
+    //       <p>{detail.deliveryCost + payment}원</p>
+    //     </div>
+    //   </div>
+    //   <hr />
+
+    //   <div className="cart-request">
+    //     <p className="request-header">요청사항</p>
+    //     <div>
+    //       <p>가게 사장님에게</p>
+    //       <textarea placeholder="예) 견과류는 빼주세요"></textarea>
+    //       <input type="checkbox" />
+    //       <label htmlFor="request">일회용 수저, 포크는 빼주세요</label>
+    //     </div>
+    //     <div>
+    //       <p>배달 기사님에게</p>
+    //       <textarea placeholder="초인종 누르고 문 앞"></textarea>
+    //     </div>
+    //     <hr />
+
+    //     <div>
+    //       <p>결제수단</p>
+    //       <p>KB국민카드 ********</p>
+    //     </div>
+    //   </div>
+    //   <div className="cart-payment">
+    //     <button onClick={onPayBtn}>
+    //       {detail.deliveryCost + payment}원 결제하기
+    //     </button>
+    //   </div>
+    // </div>
   );
 };
 

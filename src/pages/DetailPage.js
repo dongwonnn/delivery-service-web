@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-// import './DetailPage.scss';
+import './DetailPage.scss';
 import LikeList from '../compoentns/LikeList';
-import { AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlineHeart, AiFillStar } from 'react-icons/ai';
+import { BsClock } from 'react-icons/bs';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
   const { store } = match.params;
@@ -30,60 +34,148 @@ const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
   }
 
   return (
-    <div className="detail-page">
-      <h2>디테일 페이지</h2>
-      {user ? (
-        <LikeList user={user} store={store} detailItem={detailItem} />
-      ) : (
-        <Link to="/login">
-          <AiOutlineHeart />
-        </Link>
-      )}
-
-      <div className="dp-cart">
-        {orderList.length > 0 && (
-          <Link to={`/detail/${store}/cart`}>
-            <button>
-              <p>{orderList.length}</p>
-              <p>카트보기</p>
-              <p>{payment}</p>
-            </button>
-          </Link>
-        )}
-      </div>
-      <div className="dp-info">
-        <div>가게 이름 : {detailItem.name}</div>
-        <div>별점 : {detailItem.grade}</div>
-        <div>리뷰 개수 : {detailItem.feedNum}</div>
-        <div>배달비 : {detailItem.deliveryCost}</div>
-      </div>
-
-      <div className="dp-review">
-        {/* 후기 이동 */}
-        <Link to={`/detail/${store}/review`}>
-          <hr />
-          리뷰
-          <hr />
-        </Link>
-      </div>
-      <div className="dp-subMenu">
-        <div>
-          메뉴 :
-          {detailItem.menu.length > 0 &&
-            detailItem.menu.map((food) => (
-              <Link to={`/detail/${store}/${food.name}`} key={food.id}>
-                <div>
-                  <div>음식 이름 : {food.name}</div>
-                  <div>음식 가격 : {food.price}</div>
-                  <div>음식 설명 : {food.detail}</div>
-                  <hr />
-                </div>
-              </Link>
-            ))}
+    <Container className="detail">
+      <Row>
+        <div className="detail-img">
+          <div>이미지</div>
         </div>
-      </div>
-    </div>
+        <Col>
+          <div className="detail-info">
+            <p className="info-name">{detailItem.name}</p>
+            <div className="info-detail">
+              <AiFillStar />
+              <p className="info-grade">{detailItem.grade}</p>
+              <Link to={`/detail/${store}/review`}>
+                <p>리뷰{detailItem.feedNum}개 &gt;</p>
+              </Link>
+            </div>
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <div className="detail-delivery-info">
+            <div className="delivery-info-header">
+              <BsClock />
+              <div> 21~31분</div>
+              <div>매장 / 원산지 정보</div>
+            </div>
+            <div>배달비 : {detailItem.deliveryCost}</div>
+            <div>최소주문 : 5000원</div>
+          </div>
+        </Col>
+      </Row>
+      <hr />
+      <Row>
+        <Col>
+          <div className="detail-subMenu">
+            {detailItem.menu.length > 0 &&
+              detailItem.menu.map((food) => (
+                <Link to={`/detail/${store}/${food.name}`} key={food.id}>
+                  <div className="subMenu">
+                    <div className="subMenu-info">
+                      <p className="food-name">{food.name}</p>
+                      <p className="food-price">{food.price}원</p>
+                      <p className="food-detail">{food.detail}</p>
+                    </div>
+                    <div className="subMenu-img">이미지</div>
+                  </div>
+                  <hr />
+                </Link>
+              ))}
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <div className="detail-cart">
+          {orderList.length > 0 && (
+            <Link to={`/detail/${store}/cart`}>
+              <button className="detail-addBtn">
+                <p className="order-length">{orderList.length} </p>
+                <p>카트보기</p>
+                <p className="order-price">{payment}원</p>
+              </button>
+            </Link>
+          )}
+        </div>
+      </Row>
+    </Container>
+    // <div className="detail">
+    //   <h2>디테일 페이지</h2>
+    //   <div className="detail-img">
+    //     <div>이미지</div>
+    //   </div>
+    //   {user ? (
+    //     <LikeList user={user} store={store} detailItem={detailItem} />
+    //   ) : (
+    //     <Link to="/login">
+    //       <AiOutlineHeart />
+    //     </Link>
+    //   )}
+
+    //   <div className="detail-cart">
+    //     {orderList.length > 0 && (
+    //       <Link to={`/detail/${store}/cart`}>
+    //         <button>
+    //           <p>{orderList.length}</p>
+    //           <p>카트보기</p>
+    //           <p>{payment}</p>
+    //         </button>
+    //       </Link>
+    //     )}
+    //   </div>
+    //   <div className="detail-info">
+    //     <div>가게 이름 : {detailItem.name}</div>
+    //     <AiFillStar />
+    //     <div>별점 : {detailItem.grade}</div>
+    //     <div>리뷰 개수 : {detailItem.feedNum}</div>
+    //   </div>
+    //   <div className="detail-delivery-info">
+    //     <div>
+    //       <BsClock />
+    //       <div> 21~31분</div>
+    //       <div>매장 / 원산지 정보</div>
+    //     </div>
+    //     <div>배달비 : {detailItem.deliveryCost}</div>
+    //     <div>최소주문 : 5000원</div>
+    //   </div>
+
+    //   <div className="detail-review">
+    //     {/* 후기 이동 */}
+    //     <Link to={`/detail/${store}/review`}>
+    //       <hr />
+    //       리뷰
+    //       <hr />
+    //     </Link>
+    //   </div>
+    //   <div className="detail-subMenu">
+    //     <div>
+    //       메뉴 :
+    //       {detailItem.menu.length > 0 &&
+    //         detailItem.menu.map((food) => (
+    //           <Link to={`/detail/${store}/${food.name}`} key={food.id}>
+    //             <div>
+    //               <div>음식 이름 : {food.name}</div>
+    //               <div>음식 가격 : {food.price}</div>
+    //               <div>음식 설명 : {food.detail}</div>
+    //               <hr />
+    //             </div>
+    //           </Link>
+    //         ))}
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 
 export default DetailPage;
+
+{
+  /* {user ? (
+          <LikeList user={user} store={store} detailItem={detailItem} />
+        ) : (
+          <Link to="/login">
+            <AiOutlineHeart />
+          </Link>
+        )} */
+}

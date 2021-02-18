@@ -1,63 +1,58 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Navigation.scss';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
+import { BiHomeAlt, BiSearch, BiHeart, BiCalendarCheck } from 'react-icons/bi';
+import { BsPerson } from 'react-icons/bs';
 
 const Navigation = () => {
   return (
     <Container>
-      <Row>
-        <Col>1</Col>
-        <Col>2</Col>
-      </Row>
-      <Row>
-        <Col>1</Col>
-        <Col>2</Col>
-        <Col>3</Col>
+      <Row className="nav-main">
+        <Col className="nav-item">
+          <Link to="/">
+            <div className="nav-item-body">
+              <BiHomeAlt />
+              <p>홈</p>
+            </div>
+          </Link>
+        </Col>
+        <Col className="nav-item">
+          <Link to="/search">
+            <div className="nav-item-body">
+              <BiSearch />
+              <p>검색</p>
+            </div>
+          </Link>
+        </Col>
+        <Col className="nav-item">
+          <Link to="/order">
+            <div className="nav-item-body">
+              <BiHeart />
+              <p>즐겨찾기</p>
+            </div>
+          </Link>
+        </Col>
+        <Col className="nav-item">
+          <Link to="/favorite">
+            <div className="nav-item-body">
+              <BiCalendarCheck />
+              <p>주문내역</p>
+            </div>
+          </Link>
+        </Col>
+        <Col className="nav-item">
+          <Link to="/profile">
+            <div className="nav-item-body">
+              <BsPerson />
+              <p>My</p>
+            </div>
+          </Link>
+        </Col>
       </Row>
     </Container>
-
-    // <Container>
-    //   <Row>
-    //     <Col>
-    //       <Link to="/">홈</Link>
-    //     </Col>
-    //     <Col>
-    //       <Link to="/search">검색</Link>
-    //     </Col>
-    //     <Col>
-    //       <Link to="/order">주문</Link>
-    //     </Col>
-    //     <Col>
-    //       <Link to="/favorite">즐겨찾기</Link>
-    //     </Col>
-    //     <Col>
-    //       <Link to="/profile">프로필</Link>
-    //     </Col>
-    //   </Row>
-    // </Container>
-
-    // <div className="nav">
-    //   <ul className="nav-body">
-    //     <li>
-    //       <Link to="/">홈</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/search">검색</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/order">주문</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/favorite">즐겨찾기</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/profile">프로필</Link>
-    //     </li>
-    //   </ul>
-    // </div>
   );
 };
 

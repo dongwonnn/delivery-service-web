@@ -1,1 +1,20 @@
-@import '~bootstrap/scss/bootstrap';
+.nav-main {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: white;
+  .nav-item {
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+    .nav-item-body {
+      svg {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

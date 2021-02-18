@@ -1,10 +1,15 @@
 .cart {
   background-color: white;
   box-sizing: border-box;
-  margin: 0 auto;
-  width: 640px;
+
+  .block {
+    width: 100%;
+    height: 20px;
+    background-color: #eeeeee;
+  }
+
   .cart-header {
-    h1 {
+    h4 {
       width: 100%;
       height: 60px;
       line-height: 60px;
@@ -22,25 +27,42 @@
     }
   }
   .cart-main {
-    margin: 0 20px;
+    p {
+      margin-bottom: 5px;
+    }
+
+    .main-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .main-cancel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     .main-addMenu {
-      color: rgb(113, 203, 255);
+      color: #4eacf8;
       text-align: center;
       cursor: pointer;
     }
   }
   .cart-coupon {
-    margin: 0 20px;
     .coupon-title {
+      font-size: 1.3rem;
       font-weight: bold;
     }
     .coupon-card {
+      font-size: 0.7rem;
       border: 1px solid #cccccc;
       border-radius: 10px;
-      background-color: #f7f7f7;
+      background-color: #f4f6f8;
       .card-title {
         margin: 10px 20px 10px;
+        span {
+          color: #4eacf8;
+        }
       }
 
       .coupon-inner {
@@ -56,7 +78,7 @@
           border-radius: 10px;
 
           p {
-            margin-left: 20px;
+            margin: 0;
           }
         }
 
@@ -72,35 +94,53 @@
     }
   }
   .cart-list {
-    padding: 0 20px;
     div {
       display: flex;
       justify-content: space-between;
 
       .list-amount {
+        font-size: 1rem;
         font-weight: bold;
       }
     }
   }
   .cart-request {
-    padding: 0 20px;
-
+    padding-bottom: 90px;
     .request-header {
+      font-size: 1.3rem;
       font-weight: bold;
+      margin: 10px 0;
     }
 
     textarea {
       width: 100%;
     }
+
+    .pay-select {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
   }
 
   .cart-payment {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     button {
       background-color: rgb(113, 203, 255);
+      padding-top: 10px;
+      padding-bottom: 87.8px;
       width: 100%;
-      height: 50px;
+      height: 100px;
       color: white;
+
       cursor: pointer;
+      p {
+        vertical-align: middle;
+        margin-bottom: 0;
+      }
     }
   }
 }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
 import FavoritePage from './pages/FavoritePage';
 import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
@@ -63,7 +62,6 @@ const App = () => {
   return (
     <div className="app">
       <Navigation />
-      <hr />
       <Switch>
         <Route
           path="/"
@@ -107,6 +105,7 @@ const App = () => {
               setOrderList={setOrderList}
               setUser={setUser}
               user={user}
+              s={defaultAddress}
               {...props}
             />
           )}

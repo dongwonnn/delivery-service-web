@@ -4,6 +4,7 @@ import { BsArrowRight } from 'react-icons/bs';
 import './Franchises.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Col from 'react-bootstrap/Col';
 
 const Franchises = () => {
   const [stores, setStores] = useState([]);
@@ -46,6 +47,7 @@ const Franchises = () => {
             ),
         )}
       </div>
+      <hr />
     </div>
   );
 };

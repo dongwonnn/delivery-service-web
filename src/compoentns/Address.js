@@ -1,13 +1,12 @@
 import React from 'react';
+import './Address.scss';
 
 const Address = ({ user, defaultAddress }) => {
-  // let lastNum = 0;
-
-  // if (user) {
-  //   lastNum = user.addrList.length - 1;
-  // }
-
-  return <div>{user ? <p>{defaultAddress}</p> : <p>잠실 8동 </p>}</div>;
+  return (
+    <div className="address">
+      {user ? <p>{defaultAddress}</p> : <p>잠실 8동 </p>}
+    </div>
+  );
 };
 
 export default Address;

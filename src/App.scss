@@ -1,8 +1,17 @@
-// 데스크탑 : 1024;
-// 테블릿 : 768~1023px;
-// 모바일 : 320~480px
-.app {
-  max-width: 768px;
-  width: auto;
-  margin: 0 auto;
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
 }

@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-//import './HomePage.scss';
+import './HomePage.scss';
 import Categories from '../compoentns/Categories';
 import Franchises from '../compoentns/Franchises';
 import Stores from '../compoentns/Stores';
@@ -8,6 +8,9 @@ import Search from '../compoentns/Search';
 import Address from '../compoentns/Address';
 import Banner from '../compoentns/Banner';
 import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const HomePage = ({
   categories,
@@ -37,33 +40,71 @@ const HomePage = ({
   }, [stores, cost, setStores]);
 
   return (
-    <div className="hompage">
-      <div className="hp-header">
-        <Link to="/address">
-          <Address user={user} defaultAddress={defaultAddress} />
-        </Link>
-        <Link to="/search">
-          <Search />
-        </Link>
-      </div>
-      <Banner />
-      <Categories categories={categories} />
-      {orderList.totalPrice && (
-        <div>
-          <div>카트보기</div>
-          <div>{orderList.totalPrice}</div>
-        </div>
-      )}
-      <Franchises />
-      <hr />
-      <Sort
-        onRecommand={onRecommand}
-        onDeliveryCost={onDeliveryCost}
-        recommand={recommand}
-        cost={cost}
-      />
+    <Container>
+      <Row>
+        <Col>
+          <Link to="/address">
+            <Address user={user} defaultAddress={defaultAddress} />
+          </Link>
+          <Link to="/search">
+            <Search />
+          </Link>
+        </Col>
+      </Row>
+      <Row>
+        <Banner />
+      </Row>
+      <Row>
+        <Col>
+          <Categories categories={categories} />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Franchises />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Sort
+            onRecommand={onRecommand}
+            onDeliveryCost={onDeliveryCost}
+            recommand={recommand}
+            cost={cost}
+          />
+        </Col>
+      </Row>
+      {/* xs < 768 md < 1024 xl >= 1024 */}
       <Stores stores={stores} />
-    </div>
+    </Container>
+
+    // <div className="hompage">
+    //   <div className="hp-header">
+    //     <Link to="/address">
+    //       <Address user={user} defaultAddress={defaultAddress} />
+    //     </Link>
+    //     <Link to="/search">
+    //       <Search />
+    //     </Link>
+    //   </div>
+    //   <Banner />
+    //   <Categories categories={categories} />
+    //   {orderList.totalPrice && (
+    //     <div>
+    //       <div>카트보기</div>
+    //       <div>{orderList.totalPrice}</div>
+    //     </div>
+    //   )}
+    //   <Franchises />
+    //   <hr />
+    //   <Sort
+    //     onRecommand={onRecommand}
+    //     onDeliveryCost={onDeliveryCost}
+    //     recommand={recommand}
+    //     cost={cost}
+    //   />
+    //   <Stores stores={stores} />
+    // </div>
   );
 };
 
