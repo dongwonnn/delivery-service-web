@@ -1,18 +1,36 @@
 name: CI
 on:
-  push: # master Branch에서 push 이벤트가 일어났을 때만 실행
-    branches:
-      - master
+  push:
+    branches: [master]
+
+    workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout source code. # 레포지토리 체크아웃
-        uses: actions/checkout@master
+      # 레파지토리 check out
+      - name: Checkout source code.
+        uses: actions/checkout@v2
 
-      - name: Install Dependencies # 의존 파일 설치
+      # node.js 버전 12
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+
+      # 의존 파일 설치
+      - name: Install Dependencies
         run: npm install
 
-      - name: Build # React Build
+      # 빌드
+      - name: Build
         run: npm run build
+
+      # release 브랜치 이동
+      - name: Push to built branch
+        uses: Automattic/action-commit-to-branch@master
+        with:
+          branch: 'release'
+          commit_message: 'Build done!'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
