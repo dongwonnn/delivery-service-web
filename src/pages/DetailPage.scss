@@ -7,61 +7,90 @@
     width: 100%;
     height: 200px;
     background-color: #eeeeee;
-  }
+    margin-bottom: 50px;
 
-  .detail-info {
-    border: 1px black solid;
-    height: 96.8px;
-    padding: 10px 0;
+    .detail-info {
+      position: relative;
+      top: 150px;
+      border: 0.5px #e0e3e7 solid;
+      height: 96.8px;
+      padding: 10px 0;
+      box-shadow: 2px 2px 10px silver;
+      background-color: white;
 
-    .info-name {
-      font-size: 1.5rem;
-      font-weight: 550;
-      text-align: center;
-    }
-
-    .info-detail {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      vertical-align: middle;
-      svg {
-        font-size: 1.5em;
-        color: rgb(237, 240, 105);
-        border: 0.1 rgb(237, 240, 105) solid;
+      .info-name {
+        font-size: 1.5rem;
+        font-weight: 550;
+        text-align: center;
       }
 
-      .info-grade {
-        font-size: 1.2rem;
-      }
+      .info-detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-      a {
-        font-size: 0.8rem;
-        color: #4ca6eb;
+        vertical-align: middle;
+        svg {
+          font-size: 1.5em;
+          color: #f2c34c;
+          border: 0.1 #f2c34c solid;
+        }
+
+        .info-grade {
+          font-size: 1.2rem;
+        }
+
+        a {
+          font-size: 0.8rem;
+          color: #4ca6eb;
+        }
       }
     }
   }
 
   .detail-delivery-info {
     .delivery-info-header {
+      font-size: 0.8rem;
       display: flex;
       margin: 10px 0;
+      justify-content: space-between;
+      svg {
+        margin-right: 5px;
+      }
+      div {
+        font-weight: bold;
+      }
+    }
+    .delivery-store-info {
+      color: #4ca6eb;
+      font-weight: bold;
+    }
+
+    div {
+      display: flex;
+    }
+
+    .delivery-price-info {
+      p {
+        margin-bottom: 0;
+        width: 80px;
+        font-size: 0.8rem;
+      }
     }
   }
 
   .detail-cart {
     position: fixed;
-    bottom: 57.8px;
+    width: 100%;
+    height: 105px;
+    bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;
-    width: 100%;
 
     .detail-addBtn {
-      background-color: #4eacf8;
+      background-color: rgb(113, 203, 255);
       width: 100%;
-      height: 70px;
+      height: 50px;
 
       display: flex;
       justify-content: center;
@@ -89,6 +118,27 @@
   }
 
   .detail-review {
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px #e0e3e7 solid;
+    margin-bottom: 10px;
+  }
+
+  .menu-nav {
+    display: flex;
+    margin-top: 10px;
+    div {
+      margin: 10px;
+      font-size: 1rem;
+      color: #474e5a;
+    }
+    div:first-child {
+      font-weight: bold;
+      color: black;
+    }
   }
 
   .detail-subMenu {

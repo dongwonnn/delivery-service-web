@@ -2,24 +2,39 @@
   background-color: white;
   box-sizing: border-box;
   margin: 0 auto;
+  padding-bottom: 120px;
+
+  .orderList-img {
+    width: 100%;
+    height: 150px;
+    background-color: #eeeeee;
+  }
   .orderList-header {
-    .food-img {
-      width: 100%;
-      height: 200px;
-      background-color: burlywood;
-    }
     .food-name {
       font-weight: bold;
+      font-size: 1.3rem;
+      padding-top: 20px;
+    }
+    .food-detail {
+      color: #939daa;
+      font-size: 0.8rem;
     }
     .food-price {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-bottom: 20px;
+
+      .price-text {
+        font-weight: bold;
+      }
     }
     .food-count {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-bottom: 20px;
+
       .count-text {
         font-weight: bold;
       }
@@ -27,30 +42,63 @@
         width: 100px;
         display: flex;
         justify-content: space-around;
+
+        div {
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+
         button {
           width: 30px;
           height: 30px;
+          background-color: white;
           border-radius: 100%;
+          border: 0.5px solid #939daa;
         }
       }
     }
   }
 
-  .orderList-add {
-    .add-text {
-      font-weight: bold;
-      width: 100%;
-      height: 50px;
-      background-color: cadetblue;
-    }
+  .add-text {
+    width: 100%;
+    height: 50px;
+    background-color: #eeeeee;
 
-    .add-card {
+    p {
+      font-weight: bold;
+      margin-bottom: 0;
+      padding: 15px;
+    }
+  }
+  .orderList-add {
+    .add-list {
+      padding: 10px 0;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      input {
+        width: 18px;
+        height: 18px;
+        margin-top: 8px;
+        margin-right: 10px;
+      }
+
+      label {
+        margin-bottom: 0;
+      }
     }
   }
+
   .orderList-cart {
+    width: 100%;
+    height: 105px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
     button {
       background-color: rgb(113, 203, 255);
       width: 100%;

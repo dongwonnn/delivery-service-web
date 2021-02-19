@@ -36,35 +36,57 @@ const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
     <Container className="detail">
       <Row>
         <div className="detail-img">
-          <div>이미지</div>
-        </div>
-        <Col>
-          <div className="detail-info">
-            <p className="info-name">{detailItem.name}</p>
-            <div className="info-detail">
-              <AiFillStar />
-              <p className="info-grade">{detailItem.grade}</p>
-              <Link to={`/detail/${store}/review`}>
-                <p>리뷰{detailItem.feedNum}개 &gt;</p>
-              </Link>
+          <Col>
+            <div className="detail-info">
+              <p className="info-name">{detailItem.name}</p>
+              <div className="info-detail">
+                <AiFillStar />
+                <p className="info-grade">{detailItem.grade}</p>
+                <Link to={`/detail/${store}/review`}>
+                  <p>
+                    리뷰 <strong>{detailItem.feedNum}</strong>개 &gt;
+                  </p>
+                </Link>
+              </div>
             </div>
-          </div>
-        </Col>
+          </Col>
+        </div>
       </Row>
       <Row>
         <Col>
           <div className="detail-delivery-info">
             <div className="delivery-info-header">
-              <BsClock />
-              <div> 21~31분</div>
-              <div>매장 / 원산지 정보</div>
+              <div>
+                <BsClock />
+                <div> 21~31분</div>
+              </div>
+              <div className="delivery-store-info">매장 / 원산지 정보</div>
             </div>
-            <div>배달비 : {detailItem.deliveryCost}</div>
-            <div>최소주문 : 5000원</div>
+
+            <div className="delivery-price-info">
+              <p className="delivery-text">배달비</p>
+              <p>
+                <strong>{detailItem.deliveryCost}원</strong>
+              </p>
+            </div>
+            <div className="delivery-price-info">
+              <p className="delivery-text">최소주문</p>
+              <p>5000원</p>
+            </div>
           </div>
         </Col>
       </Row>
-      <hr />
+      <Row>
+        <div className="menu-nav">
+          <div>추천메뉴</div>
+          <div>메뉴소개</div>
+          <div>튀김류</div>
+          <div>토핑류</div>
+        </div>
+      </Row>
+      <Row>
+        <div className="line"></div>
+      </Row>
       <Row>
         <Col>
           <div className="detail-subMenu">
