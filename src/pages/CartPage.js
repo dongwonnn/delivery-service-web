@@ -129,9 +129,7 @@ const CartPage = ({
           </div>
         </Col>
       </Row>
-      <Row>
-        <div className="block"></div>
-      </Row>
+
       <Row>
         <Col>
           <div className="cart-request">
