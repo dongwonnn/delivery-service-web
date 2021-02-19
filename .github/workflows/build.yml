@@ -26,6 +26,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      # gitignore 삭제
+      - name: Remove .gitignore
+        run: rm .gitignore
+
       # release 브랜치 이동
       - name: Push to built branch
         uses: Automattic/action-commit-to-branch@master
