@@ -15,6 +15,8 @@
   - [ ] 지도로 받는 곳 설정하기
   - [ ] (버그) 하나 이상 주문 받기
 
+### 개발 일지
+
 - [21.01.28]
 
   - [x] 사용할 페이지 생성, 라우팅 설정
@@ -111,3 +113,4 @@
       - workflow, jop, step, event
     - [x] github 이용해 CI 설정. github/workflows/build.yml
       - master branch에서 push 했을 때 realase branch에 build 자동화 시키기
+    - [ ] eslint 경고 무시 스크립트 구현

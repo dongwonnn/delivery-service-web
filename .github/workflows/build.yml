@@ -1,13 +1,20 @@
 name: CI
 on:
+  #event : 워크플로우를 실행시키는 조건
   push:
     branches: [master]
 
-    workflow_dispatch:
+  workflow_dispatch:
 
+# job : 하나의 인스턴스(리눅스, 맥, 윈도우)에서 여러 step을 그룹시켜 실행하는 역할
 jobs:
   build:
+    # 환경
     runs-on: ubuntu-latest
+
+    # step: 순차적으로 명령어를 수행
+    # user : 다른 사람이 정의한 명령어 실행
+    # run : 실행할 수 있는 스크립트
     steps:
       # 레파지토리 check out
       - name: Checkout source code.
