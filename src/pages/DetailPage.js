@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './DetailPage.scss';
-import LikeList from '../compoentns/LikeList';
-import { AiOutlineHeart, AiFillStar } from 'react-icons/ai';
+// import LikeList from '../compoentns/LikeList';
+import { AiFillStar } from 'react-icons/ai';
 import { BsClock } from 'react-icons/bs';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+// AiOutlineHeart
 const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
   const { store } = match.params;
   const [detailItem, setDetailItem] = useState([]);
@@ -170,12 +170,12 @@ const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
 
 export default DetailPage;
 
-{
-  /* {user ? (
-          <LikeList user={user} store={store} detailItem={detailItem} />
-        ) : (
-          <Link to="/login">
-            <AiOutlineHeart />
-          </Link>
-        )} */
-}
+// {
+//    {user ? (
+//           <LikeList user={user} store={store} detailItem={detailItem} />
+//         ) : (
+//           <Link to="/login">
+//             <AiOutlineHeart />
+//           </Link>
+//         )}
+// }

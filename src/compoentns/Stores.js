@@ -33,6 +33,6 @@ const Stores = ({ stores }) => {
 };
 
 export default Stores;
-{
-  /* <div style={{ height: '150vh', textAlign: 'center' }}> */
-}
+// {
+//    <div style={{ height: '150vh', textAlign: 'center' }}>
+// }
