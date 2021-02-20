@@ -29,7 +29,7 @@ const App = () => {
   const [stores, setStores] = useState([]);
   const [defaultAddress, setDefaultAddress] = useState('설정');
 
-  const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true\
+  const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true
 
   const login = ({ email, password }) => setUser(singIn({ email, password }));
   const logout = () => setUser(null);
