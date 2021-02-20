@@ -43,6 +43,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      # build docs로 바꾸기
+      - name: Remove docs folder
+        run: rm -rf docs
+
+      # build docs로 바꾸기
       - name: Change folder name to docs
         run: mv build docs
 
