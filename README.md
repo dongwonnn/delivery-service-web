@@ -8,6 +8,8 @@
 
 ### test용 아이디/비밀번호 : kkum9408@gmail.com / 123 -->
 
+- Test git stash
+
 - 구현 안된 기능
 
   - [ ] 재주문 기능
