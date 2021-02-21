@@ -42,12 +42,15 @@ jobs:
       - name: Apply stash
         run: git stash pop
 
+      # git add
       - name: git add .
         run : git add .
 
+      # git commit
       - name: git commit
         run : git commit -m "Update docs"
 
+      # git push
       - name : push
          run : git push
 
