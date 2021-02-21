@@ -118,7 +118,7 @@ const App = () => {
         />
 
         <Route
-          path="/delivery-service-web/detail/:store/:food"
+          path="/:store/:food"
           exact={true}
           render={(props) => (
             <OrderListPage
