@@ -31,8 +31,8 @@ jobs:
         run: mv build docs
 
       # add docs
-      - name: add docs
-        run: git add docs
+      # - name: add docs
+      #   run: git add docs
 
       # release 브랜치 이동
       - name: Push to built branch
@@ -42,5 +42,3 @@ jobs:
           commit_message: 'Build done!'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-          ##
