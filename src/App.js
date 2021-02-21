@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import FavoritePage from './pages/FavoritePage';
 import HomePage from './pages/HomePage';
@@ -28,6 +28,8 @@ const App = () => {
   const [orderList, setOrderList] = useState([]);
   const [stores, setStores] = useState([]);
   const [defaultAddress, setDefaultAddress] = useState('설정');
+  const [recommand, setRecommand] = useState(false);
+  const [cost, setCost] = useState(false);
 
   const authenticated = user !== null; // user가 존재하지 않으면 false, 존재하면 true
 
@@ -59,12 +61,28 @@ const App = () => {
     fetchData();
   }, []);
 
+  const onRecommand = useCallback(() => {
+    recommand
+      ? setStores([...stores.sort((a, b) => b.grade - a.grade)])
+      : setStores([...stores.sort((a, b) => a.grade - b.grade)]);
+
+    setRecommand((recommand) => !recommand);
+  }, [stores, recommand, setStores]);
+
+  const onDeliveryCost = useCallback(() => {
+    cost
+      ? setStores([...stores.sort((a, b) => b.deliveryCost - a.deliveryCost)])
+      : setStores([...stores.sort((a, b) => a.deliveryCost - b.deliveryCost)]);
+
+    setCost((cost) => !cost);
+  }, [stores, cost, setStores]);
+
   return (
     <div className="app">
       <Navigation />
       <Switch>
         <Route
-          path="/delivery-service-web"
+          path="/"
           exact={true}
           render={(props) => (
             <HomePage
@@ -74,13 +92,17 @@ const App = () => {
               stores={stores}
               setStores={setStores}
               defaultAddress={defaultAddress}
+              onRecommand={onRecommand}
+              onDeliveryCost={onDeliveryCost}
+              recommand={recommand}
+              cost={cost}
               {...props}
             />
           )}
         />
 
         <Route
-          path="/delivery-service-web/delivery-service-web/detail/:store"
+          path="/detail/:store"
           exact={true}
           render={(props) => (
             <DetailPage
@@ -96,7 +118,7 @@ const App = () => {
         />
 
         <Route
-          path="/delivery-service-web/delivery-service-web/detail/:store/cart"
+          path="/detail/:store/cart"
           exact={true}
           render={(props) => (
             <CartPage
@@ -105,20 +127,19 @@ const App = () => {
               setOrderList={setOrderList}
               setUser={setUser}
               user={user}
-              s={defaultAddress}
               {...props}
             />
           )}
         />
 
         <Route
-          path="/delivery-service-web/detail/:store/review"
+          path="/detail/:store/review"
           exact={true}
           render={(props) => <ReviewPage stores={stores} {...props} />}
         />
 
         <Route
-          path="/:store/:food"
+          path="/detail/:store/:food"
           exact={true}
           render={(props) => (
             <OrderListPage
@@ -131,7 +152,7 @@ const App = () => {
         />
 
         <Route
-          path="/delivery-service-web/search"
+          path="/search"
           render={(props) => (
             <SearchPage categories={categories} stores={stores} {...props} />
           )}
@@ -139,7 +160,7 @@ const App = () => {
 
         <AuthRoute
           authenticated={authenticated}
-          path="/delivery-service-web/order"
+          path="/order"
           render={(props) => (
             <OrderHistoryPage user={user} detail={detail} {...props} />
           )}
@@ -147,25 +168,33 @@ const App = () => {
 
         <AuthRoute
           authenticated={authenticated}
-          path="/delivery-service-web/favorite"
+          path="/favorite"
           render={(props) => <FavoritePage user={user} {...props} />}
         />
 
         <Route
-          path="/delivery-service-web/category/:category"
+          path="/category/:category"
           render={(props) => (
-            <CategoryPage categories={categories} stores={stores} {...props} />
+            <CategoryPage
+              categories={categories}
+              stores={stores}
+              onRecommand={onRecommand}
+              onDeliveryCost={onDeliveryCost}
+              recommand={recommand}
+              cost={cost}
+              {...props}
+            />
           )}
         />
         <AuthRoute
           authenticated={authenticated}
-          path="/delivery-service-web/address"
+          path="/address"
           render={(props) => (
             <AddressPage user={user} setDefaultAddress={setDefaultAddress} />
           )}
         />
         <Route
-          path="/delivery-service-web/setAddress"
+          path="/setAddress"
           render={(props) => (
             <SetAddressPage
               user={user}
@@ -175,21 +204,21 @@ const App = () => {
           )}
         />
         <Route
-          path="/delivery-service-web/setting"
+          path="/setting"
           render={(props) => <SettingPage logout={logout} {...props} />}
         />
 
         <Route
-          path="/delivery-service-web/register"
+          path="/register"
           render={(props) => <RegisterPage register={register} {...props} />}
         />
         <AuthRoute
           authenticated={authenticated}
-          path="/delivery-service-web/profile"
+          path="/profile"
           render={(props) => <ProfilePage user={user} {...props} />}
         />
         <Route
-          path="/delivery-service-web/login"
+          path="/login"
           render={(props) => (
             <LoginPage authenticated={authenticated} login={login} {...props} />
           )}

@@ -2,8 +2,20 @@ import React, { useEffect, useState } from 'react';
 import Categories from '../compoentns/Categories';
 import './CategoryPage.scss';
 import Stores from '../compoentns/Stores';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Sort from '../modules/Sort';
 
-const CategoryPage = ({ match, categories, stores }) => {
+const CategoryPage = ({
+  match,
+  categories,
+  stores,
+  recommand,
+  cost,
+  onDeliveryCost,
+  onRecommand,
+}) => {
   const { category } = match.params;
   const [catStores, setCatStores] = useState([]);
 
@@ -13,11 +25,33 @@ const CategoryPage = ({ match, categories, stores }) => {
   }, [category, stores]);
 
   return (
-    <div className="categoryPage">
-      <h1>카테고리 페이지</h1>
-      <Categories categories={categories} />
-      <Stores stores={catStores} />
-    </div>
+    <Container className="categoryPage">
+      <Row>
+        <Col>
+          <Categories categories={categories} />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Sort
+            onRecommand={onRecommand}
+            onDeliveryCost={onDeliveryCost}
+            recommand={recommand}
+            cost={cost}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Stores stores={catStores} />
+        </Col>
+      </Row>
+    </Container>
+    // <div className="categoryPage">
+    //   <h1>카테고리 페이지</h1>
+    //   <Categories categories={categories} />
+    //   <Stores stores={catStores} />
+    // </div>
   );
 };
 

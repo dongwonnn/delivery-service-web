@@ -19,26 +19,11 @@ const HomePage = ({
   setStores,
   stores,
   defaultAddress,
+  recommand,
+  cost,
+  onDeliveryCost,
+  onRecommand,
 }) => {
-  const [recommand, setRecommand] = useState(false);
-  const [cost, setCost] = useState(false);
-
-  const onRecommand = useCallback(() => {
-    recommand
-      ? setStores([...stores.sort((a, b) => b.grade - a.grade)])
-      : setStores([...stores.sort((a, b) => a.grade - b.grade)]);
-
-    setRecommand((recommand) => !recommand);
-  }, [stores, recommand, setStores]);
-
-  const onDeliveryCost = useCallback(() => {
-    cost
-      ? setStores([...stores.sort((a, b) => b.deliveryCost - a.deliveryCost)])
-      : setStores([...stores.sort((a, b) => a.deliveryCost - b.deliveryCost)]);
-
-    setCost((cost) => !cost);
-  }, [stores, cost, setStores]);
-
   return (
     <Container>
       <Row>
@@ -66,6 +51,10 @@ const HomePage = ({
       </Row>
       <Row>
         <Col>
+          <p>
+            <strong>골라먹는 맛집</strong>
+          </p>
+
           <Sort
             onRecommand={onRecommand}
             onDeliveryCost={onDeliveryCost}

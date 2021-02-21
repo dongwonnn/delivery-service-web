@@ -12,7 +12,7 @@ const Navigation = () => {
     <Container>
       <Row className="nav-main">
         <Col className="nav-item">
-          <Link to="/delivery-service-web">
+          <Link to="/">
             <div className="nav-item-body">
               <BiHomeAlt />
               <p>홈</p>
@@ -28,7 +28,7 @@ const Navigation = () => {
           </Link>
         </Col>
         <Col className="nav-item">
-          <Link to="/delivery-service-web/order">
+          <Link to="/order">
             <div className="nav-item-body">
               <BiHeart />
               <p>즐겨찾기</p>
@@ -36,7 +36,7 @@ const Navigation = () => {
           </Link>
         </Col>
         <Col className="nav-item">
-          <Link to="/delivery-service-web/favorite">
+          <Link to="/favorite">
             <div className="nav-item-body">
               <BiCalendarCheck />
               <p>주문내역</p>
@@ -44,7 +44,7 @@ const Navigation = () => {
           </Link>
         </Col>
         <Col className="nav-item">
-          <Link to="/delivery-service-web/profile">
+          <Link to="/profile">
             <div className="nav-item-body">
               <BsPerson />
               <p>My</p>

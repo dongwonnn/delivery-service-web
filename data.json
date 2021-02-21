@@ -1963,9 +1963,9 @@
       "name": "이천쌀밥 강남점",
       "franchise": true,
       "category": "한식",
-      "grade": 2.1,
+      "grade": 2.0,
       "feedNum": 2526,
-      "deliveryCost": 2000,
+      "deliveryCost": 5000,
       "menu": [
         {
           "id": 0,
@@ -2141,9 +2141,9 @@
       "name": "산들해 강남점",
       "franchise": true,
       "category": "한식",
-      "grade": 2.1,
+      "grade": 3.0,
       "feedNum": 2526,
-      "deliveryCost": 2000,
+      "deliveryCost": 2500,
       "menu": [
         {
           "id": 0,
