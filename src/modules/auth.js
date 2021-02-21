@@ -2,8 +2,8 @@ const users = [
   {
     email: 'kkum9408@gmail.com',
     password: '123',
-    name: 'dongwon',
-    phoneNum: '01063666585',
+    name: '김동원',
+    phoneNum: '010-6366-6585',
     likesList: [],
     orderHistory: [],
     addrList: [
@@ -30,8 +30,8 @@ const users = [
   {
     email: 'letuin@gmail.com',
     password: '234',
-    name: 'letuin',
-    phoneNum: '01012345678',
+    name: '렛유인',
+    phoneNum: '010-1234-5678',
     likesList: [],
     orderHistory: [],
     addrList: [],

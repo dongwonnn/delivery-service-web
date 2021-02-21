@@ -1,0 +1,40 @@
+.profile {
+  padding-bottom: 60px;
+
+  p {
+    margin: 0;
+  }
+
+  .profile-header {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    .header-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+  .profile-coupone {
+    width: 100%;
+    height: 90px;
+    background-color: #eeeeee;
+    margin: 10px 0 0 0;
+  }
+
+  .profile-body {
+    p {
+      margin: 20px 0;
+      font-size: 1.2rem;
+    }
+
+    a {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      svg {
+        font-size: 1.2rem;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
+}
