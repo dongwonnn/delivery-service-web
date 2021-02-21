@@ -30,19 +30,11 @@ jobs:
       - name: Change name build to docs
         run: mv build docs
 
-      # add docs
-      - name: add docs
-        run:
-          git add docs
+      - name: add.
+        run: git add .
 
-          # commit
-      - name: commit
-        run:
-          git commit -m "Update docs"
-
-          # add docs
-      - name: push
-        run: git push
+      - name: remote
+        run: git remote update
 
       # release 브랜치 이동
       - name: Push to built branch
