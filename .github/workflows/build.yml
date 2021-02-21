@@ -22,13 +22,13 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # bracn 삭제
-      - name: Delete local branch
-        run: git push origin --delete release
-
       # 빌드
       - name: Build
         run: npm run build
+
+      # docs 삭제
+      - name: Delete Docs folder
+        run: rm Docs
 
       # 폴더 이름 변경
       - name: Change name build to docs
