@@ -36,17 +36,31 @@ jobs:
 
       # relase 이동
       - name: move release branch
-        run: git checkout release
+        run: git checkout -b release
 
       # stash 적용
       - name: Apply stash at release
         run: git stash pop
 
-      # release 브랜치 이동
-      - name: Push to built branch
-        uses: Automattic/action-commit-to-branch@master
-        with:
-          branch: 'release'
-          commit_message: 'Build done!'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # release push
+
+      # git add
+      - name: git add
+        run: git add .
+
+      # git commit
+      - name: git commit
+        run: git commit -m "Update docs"
+
+      # git push
+      - name: git push
+        run: git push
+
+      # # release 브랜치 이동
+      # - name: Push to built branch
+      #   uses: Automattic/action-commit-to-branch@master
+      #   with:
+      #     branch: 'release'
+      #     commit_message: 'Build done!'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
