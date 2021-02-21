@@ -164,5 +164,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "homepage": "delivery-service-web"
 }
