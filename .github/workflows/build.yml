@@ -51,6 +51,8 @@ jobs:
       # git commit
       - name: git commit
         run: git commit -m "Update docs"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # git push
       - name: git push
