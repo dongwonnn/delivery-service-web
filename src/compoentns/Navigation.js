@@ -20,7 +20,7 @@ const Navigation = () => {
           </Link>
         </Col>
         <Col className="nav-item">
-          <Link to="/delivery-service-web/search">
+          <Link to="/search">
             <div className="nav-item-body">
               <BiSearch />
               <p>검색</p>
