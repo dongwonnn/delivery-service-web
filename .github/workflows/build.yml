@@ -45,8 +45,8 @@ jobs:
       - name: git add .
         run : git add .
 
-      - name : git commit 
-         run : git commit -m "Upadte docs"
+      - name: git commit
+        run : git commit -m "Update docs"
 
       - name : push
          run : git push
