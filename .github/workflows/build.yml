@@ -30,17 +30,32 @@ jobs:
       - name: Change name build to docs
         run: mv build docs
 
-      # add docs
-      - name: add docs
-        run: git add docs
+      # stash
+      - name: Stash
+        run: git stash
 
       # release 브랜치 이동
-      - name: Push to built branch
-        uses: Automattic/action-commit-to-branch@master
-        with:
-          branch: 'release'
-          commit_message: 'Build done!'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: move release branch
+        run: git checkout -b release
 
-          ##
+      # Stash 적용
+      - name: Apply stash
+        run: git stash pop
+
+      - name: git add .
+        run : git add .
+
+      - name : git commit 
+         run : git commit -m "Upadte docs"
+
+      - name : push
+         run : git push
+
+      # # release 브랜치 이동
+      # - name: Push to built branch
+      #   uses: Automattic/action-commit-to-branch@master
+      #   with:
+      #     branch: 'release'
+      #     commit_message: 'Build done!'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
