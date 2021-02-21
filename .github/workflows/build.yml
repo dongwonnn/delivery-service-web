@@ -1,68 +1,68 @@
-name: CI
-on:
-  push:
-    branches: [master]
+# name: CI
+# on:
+#   push:
+#     branches: [master]
 
-    workflow_dispatch:
+#     workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      # 레파지토리 check out
-      - name: Checkout source code.
-        uses: actions/checkout@v2
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       # 레파지토리 check out
+#       - name: Checkout source code.
+#         uses: actions/checkout@v2
 
-      # node.js 버전 12
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '12'
+#       # node.js 버전 12
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: '12'
 
-      # 의존 파일 설치
-      - name: Install Dependencies
-        run: npm install
+#       # 의존 파일 설치
+#       - name: Install Dependencies
+#         run: npm install
 
-      # 빌드
-      - name: Build
-        run: npm run build
+#       # 빌드
+#       - name: Build
+#         run: npm run build
 
-      # 폴더 이름 변경
-      - name: Change name build to docs
-        run: mv build docs
+#       # 폴더 이름 변경
+#       - name: Change name build to docs
+#         run: mv build docs
 
-      # Stash
-      - name: Stash docs at master
-        run: git stash
+#       # Stash
+#       - name: Stash docs at master
+#         run: git stash
 
-      # relase 이동
-      - name: move release branch
-        run: git checkout -b release
+#       # relase 이동
+#       - name: move release branch
+#         run: git checkout -b release
 
-      # stash 적용
-      - name: Apply stash at release
-        run: git stash pop
+#       # stash 적용
+#       - name: Apply stash at release
+#         run: git stash pop
 
-      # release push
+#       # release push
 
-      # git add
-      - name: git add
-        run: git add .
+#       # git add
+#       - name: git add
+#         run: git add .
 
-      # git commit
-      - name: git commit
-        run: git commit -m "Update docs"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       # git commit
+#       - name: git commit
+#         run: git commit -m "Update docs"
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # git push
-      - name: git push
-        run: git push
+#       # git push
+#       - name: git push
+#         run: git push
 
-      # # release 브랜치 이동
-      # - name: Push to built branch
-      #   uses: Automattic/action-commit-to-branch@master
-      #   with:
-      #     branch: 'release'
-      #     commit_message: 'Build done!'
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       # # release 브랜치 이동
+#       # - name: Push to built branch
+#       #   uses: Automattic/action-commit-to-branch@master
+#       #   with:
+#       #     branch: 'release'
+#       #     commit_message: 'Build done!'
+#       #   env:
+#       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
