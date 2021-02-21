@@ -64,7 +64,7 @@ const App = () => {
       <Navigation />
       <Switch>
         <Route
-          path="/"
+          path="/delivery-service-web"
           exact={true}
           render={(props) => (
             <HomePage
@@ -80,7 +80,7 @@ const App = () => {
         />
 
         <Route
-          path="/detail/:store"
+          path="/delivery-service-web/delivery-service-web/detail/:store"
           exact={true}
           render={(props) => (
             <DetailPage
@@ -96,7 +96,7 @@ const App = () => {
         />
 
         <Route
-          path="/detail/:store/cart"
+          path="/delivery-service-web/delivery-service-web/detail/:store/cart"
           exact={true}
           render={(props) => (
             <CartPage
@@ -112,13 +112,13 @@ const App = () => {
         />
 
         <Route
-          path="/detail/:store/review"
+          path="/delivery-service-web/detail/:store/review"
           exact={true}
           render={(props) => <ReviewPage stores={stores} {...props} />}
         />
 
         <Route
-          path="/detail/:store/:food"
+          path="/delivery-service-web/detail/:store/:food"
           exact={true}
           render={(props) => (
             <OrderListPage
@@ -131,7 +131,7 @@ const App = () => {
         />
 
         <Route
-          path="/search"
+          path="/delivery-service-web/search"
           render={(props) => (
             <SearchPage categories={categories} stores={stores} {...props} />
           )}
@@ -139,7 +139,7 @@ const App = () => {
 
         <AuthRoute
           authenticated={authenticated}
-          path="/order"
+          path="/delivery-service-web/order"
           render={(props) => (
             <OrderHistoryPage user={user} detail={detail} {...props} />
           )}
@@ -147,25 +147,25 @@ const App = () => {
 
         <AuthRoute
           authenticated={authenticated}
-          path="/favorite"
+          path="/delivery-service-web/favorite"
           render={(props) => <FavoritePage user={user} {...props} />}
         />
 
         <Route
-          path="/category/:category"
+          path="/delivery-service-web/category/:category"
           render={(props) => (
             <CategoryPage categories={categories} stores={stores} {...props} />
           )}
         />
         <AuthRoute
           authenticated={authenticated}
-          path="/address"
+          path="/delivery-service-web/address"
           render={(props) => (
             <AddressPage user={user} setDefaultAddress={setDefaultAddress} />
           )}
         />
         <Route
-          path="/setAddress"
+          path="/delivery-service-web/setAddress"
           render={(props) => (
             <SetAddressPage
               user={user}
@@ -175,21 +175,21 @@ const App = () => {
           )}
         />
         <Route
-          path="/setting"
+          path="/delivery-service-web/setting"
           render={(props) => <SettingPage logout={logout} {...props} />}
         />
 
         <Route
-          path="/register"
+          path="/delivery-service-web/register"
           render={(props) => <RegisterPage register={register} {...props} />}
         />
         <AuthRoute
           authenticated={authenticated}
-          path="/profile"
+          path="/delivery-service-web/profile"
           render={(props) => <ProfilePage user={user} {...props} />}
         />
         <Route
-          path="/login"
+          path="/delivery-service-web/login"
           render={(props) => (
             <LoginPage authenticated={authenticated} login={login} {...props} />
           )}
