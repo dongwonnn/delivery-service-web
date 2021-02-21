@@ -22,7 +22,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # test
       # 빌드
       - name: Build
         run: npm run build
@@ -30,6 +29,10 @@ jobs:
       # 폴더 이름 변경
       - name: Change name build to docs
         run: mv build docs
+
+      # Stash
+      - name: Stash docs at master
+        run: git stash
 
       # release 브랜치 이동
       - name: Push to built branch
@@ -39,3 +42,7 @@ jobs:
           commit_message: 'Build done!'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Stash 적용
+      - name: Apply Stash at release
+        run: git stash pop
