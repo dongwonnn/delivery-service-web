@@ -26,10 +26,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      # docs 삭제
-      - name: Delete Docs folder
-        run: rm docs
-
       # 폴더 이름 변경
       - name: Change name build to docs
         run: mv build docs
