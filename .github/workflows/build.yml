@@ -36,7 +36,7 @@
 
 #       # relase 이동
 #       - name: move release branch
-#         run: git checkout -b release
+#         run: git checkout release
 
 #       # stash 적용
 #       - name: Apply stash at release
