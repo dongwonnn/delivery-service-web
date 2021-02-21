@@ -22,6 +22,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      # bracn 삭제
+      - name: Delete local branch
+        run: git push origin --delete release
+
       # 빌드
       - name: Build
         run: npm run build
