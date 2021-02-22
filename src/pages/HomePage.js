@@ -28,12 +28,18 @@ const HomePage = ({
     <Container className="homepage">
       <Row>
         <Col>
-          <Link to="/address">
-            <Address user={user} defaultAddress={defaultAddress} />
-          </Link>
-          <Link to="/search">
-            <Search />
-          </Link>
+          <div className="homepage-header">
+            <div className="header-address">
+              <Link to="/address">
+                <Address user={user} defaultAddress={defaultAddress} />
+              </Link>
+              <div className="header-search">
+                <Link to="/search">
+                  <Search />
+                </Link>
+              </div>
+            </div>
+          </div>
         </Col>
       </Row>
       <Row>

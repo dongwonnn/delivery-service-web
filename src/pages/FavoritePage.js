@@ -3,8 +3,6 @@ import Stores from '../compoentns/Stores';
 import { AiFillHeart } from 'react-icons/ai';
 
 const FavoritePage = ({ user }) => {
-  console.log(user.likesList);
-
   if (user.likesList.length === 0) {
     return (
       <div>

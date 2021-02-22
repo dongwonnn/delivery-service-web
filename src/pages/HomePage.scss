@@ -1,4 +1,21 @@
 .homepage {
+  .homepage-header {
+    margin: 20px;
+    .header-address {
+      position: relative;
+
+      p {
+        color: #2e3844;
+        font-weight: bold;
+      }
+      .header-search {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
   .homepage-sort {
     padding-bottom: 10px;
   }

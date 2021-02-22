@@ -20,13 +20,17 @@ import SettingPage from './pages/SettingPage';
 import SetAddressPage from './pages/SetAddressPage';
 import Navigation from './compoentns/Navigation';
 import './App.scss';
+import { store } from './data/stores';
+import { category } from './data/categories';
 
 const App = () => {
   const [user, setUser] = useState(null);
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState(category);
+  // const [categories, setCategories] = useState([]);
   const [detail, setDetail] = useState(undefined);
   const [orderList, setOrderList] = useState([]);
-  const [stores, setStores] = useState([]);
+  const [stores, setStores] = useState(store);
+  // const [stores, setStores] = useState([]);
   const [defaultAddress, setDefaultAddress] = useState('설정');
   const [recommand, setRecommand] = useState(false);
   const [cost, setCost] = useState(false);
@@ -36,30 +40,30 @@ const App = () => {
   const login = ({ email, password }) => setUser(singIn({ email, password }));
   const logout = () => setUser(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:4000/stores');
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get('http://localhost:4000/stores');
 
-        setStores(response.data);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, []);
+  //       setStores(response.data);
+  //     } catch (e) {
+  //       console.log(e);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:4000/categories');
-        setCategories(response.data);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get('http://localhost:4000/categories');
+  //       setCategories(response.data);
+  //     } catch (e) {
+  //       console.log(e);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
   const onRecommand = useCallback(() => {
     recommand

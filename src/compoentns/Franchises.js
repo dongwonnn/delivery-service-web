@@ -4,22 +4,23 @@ import { BsArrowRight } from 'react-icons/bs';
 import './Franchises.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { store } from '../data/stores';
 
 const Franchises = () => {
-  const [stores, setStores] = useState([]);
+  const [stores, setStores] = useState(store);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:4000/stores');
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get('http://localhost:4000/stores');
 
-        setStores(response.data);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, []);
+  //       setStores(response.data);
+  //     } catch (e) {
+  //       console.log(e);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="hp-recommand">

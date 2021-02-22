@@ -1,8 +1,6 @@
 .loginPage {
   background-color: white;
-  margin: 0 auto;
   padding: 35.016px;
-  width: 460px;
 
   .login-title {
     text-align: center;
@@ -34,6 +32,7 @@
       }
     }
     .login-message {
+      padding: 10px 0;
       display: flex;
       justify-content: space-between;
       .login-checkbox {
@@ -68,10 +67,11 @@
       }
 
       .login-register {
+        margin-bottom: 10px;
         a {
+          padding: 12px 0;
           text-decoration-color: #0074e9;
           background-color: #ffffff;
-          height: 50px;
           border: 0.5px #cccccc solid;
           border-bottom: 2px #cccccc solid;
           cursor: pointer;
