@@ -24,8 +24,8 @@ jobs:
 
       # git 인증
       - uses: actions/labeler@v2
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       # git remote update
       - name: Remote Upadte
@@ -33,7 +33,7 @@ jobs:
 
       # git fetch
       - name: Fetch
-        run: git fetch
+        run: git fetch --all
 
       # git stash
       - name: Stash
