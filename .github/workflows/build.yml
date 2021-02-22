@@ -54,10 +54,18 @@ jobs:
       - name: git add
         run: git add .
 
+      # # git 인증
+      # - uses: actions/labeler@v2
+      #   with:
+      #     repo-token: ${{ secrets.GITHUB_TOKEN }}
+
       # git 인증
-      - uses: actions/labeler@v2
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Github auth
+        env:
+          MY_EMAIL: kkum9408@gmail.com
+          MY_NAME: dongwon
+        run: git config --global user.email $MY_EMAIL
+          git config --global user.name $MY_NAME
 
       # commit
       - name: git commit
