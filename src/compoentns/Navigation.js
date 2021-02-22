@@ -12,7 +12,7 @@ const Navigation = () => {
     <Container>
       <Row className="nav-main">
         <Col className="nav-item">
-          <Link to="/">
+          <Link to="/delivery-service-web">
             <div className="nav-item-body">
               <BiHomeAlt />
               <p>홈</p>
@@ -20,7 +20,7 @@ const Navigation = () => {
           </Link>
         </Col>
         <Col className="nav-item">
-          <Link to="/search">
+          <Link to="/delivery-service-web/search">
             <div className="nav-item-body">
               <BiSearch />
               <p>검색</p>
