@@ -30,12 +30,6 @@ jobs:
       - name: Change name build to docs
         run: mv build docs
 
-      - name: add.
-        run: git add .
-
-      - name: remote
-        run: git remote update
-
       # release 브랜치 이동
       - name: Push to built branch
         uses: Automattic/action-commit-to-branch@master

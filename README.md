@@ -109,6 +109,7 @@
   - [x] homepage, detail, orderHistory, cary page 반응형 구현
 
 - [21.02.19 ~]
+
   - 배포 과정
     - [x] CI/CD 공부
       - yml 파일, github action 용어 공부
@@ -116,3 +117,13 @@
     - [x] github 이용해 CI 설정. github/workflows/build.yml
       - master branch에서 push 했을 때 realase branch에 build 자동화 시키기
     - [ ] eslint 경고 무시 스크립트 구현
+
+- [21.02.20]
+
+  - [x] build 폴더 docs로 변경하는 코드
+  - [x] github page 기본 path 설정
+    - package.json의 homepage 속성 이용
+
+- [21.02.21]
+  - [ ] release branch로 push하는 방법
+  - [x] Search, Category, Profile page CSS 작업
