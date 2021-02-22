@@ -55,10 +55,6 @@ jobs:
       - name: Apply stash
         run: git stash pop
 
-      # add
-      - name: git add
-        run: git add .
-
       # Author identity
       - name: Github auth and commit
         env:
@@ -68,9 +64,11 @@ jobs:
           git config --global user.email $MY_EMAIL
           git config --global user.name $MY_NAME
 
-      # commit
+      # add and commit
       - name: git commit
-        run: git commit -m "Build done!"
+        run: |
+          git add .
+          git commit -m "Build done!"
 
       # push
       - name: git push
