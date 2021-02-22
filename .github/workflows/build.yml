@@ -45,7 +45,7 @@ jobs:
 
       # apply stash
       - name: Apply stash
-        run: git stash pop
+        run: git stash apply
 
       # add
       - name: git add
