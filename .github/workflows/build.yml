@@ -74,9 +74,12 @@ jobs:
 
       # push
       - name: git push
-        run: git push --set-upstream origin release
+        run: |
+          git pull
+          git push --set-upstream origin release
 
         ##
+
 # name: CI
 # on:
 #   push:
