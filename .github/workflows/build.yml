@@ -28,8 +28,8 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       # git remote update
-      - name: Remote Upadte
-        run: git remote upadte
+      - name: Remote Update
+        run: git remote update
 
       # git fetch
       - name: Fetch
