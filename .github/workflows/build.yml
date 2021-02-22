@@ -73,7 +73,7 @@ jobs:
       # push
       - name: git push
         run: |
-          git pull
+          git pull remote release
           git push --set-upstream origin release
 
         ##
