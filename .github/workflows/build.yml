@@ -32,7 +32,7 @@ jobs:
 
       # build -> docs 복사
       - name: copy build to docs
-        run: cp build/* docs
+        run: cp -r build/* docs
 
       # release 브랜치 이동
       - name: Push to built branch
