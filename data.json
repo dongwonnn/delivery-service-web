@@ -135,46 +135,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -313,46 +318,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -491,46 +501,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -669,46 +684,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -847,46 +867,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -1025,46 +1050,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -1203,46 +1233,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -1381,46 +1416,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -1429,7 +1469,7 @@
       "name": "돈카살롱 강남점",
       "franchise": true,
       "category": "돈가스",
-      "grade": 4.5,
+      "grade": 4,
       "feedNum": 2526,
       "deliveryCost": 3500,
       "menu": [
@@ -1559,46 +1599,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -1737,46 +1782,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "맛있어요",
-          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥"
+          "orderdMenu": "상아김밥 · 상아떡볶이 · 지단김밥",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -1915,46 +1965,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -2093,46 +2148,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -2271,46 +2331,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -2449,46 +2514,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -2627,46 +2697,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -2805,46 +2880,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -2983,46 +3063,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -3161,46 +3246,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -3339,46 +3429,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     },
@@ -3517,46 +3612,51 @@
           "id": 0,
           "user": "최땡땡",
           "date": "2021-02-01",
-          "grade": 4.5,
+          "grade": 4,
           "photoCheck": true,
           "text": "배달로 커피는 처음 시켰는데 진짜 너무너무너무 기대이상입니다! 하나도 안흔들리고 ㅋㅋ 어쩜 이렇게 매장에서 먹는 거 처럼 왔는지 ㅎㅎ 달다하고 커피맛도 좋았어요~ 또 시킬게요",
-          "orderdMenu": "아인슈페너 (Small Size)"
+          "orderdMenu": "아인슈페너 (Small Size)",
+          "recommand": 1
         },
         {
           "id": 1,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 5,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 2,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 3,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 3,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 2,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         },
         {
           "id": 4,
           "user": "김땡땡",
           "date": "2021-01-30",
-          "grade": 4.5,
+          "grade": 1,
           "photoCheck": true,
           "text": "굿굿",
-          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키"
+          "orderdMenu": "오리지널 콜드브루 · 요거트 스무디 · 화이트 청크 딜라이트 쿠키 · 더블 코코아 화이트 초코 쿠키",
+          "recommand": 1
         }
       ]
     }

@@ -82,7 +82,7 @@ const App = () => {
       <Navigation />
       <Switch>
         <Route
-          path="/delivery-service-web"
+          path="/"
           exact={true}
           render={(props) => (
             <HomePage

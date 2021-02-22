@@ -5,8 +5,10 @@
   right: 0;
   z-index: 1;
   background-color: white;
+  border-top: 1px solid #eeeeee;
+  padding: 10px 0;
+
   .nav-item {
-    border-top: 1px solid #eeeeee;
     text-align: center;
     .nav-item-body {
       svg {

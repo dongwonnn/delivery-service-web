@@ -25,7 +25,7 @@ const HomePage = ({
   onRecommand,
 }) => {
   return (
-    <Container>
+    <Container className="homepage">
       <Row>
         <Col>
           <Link to="/address">
@@ -51,7 +51,7 @@ const HomePage = ({
       </Row>
       <Row>
         <Col>
-          <p>
+          <p className="homepage-sort">
             <strong>골라먹는 맛집</strong>
           </p>
 

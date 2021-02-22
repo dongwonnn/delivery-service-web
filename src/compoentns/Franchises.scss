@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    padding-bottom: 10px;
 
     p {
       font-weight: bold;
@@ -45,8 +46,7 @@
 
         svg {
           font-size: 1.5em;
-          color: yellow;
-          border: 0.1 yellow solid;
+          color: #f6c643;
         }
       }
       cursor: pointer;

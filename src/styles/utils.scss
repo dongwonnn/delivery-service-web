@@ -1,1 +1,16 @@
 @import '~bootstrap/scss/bootstrap';
+
+div,
+header,
+h1,
+main,
+p,
+input,
+label,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
