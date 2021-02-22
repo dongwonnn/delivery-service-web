@@ -28,7 +28,6 @@ const HomePage = ({
     <Container>
       <Row>
         <Col>
-          <p>Testing branch</p>
           <Link to="/address">
             <Address user={user} defaultAddress={defaultAddress} />
           </Link>
