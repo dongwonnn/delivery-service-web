@@ -22,23 +22,78 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # 빌드
-      - name: Build
-        run: npm run build
+      # git remote update
+      - name: Remote Upadte
+        run: git remote upadte
 
-      # docs 비우기
-      - name: delete docs files
-        run: rm -r docs/*
+      # git fetch
+      - name: Fetch
+        run: git fetch
 
-      # build -> docs 복사
-      - name: copy build to docs
-        run: cp -r build/* docs
+      # git stash
+      - name: Stash
+        run: git stash
 
-      # release 브랜치 이동
-      - name: Push to built branch
-        uses: Automattic/action-commit-to-branch@master
-        with:
-          branch: 'release'
-          commit_message: 'Build done!'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # create branch and move
+      - name: create release branch
+        run: git branch -b release
+
+      # apply stash
+      - name: Apply stash
+        run: git stash pop
+
+      # add
+      - name: git add
+        run: git add .
+
+      # commit
+      - name: git commit
+        run: git commit -m "Build done!"
+
+      # push
+      - name: git push
+        run: git push --set-upstream origin release
+# name: CI
+# on:
+#   push:
+#     branches: [master]
+
+#     workflow_dispatch:
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       # 레파지토리 check out
+#       - name: Checkout source code.
+#         uses: actions/checkout@v2
+
+#       # node.js 버전 12
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: '12'
+
+#       # 의존 파일 설치
+#       - name: Install Dependencies
+#         run: npm install
+
+#       # 빌드
+#       - name: Build
+#         run: npm run build
+
+#       # docs 비우기
+#       - name: delete docs files
+#         run: rm -r docs/*
+
+#       # build -> docs 복사
+#       - name: copy build to docs
+#         run: cp -r build/* docs
+
+#       # release 브랜치 이동
+#       - name: Push to built branch
+#         uses: Automattic/action-commit-to-branch@master
+#         with:
+#           branch: 'release'
+#           commit_message: 'Build done!'
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
