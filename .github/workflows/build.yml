@@ -41,7 +41,7 @@ jobs:
 
       # create branch and move
       - name: create release branch
-        run: git branch -b release
+        run: git checkout -b release
 
       # apply stash
       - name: Apply stash
