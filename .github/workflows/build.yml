@@ -30,11 +30,6 @@ jobs:
       - name: Change folder name build to docs
         run: mv build docs
 
-      # git 인증
-      - uses: actions/labeler@v2
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-
       # git remote update
       - name: Remote Update
         run: git remote update
@@ -58,6 +53,11 @@ jobs:
       # add
       - name: git add
         run: git add .
+
+      # git 인증
+      - uses: actions/labeler@v2
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       # commit
       - name: git commit
