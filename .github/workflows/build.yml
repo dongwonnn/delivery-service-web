@@ -28,7 +28,7 @@ jobs:
 
       # docs 비우기
       - name: delete docs files
-        run: rm docs/*
+        run: rm -r docs/*
 
       # build -> docs 복사
       - name: copy build to docs
