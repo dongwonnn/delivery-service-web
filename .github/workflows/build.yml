@@ -26,9 +26,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      # 폴더 이름 변경
-      - name: Change name build to docs
-        run: mv build docs
+      # docs 비우기
+      - name: delete docs files
+        run: rm docs/*
+
+      # build -> docs 복사
+      - name: copy build to docs
+        run: cp build/* docs
 
       # release 브랜치 이동
       - name: Push to built branch
