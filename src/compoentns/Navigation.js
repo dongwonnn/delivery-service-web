@@ -28,7 +28,7 @@ const Navigation = () => {
           </Link>
         </Col>
         <Col className="nav-item">
-          <Link to="/order">
+          <Link to="/favorite">
             <div className="nav-item-body">
               <BiHeart />
               <p>즐겨찾기</p>
@@ -36,7 +36,7 @@ const Navigation = () => {
           </Link>
         </Col>
         <Col className="nav-item">
-          <Link to="/favorite">
+          <Link to="/order">
             <div className="nav-item-body">
               <BiCalendarCheck />
               <p>주문내역</p>

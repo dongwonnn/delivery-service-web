@@ -3,8 +3,16 @@ import './OrderListPage.scss';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
-const OrderListPage = ({ match, detail, orderList, setOrderList, history }) => {
+const OrderListPage = ({
+  match,
+  detail,
+  orderList,
+  setOrderList,
+  history,
+  user,
+}) => {
   const { food } = match.params;
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(undefined);
@@ -189,9 +197,17 @@ const OrderListPage = ({ match, detail, orderList, setOrderList, history }) => {
         </Col>
       </Row>
       <Row>
-        <div className="orderList-cart" onClick={onSubmitBtn}>
-          <button>카트에 담기</button>
-        </div>
+        {user ? (
+          <div className="orderList-cart" onClick={onSubmitBtn}>
+            <button>카트에 담기</button>
+          </div>
+        ) : (
+          <Link to="/login">
+            <div className="orderList-cart">
+              <button>카트에 담기</button>
+            </div>
+          </Link>
+        )}
       </Row>
       <Row>
         <Col>

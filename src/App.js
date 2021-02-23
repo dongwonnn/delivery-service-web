@@ -150,6 +150,7 @@ const App = () => {
               detail={detail}
               orderList={orderList}
               setOrderList={setOrderList}
+              user={user}
               {...props}
             />
           )}

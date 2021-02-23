@@ -9,6 +9,14 @@
     background-color: #eeeeee;
     margin-bottom: 50px;
 
+    .detail-favorite {
+      position: absolute;
+
+      top: 20px;
+      right: 20px;
+      font-size: 1.3rem;
+    }
+
     .detail-info {
       position: relative;
       top: 150px;

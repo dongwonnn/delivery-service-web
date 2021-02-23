@@ -37,6 +37,15 @@ const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
       <Row>
         <div className="detail-img">
           <Col>
+            <span className="detail-favorite">
+              {user ? (
+                <LikeList user={user} store={store} detailItem={detailItem} />
+              ) : (
+                <Link to="/login">
+                  <AiOutlineHeart />
+                </Link>
+              )}
+            </span>
             <div className="detail-info">
               <p className="info-name">{detailItem.name}</p>
               <div className="info-detail">

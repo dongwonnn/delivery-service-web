@@ -1,0 +1,95 @@
+.orderHistoryPage {
+  .orderHistoryPage-header {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+
+    p {
+      width: 50%;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+  }
+
+  .orderHistoryPage-hr {
+    width: 100%;
+    height: 1px;
+    background-color: #eeeeee;
+  }
+
+  .orderHistoryPage-body {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #a4adb8;
+    border-radius: 10px;
+
+    .body-header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .body-store {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .body-date {
+        color: #9a9a9a;
+        font-size: 0.8rem;
+      }
+
+      .body-delivery-check {
+        font-size: 0.9rem;
+      }
+
+      .body-img {
+        background-color: #eeeeee;
+        width: 30%;
+        padding-bottom: 30%;
+      }
+    }
+
+    .body-orderList {
+      display: flex;
+      font-size: 0.8rem;
+
+      .list-count {
+        background-color: #eeeeee;
+        width: 19.2px;
+        margin-right: 7px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+
+    .body-price {
+      margin-bottom: 20px;
+    }
+
+    .body-reorder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #e0e3e7;
+
+      width: 100%;
+      height: 40px;
+
+      border-radius: 10px;
+      color: #939daa;
+      font-weight: bold;
+    }
+
+    .body-receipt {
+      width: 100%;
+      height: 40px;
+      background-color: #f6f8f9;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  }
+}

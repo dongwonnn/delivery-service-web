@@ -1,6 +1,7 @@
 import React from 'react';
 import Stores from '../compoentns/Stores';
 import { AiFillHeart } from 'react-icons/ai';
+import './FavoritePage.scss';
 
 const FavoritePage = ({ user }) => {
   if (user.likesList.length === 0) {
@@ -15,7 +16,7 @@ const FavoritePage = ({ user }) => {
   }
 
   return (
-    <div>
+    <div className="favorite">
       <h1>즐겨찾기</h1>
       <p>총 {user.likesList.length}개</p>
       <Stores stores={user.likesList} />

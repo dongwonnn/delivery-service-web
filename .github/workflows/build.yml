@@ -22,6 +22,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      # 환경변수 설정하기
+      # https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions 에서 확인
+      # - name: Set Env
+      #   run: echo "action_state=yellow" >> $GITHUB_ENV
+
       - name: Set Env
         run: echo "PUBLIC_URL=/${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
 
