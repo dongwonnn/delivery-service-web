@@ -9,13 +9,14 @@
     margin-bottom: 0;
     cursor: pointer;
     div {
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
       border-radius: 50%;
       background-color: rgb(173, 173, 173);
     }
     p {
-      font-size: 10px;
+      padding-top: 5px;
+      font-size: 0.9rem;
       font-weight: bold;
       text-align: center;
     }

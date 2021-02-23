@@ -51,9 +51,15 @@ const HomePage = ({
         </Col>
       </Row>
       <Row>
+        <span className="homepage-hr" />
+      </Row>
+      <Row>
         <Col>
           <Franchises />
         </Col>
+      </Row>
+      <Row>
+        <span className="homepage-block" />
       </Row>
       <Row>
         <Col>

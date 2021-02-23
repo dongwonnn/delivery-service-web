@@ -47,7 +47,6 @@ const Franchises = () => {
             ),
         )}
       </div>
-      <hr />
     </div>
   );
 };

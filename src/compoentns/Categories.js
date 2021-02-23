@@ -11,7 +11,6 @@ const Categories = ({ categories }) => {
             <div></div>
             <p>{category.text}</p>
           </div>
-          <hr />
         </Link>
       ))}
     </div>
