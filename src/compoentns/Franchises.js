@@ -3,7 +3,7 @@ import { AiFillStar } from 'react-icons/ai';
 import { BsArrowRight } from 'react-icons/bs';
 import './Franchises.scss';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 import { store } from '../data/stores';
 
 const Franchises = () => {
