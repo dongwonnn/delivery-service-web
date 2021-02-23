@@ -1,0 +1,92 @@
+.favorite {
+  .favorite-title {
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .favorite-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    .favorite-cnt {
+      font-weight: bold;
+    }
+
+    .favorite-sort {
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: #474e5a;
+    }
+  }
+
+  .favorite-body {
+    display: flex;
+    margin-bottom: 10px;
+
+    .favorite-img {
+      width: 25%;
+      padding-bottom: 25%;
+      background-color: #eeeeee;
+      margin-right: 10px;
+    }
+
+    .favorite-info {
+      display: flex;
+      flex-direction: column;
+
+      .info-store {
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      .info-grade {
+        font-size: 0.7rem;
+        svg {
+          color: #f6c643;
+        }
+      }
+
+      .info-dist {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .favorite-block {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+  }
+}
+
+.favorite-empty {
+  padding-bottom: 60px;
+
+  .favorite-title {
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .favorite-empty-text {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #eeeeee;
+    position: absolute;
+
+    p {
+      text-align: center;
+
+      position: relative;
+      top: 20%;
+    }
+  }
+}
