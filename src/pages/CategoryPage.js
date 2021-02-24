@@ -28,9 +28,18 @@ const CategoryPage = ({
     <Container className="categoryPage">
       <Row>
         <Col>
+          <div className="categroy-title">{category}</div>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
           <Categories categories={categories} />
         </Col>
       </Row>
+      <Row>
+        <div className="category-line"></div>
+      </Row>
+
       <Row>
         <Col>
           <Sort

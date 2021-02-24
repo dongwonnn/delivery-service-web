@@ -19,11 +19,11 @@ const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath);
 // start : deployment
 // build : production
 
-const publicUrlOrPath = getPublicUrlOrPath(
-  process.env.NODE_ENV === 'development',
-  require(resolveApp('package.json')).homepage,
-  process.env.PUBLIC_URL,
-);
+// const publicUrlOrPath = getPublicUrlOrPath(
+//   process.env.NODE_ENV === 'development',
+//   require(resolveApp('package.json')).homepage,
+//   process.env.PUBLIC_URL,
+// );
 
 // 왜 public_url을 썼는지
 
@@ -41,16 +41,16 @@ const publicUrlOrPath = getPublicUrlOrPath(
 //         process.env.PUBLIC_URL,
 //       );
 
-// const homepage =
-//   process.env.NODE_ENV === 'development'
-//     ? '/'
-//     : require(resolveApp('package.json')).homepage;
+const homepage =
+  process.env.NODE_ENV === 'development'
+    ? '/'
+    : require(resolveApp('package.json')).homepage;
 
-// const publicUrlOrPath = getPublicUrlOrPath(
-//   process.env.NODE_ENV === 'development',
-//   homepage,
-//   process.env.PUBLIC_URL,
-// );
+const publicUrlOrPath = getPublicUrlOrPath(
+  process.env.NODE_ENV === 'development',
+  homepage,
+  process.env.PUBLIC_URL,
+);
 
 // const publicUrlOrPath = getPublicUrlOrPath(
 //   process.env.NODE_ENV === 'development',
