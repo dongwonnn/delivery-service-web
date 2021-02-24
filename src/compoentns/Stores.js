@@ -12,9 +12,7 @@ const Stores = ({ stores }) => {
         {stores.map((store) => (
           <div className="item-card" key={store.name}>
             <Link to={`/detail/${store.name}`}>
-              <div className="card-img">
-                <div>이미지</div>
-              </div>
+              <div className="card-img"></div>
               <div className="card-text">
                 <div className="card-name">{store.name}</div>
                 <div className="card-detail">

@@ -2,7 +2,6 @@
   background-color: white;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-bottom: 120px;
 
   .orderList-img {
     width: 100%;
@@ -93,18 +92,20 @@
 
   .orderList-cart {
     width: 100%;
-    height: 105px;
+    height: 70px;
+    background-color: #4eacf8;
+    color: white;
+
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-
-    button {
-      background-color: rgb(113, 203, 255);
-      width: 100%;
-      height: 50px;
-      color: white;
-      cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    p {
+      margin-top: 10px;
     }
   }
 }

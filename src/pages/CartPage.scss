@@ -1,7 +1,7 @@
 .cart {
   background-color: white;
   box-sizing: border-box;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 
   .block {
     width: 100%;
@@ -37,10 +37,22 @@
       font-weight: bold;
     }
 
-    .main-cancel {
+    .main-body {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+
+      .main-count {
+        margin-right: 5px;
+      }
+
+      .main-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .main-cancel {
+          display: flex;
+        }
+      }
     }
 
     .main-addMenu {
@@ -53,6 +65,7 @@
     .coupon-title {
       font-size: 1.3rem;
       font-weight: bold;
+      margin-bottom: 10px;
     }
     .coupon-card {
       font-size: 0.7rem;
@@ -68,26 +81,27 @@
 
       .coupon-inner {
         margin: 0 20px 10px;
-        border-radius: 10px;
+        border-radius: 3px;
         display: flex;
         justify-content: space-between;
 
         div {
           background-color: white;
-          width: 500px;
+          width: 70%;
           margin-right: 20px;
-          border-radius: 10px;
+          border-radius: 3px;
 
           p {
-            margin: 0;
+            margin: 10px;
+            color: #939daa;
           }
         }
 
         button {
-          width: 120px;
+          width: 25%;
           background-color: white;
           border: 1px solid rgb(113, 203, 255);
-          border-radius: 10px;
+          border-radius: 3px;
           color: rgb(113, 203, 255);
           font-weight: bold;
         }
@@ -98,50 +112,97 @@
     div {
       display: flex;
       justify-content: space-between;
+      margin: 5px 0;
+    }
 
-      .list-amount {
-        font-size: 1rem;
+    .list-amount {
+      .list-text {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .list-total {
+        font-size: 1.4rem;
         font-weight: bold;
       }
     }
   }
+
   .cart-request {
-    padding-bottom: 90px;
     .request-header {
       font-size: 1.3rem;
       font-weight: bold;
       margin: 10px 0;
     }
-
-    textarea {
-      width: 100%;
+    p {
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .pay-select {
-      font-size: 1.2rem;
+    input {
+      border: 1px solid #909fab;
+      padding: 8px;
+      width: 100%;
+      height: auto;
+      font-size: 0.9rem;
+    }
+
+    .request-semi {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      input {
+        margin: 10px 0;
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+      }
+
+      label {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .pay-select {
+    margin: 10px 0;
+
+    .pay-header {
       font-weight: bold;
+      font-size: 1.2rem;
     }
   }
 
   .cart-payment {
     width: 100%;
-    height: 105px;
+    height: 70px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 
-    button {
-      background-color: rgb(113, 203, 255);
-      width: 100%;
-      height: 50px;
-      color: white;
+    background-color: #4eacf8;
+    color: white;
 
-      cursor: pointer;
-      p {
-        vertical-align: middle;
-        margin-bottom: 0;
-      }
-    }
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cart-block {
+    width: 100%;
+    height: 5px;
+    background-color: #eeeeee;
+    margin: 10px 0;
+  }
+
+  .cart-thick-block {
+    width: 100%;
+    height: 20px;
+    background-color: #eeeeee;
+    margin: 10px 0;
   }
 }

@@ -199,12 +199,12 @@ const OrderListPage = ({
       <Row>
         {user ? (
           <div className="orderList-cart" onClick={onSubmitBtn}>
-            <button>카트에 담기</button>
+            <p>카트에 담기</p>
           </div>
         ) : (
           <Link to="/login">
             <div className="orderList-cart">
-              <button>카트에 담기</button>
+              <p>카트에 담기</p>
             </div>
           </Link>
         )}

@@ -52,9 +52,7 @@ const HomePage = ({
         <Banner />
       </Row>
       <Row>
-        <Col>
-          <Categories categories={categories} />
-        </Col>
+        <Categories categories={categories} />
       </Row>
       <Row>
         <span className="homepage-hr" />

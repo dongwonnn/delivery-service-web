@@ -34,7 +34,7 @@ const Franchises = () => {
             store.franchise && (
               <Link to={`/detail/${store.name}`} key={store.name}>
                 <div className="hp-recommand-list">
-                  <div className="list-img">이미지</div>
+                  <div className="list-img"></div>
                   <p className="list-name">{store.name}</p>
                   <div className="list-detail">
                     <AiFillStar />

@@ -33,7 +33,7 @@ const ProfilePage = ({ user }) => {
         </Col>
       </Row>
       <Row>
-        <div className="profile-coupone">쿠폰배너</div>
+        <div className="profile-coupone"></div>
       </Row>
 
       <Row>

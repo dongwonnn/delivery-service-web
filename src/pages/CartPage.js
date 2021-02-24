@@ -46,10 +46,11 @@ const CartPage = ({
     };
 
     user.orderHistory.push(orderInfo);
-    console.log(lists);
     setOrderList([]);
     history.push('/');
   };
+
+  console.log(lists);
 
   if (orderList.length === 0) return <div></div>;
   return (
@@ -61,8 +62,10 @@ const CartPage = ({
             <p className="header-building">{defaultAddress} (으)로 배달</p>
             <p className="header-address">주소</p>
           </div>
-          <hr />
         </Col>
+      </Row>
+      <Row>
+        <div className="cart-block"></div>
       </Row>
       <Row>
         <Col>
@@ -70,23 +73,28 @@ const CartPage = ({
             <p className="main-name">{detail.name}</p>
             <hr />
             {lists.map((list, idx) => (
-              <div key={idx}>
-                <div className="main-cancel">
-                  <p>{list.mainMenu}</p>
-                  <GrFormClose onClick={() => onCloseBtn(idx)} />
+              <div key={idx} className="main-body">
+                <div className="main-count">{list.count}</div>
+                <div className="main-menu">
+                  <div>{list.mainMenu}</div>
+                  <div className="main-cancel">
+                    <p>{list.totalPrice}원</p>
+                    <GrFormClose onClick={() => onCloseBtn(idx)} />
+                  </div>
                 </div>
                 <p>{list.reqMunu}</p>
                 <p>{list.selMenu}</p>
-                <p>{list.totalPrice}원</p>
               </div>
             ))}
             <hr />
             <div className="main-addMenu">
               <p onClick={onAddMenu}>+메뉴추가</p>
             </div>
-            <hr />
           </div>
         </Col>
+      </Row>
+      <Row>
+        <div className="cart-block"></div>
       </Row>
       <Row>
         <Col>
@@ -94,7 +102,7 @@ const CartPage = ({
             <p className="coupon-title">할인쿠폰</p>
             <div className="coupon-card">
               <p className="card-title">
-                사용가능 쿠폰{' '}
+                사용가능 쿠폰
                 <span>
                   0장 <BiCaretRight />
                 </span>
@@ -119,45 +127,57 @@ const CartPage = ({
             </div>
             <div>
               <p>배달비</p>
-              <p>{detail.deliveryCost}원</p>
+              <p>+{detail.deliveryCost}원</p>
             </div>
             <hr />
             <div className="list-amount">
-              <p>총 결제금액</p>
-              <p>{detail.deliveryCost + payment}원</p>
+              <div className="list-text">
+                <p>총 결제금액</p>
+              </div>
+              <div className="list-total">
+                <p>{detail.deliveryCost + payment}원</p>
+              </div>
             </div>
           </div>
         </Col>
       </Row>
-
+      <Row>
+        <div className="cart-thick-block"></div>
+      </Row>
       <Row>
         <Col>
           <div className="cart-request">
             <p className="request-header">요청사항</p>
-            <div>
-              <p>가게 사장님에게</p>
-              <textarea placeholder="예) 견과류는 빼주세요"></textarea>
+            <p>가게 사장님에게</p>
+            <input placeholder="예) 견과류는 빼주세요"></input>
+            <div className="request-semi">
               <input type="checkbox" />
               <label htmlFor="request">일회용 수저, 포크는 빼주세요</label>
             </div>
-            <div>
+            <div className="request-message">
               <p>배달 기사님에게</p>
-              <textarea placeholder="초인종 누르고 문 앞"></textarea>
-            </div>
-            <hr />
-
-            <div>
-              <p className="pay-select">결제수단</p>
-              <p>KB국민카드 ********</p>
+              <input placeholder="초인종 누르고 문 앞"></input>
             </div>
           </div>
         </Col>
       </Row>
       <Row>
-        <div className="cart-payment">
-          <button onClick={onPayBtn}>
-            <p>{detail.deliveryCost + payment}원 결제하기</p>
-          </button>
+        <div className="cart-block"></div>
+      </Row>
+      <Row>
+        <Col>
+          <div className="pay-select">
+            <p className="pay-header">결제수단</p>
+            <p>KB국민카드 ********</p>
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <div className="cart-block"></div>
+      </Row>
+      <Row>
+        <div className="cart-payment" onClick={onPayBtn}>
+          <p>{detail.deliveryCost + payment}원 결제하기</p>
         </div>
       </Row>
     </Container>

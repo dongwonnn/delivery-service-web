@@ -6,7 +6,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 const Address = ({ user, defaultAddress }) => {
   return (
     <div className="address">
-      <FiMapPin />
+      <FiMapPin className="address-pin" />
       {user ? <p>{defaultAddress}</p> : <p>잠실 8동 </p>}
       <IoIosArrowDown className="address-arrow" />
     </div>
