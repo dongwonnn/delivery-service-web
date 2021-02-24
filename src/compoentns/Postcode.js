@@ -1,7 +1,7 @@
 import React from 'react';
 import DaumPostcode from 'react-daum-postcode';
 
-const Postcode = ({ onAddressChange, onClose }) => {
+const Postcode = ({ onAddressChange, onClose, vh }) => {
   const handleComplete = (data) => {
     let fullAddress = data.address;
     let extraAddress = '';
@@ -23,7 +23,7 @@ const Postcode = ({ onAddressChange, onClose }) => {
 
   return (
     <div>
-      <DaumPostcode onComplete={handleComplete} />;
+      <DaumPostcode onComplete={handleComplete} height={vh - 30} />;
     </div>
   );
 };

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Navigation from '../compoentns/Navigation';
 
 const SearchPage = ({ categories, stores }) => {
   const [inputValue, setInputValue] = useState('');
@@ -29,6 +30,9 @@ const SearchPage = ({ categories, stores }) => {
 
   return (
     <Container className="searchPage">
+      <Row>
+        <Navigation />
+      </Row>
       <Row>
         <Col>
           <div className="sp-header">

@@ -13,11 +13,17 @@ import { MdChatBubbleOutline } from 'react-icons/md';
 import { IoCallOutline } from 'react-icons/io5';
 import { HiOutlineSpeakerphone } from 'react-icons/hi';
 import { CgFileDocument } from 'react-icons/cg';
+import Navigation from '../compoentns/Navigation';
 
 const ProfilePage = ({ user }) => {
   const { phoneNum, name } = user || {};
   return (
     <Container className="profile">
+      <Row>
+        <Col>
+          <Navigation />
+        </Col>
+      </Row>
       <Row>
         <Col>
           <div className="profile-header">

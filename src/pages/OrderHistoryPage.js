@@ -4,6 +4,7 @@ import './OrderHistoryPage.scss';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Navigation from '../compoentns/Navigation';
 
 const OrderHistoryPage = ({ user, detail }) => {
   const [modal, setModal] = useState(false);
@@ -15,11 +16,25 @@ const OrderHistoryPage = ({ user, detail }) => {
   const onReviewBtn = () => {};
 
   if (user.orderHistory.length === 0) {
-    return <div>주문 기록 없음</div>;
+    return (
+      <Container>
+        <Row>
+          <Navigation />
+        </Row>
+        <Row>
+          <Col>
+            <div>주문 기록 없음</div>
+          </Col>
+        </Row>
+      </Container>
+    );
   }
 
   return (
     <Container className="orderHistoryPage">
+      <Row>
+        <Navigation />
+      </Row>
       <Row>
         <div className="orderHistoryPage-header">
           <p>과거 주문 내역</p>

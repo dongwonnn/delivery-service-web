@@ -83,7 +83,6 @@ const App = () => {
 
   return (
     <div className="app">
-      <Navigation />
       <Switch>
         <Route
           path="/"
