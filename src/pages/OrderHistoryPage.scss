@@ -94,4 +94,19 @@
       margin-top: 20px;
     }
   }
+
+  .orderHistory-empty {
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      position: fixed;
+      top: 20%;
+    }
+  }
 }

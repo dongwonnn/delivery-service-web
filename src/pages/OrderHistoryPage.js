@@ -17,14 +17,21 @@ const OrderHistoryPage = ({ user, detail }) => {
 
   if (user.orderHistory.length === 0) {
     return (
-      <Container>
+      <Container className="orderHistoryPage">
         <Row>
           <Navigation />
         </Row>
         <Row>
-          <Col>
-            <div>주문 기록 없음</div>
-          </Col>
+          <div className="orderHistoryPage-header">
+            <p>과거 주문 내역</p>
+            <p>준비중</p>
+          </div>
+          <div className="orderHistoryPage-hr" />
+        </Row>
+        <Row>
+          <div className="orderHistory-empty">
+            <p>주문 내역이 없습니다.</p>
+          </div>
         </Row>
       </Container>
     );
