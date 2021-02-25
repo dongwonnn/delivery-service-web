@@ -8,7 +8,7 @@ const Categories = ({ categories }) => {
       {categories.map((category) => (
         <Link to={`/category/${category.text}`} key={category.name}>
           <div className="hp-category">
-            <div></div>
+            <div className="hp-category-image"></div>
             <p>{category.text}</p>
           </div>
         </Link>

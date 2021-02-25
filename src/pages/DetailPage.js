@@ -108,7 +108,7 @@ const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
                       <p className="food-price">{food.price}원</p>
                       <p className="food-detail">{food.detail}</p>
                     </div>
-                    <div className="subMenu-img">이미지</div>
+                    <div className="subMenu-img"></div>
                   </div>
                   <hr />
                 </Link>

@@ -9,9 +9,13 @@
     margin-bottom: 10px;
 
     .card-img {
-      background-color: #eeeeee;
       width: 100%;
       padding-bottom: 60%;
+
+      background-image: url('../images/meat-4813261_1920.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
     }
 
     .card-text {

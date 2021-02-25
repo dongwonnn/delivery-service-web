@@ -1,9 +1,6 @@
 import React from 'react';
 
 const Recept = ({ modal, order, detail }) => {
-  console.log(modal);
-  console.log(order);
-
   const sumPrice = order.orderMenu.reduce((acc, cur) => {
     return acc + cur.totalPrice;
   }, 0);

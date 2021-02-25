@@ -30,8 +30,12 @@
     .favorite-img {
       width: 25%;
       padding-bottom: 25%;
-      background-color: #eeeeee;
       margin-right: 10px;
+
+      background-image: url('../images/meat-4813261_1920.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
     }
 
     .favorite-info {

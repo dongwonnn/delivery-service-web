@@ -125,7 +125,7 @@ const OrderListPage = ({
   return (
     <Container className="orderList">
       <Row>
-        <div className="orderList-img">이미지</div>
+        <div className="orderList-img"></div>
       </Row>
 
       <Row>

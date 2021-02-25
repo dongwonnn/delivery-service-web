@@ -26,7 +26,12 @@
       .list-img {
         width: 110px;
         height: 110px;
-        background-color: rgb(173, 173, 173);
+
+        background-image: url('../images/japanese-food-2199962_1920.jpg');
+        background-position: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
         margin-right: 10px;
         text-align: center;
       }

@@ -33,7 +33,11 @@
       .category-img {
         width: 100%;
         padding-bottom: 100%;
-        background-color: #cccccc;
+
+        background-image: url('../images/korean-food.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
       }
       p {
         text-align: center;
