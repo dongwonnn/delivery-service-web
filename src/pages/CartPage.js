@@ -50,8 +50,6 @@ const CartPage = ({
     history.push('/');
   };
 
-  console.log(lists);
-
   if (orderList.length === 0) return <div></div>;
   return (
     <Container className="cart">
@@ -82,7 +80,7 @@ const CartPage = ({
                     <GrFormClose onClick={() => onCloseBtn(idx)} />
                   </div>
                 </div>
-                <p>{list.reqMunu}</p>
+                <p>{list.reqMenu}</p>
                 <p>{list.selMenu}</p>
               </div>
             ))}

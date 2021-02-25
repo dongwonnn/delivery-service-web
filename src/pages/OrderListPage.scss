@@ -2,7 +2,7 @@
   background-color: white;
   box-sizing: border-box;
   margin: 0 auto;
-
+  padding-bottom: 70px;
   .orderList-img {
     width: 100%;
     height: 150px;
@@ -106,6 +106,40 @@
     font-weight: bold;
     p {
       margin-top: 10px;
+    }
+  }
+
+  .orderlist-modal {
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    position: fixed;
+    top: 40%;
+    left: 10px;
+    right: 10px;
+    margin: 0 40px;
+
+    .modal-content {
+      padding: 10px;
+      p {
+        text-align: center;
+      }
+
+      .content-text1 {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+    }
+
+    .modal-btn {
+      display: flex;
+      justify-content: space-between;
+      button {
+        color: #4eacf8;
+        padding: 10px;
+        background-color: white;
+        width: 49%;
+        border-right: 1px solid #eeeeee;
+      }
     }
   }
 }

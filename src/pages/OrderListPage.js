@@ -32,9 +32,10 @@ const OrderListPage = ({
   const onMinusBtn = () => {
     if (count > 1) {
       setCount(count - 1);
+
+      const nextTotalPrice = defaultPrice * (count - 1);
+      setTotalPrice(nextTotalPrice);
     }
-    const nextTotalPrice = defaultPrice * (count - 1);
-    setTotalPrice(nextTotalPrice);
   };
 
   const onPlusBtn = () => {
@@ -44,9 +45,10 @@ const OrderListPage = ({
   };
 
   const onToggleReqBtn = (e) => {
-    if (e.target.checked) {
-      foodMenu.reqMenu[e.target.id].check = true;
-    }
+    const id = e.target.id;
+
+    foodMenu.reqMenu[id].check = true;
+    console.log(foodMenu.reqMenu[id].check);
   };
 
   const onToggleSelBtn = (e) => {
@@ -115,6 +117,7 @@ const OrderListPage = ({
 
       setOrderList([...orderList, nextOrderList]);
 
+      console.log(nextOrderList);
       history.go(-1);
     }
   };
@@ -212,11 +215,19 @@ const OrderListPage = ({
       <Row>
         <Col>
           {overlap && (
-            <div>
-              <p>같은 가게의 메뉴만을 담을 수 있습니다.</p>
-              <p>주문할 가게를 변경하실 경우 이전에 담은 메뉴가 삭제됩니다.</p>
-              <button onClick={onCancle}>취소</button>
-              <button onClick={onChangeOrderList}>새로담기</button>
+            <div className="orderlist-modal">
+              <div className="modal-content">
+                <p className="content-text1">
+                  같은 가게의 메뉴만을 담을 수 있습니다.
+                </p>
+                <p className="content-text2">
+                  주문할 가게를 변경하실 경우 이전에 담은 메뉴가 삭제됩니다.
+                </p>
+              </div>
+              <div className="modal-btn">
+                <button onClick={onCancle}>취소</button>
+                <button onClick={onChangeOrderList}>새로담기</button>
+              </div>
             </div>
           )}
         </Col>
