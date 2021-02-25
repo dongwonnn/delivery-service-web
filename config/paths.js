@@ -25,8 +25,6 @@ const publicUrlOrPath = getPublicUrlOrPath(
   process.env.PUBLIC_URL,
 );
 
-// 왜 public_url을 썼는지
-
 // const publicUrlOrPath =
 //   process.env.NODE_ENV === 'development'
 //     ? getPublicUrlOrPath(
