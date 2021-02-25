@@ -59,20 +59,24 @@ const AddressPage = ({ user, setDefaultAddress }) => {
       <Row>
         <Col>
           {hasHomeAddress ? (
-            <div className="address-page-add-home">
-              <BiHomeAlt />
-              <div className="address-page-home">
-                <p>집</p>
-                <div onClick={() => setDefaultAddress(hasHomeAddress.address)}>
-                  {hasHomeAddress.address}
-                  <br />
-                  <p className="address-page-sub">
-                    {hasHomeAddress.subAddress}
-                  </p>
+            <Link to="/">
+              <div className="address-page-add-home">
+                <BiHomeAlt />
+                <div className="address-page-home">
+                  <p>집</p>
+                  <div
+                    onClick={() => setDefaultAddress(hasHomeAddress.address)}
+                  >
+                    {hasHomeAddress.address}
+                    <br />
+                    <p className="address-page-sub">
+                      {hasHomeAddress.subAddress}
+                    </p>
+                  </div>
+                  <hr />
                 </div>
-                <hr />
               </div>
-            </div>
+            </Link>
           ) : (
             <Link to="/setAddress">
               <div className="address-page-add-home">
@@ -89,20 +93,24 @@ const AddressPage = ({ user, setDefaultAddress }) => {
       <Row>
         <Col>
           {hasWorkAddress ? (
-            <div className="address-page-add-work">
-              <IoBagHandleOutline />
-              <div className="address-page-work">
-                <p>회사</p>
-                <div onClick={() => setDefaultAddress(hasWorkAddress.address)}>
-                  {hasWorkAddress.address}
-                  <br />
-                  <p className="address-page-sub">
-                    {hasWorkAddress.subAddress}
-                  </p>
+            <Link to="/">
+              <div className="address-page-add-work">
+                <IoBagHandleOutline />
+                <div className="address-page-work">
+                  <p>회사</p>
+                  <div
+                    onClick={() => setDefaultAddress(hasWorkAddress.address)}
+                  >
+                    {hasWorkAddress.address}
+                    <br />
+                    <p className="address-page-sub">
+                      {hasWorkAddress.subAddress}
+                    </p>
+                  </div>
+                  <hr />
                 </div>
-                <hr />
               </div>
-            </div>
+            </Link>
           ) : (
             <Link to="/setAddress">
               <div className="address-page-add-work">
@@ -121,20 +129,22 @@ const AddressPage = ({ user, setDefaultAddress }) => {
           {user.addrList.length > 0 &&
             user.addrList.map((addr, idx) =>
               addr.addrCat === '기타' ? (
-                <div className="address-page-add-etc" key={idx}>
-                  <FiMapPin />
-                  <div className="address-page-etc">
-                    <div
-                      key={addr.address}
-                      onClick={() => setDefaultAddress(addr.address)}
-                    >
-                      {addr.address}
-                      <br />
-                      <p className="address-page-sub">{addr.subAddress}</p>
+                <Link to="/">
+                  <div className="address-page-add-etc" key={idx}>
+                    <FiMapPin />
+                    <div className="address-page-etc">
+                      <div
+                        key={addr.address}
+                        onClick={() => setDefaultAddress(addr.address)}
+                      >
+                        {addr.address}
+                        <br />
+                        <p className="address-page-sub">{addr.subAddress}</p>
+                      </div>
+                      <hr />
                     </div>
-                    <hr />
                   </div>
-                </div>
+                </Link>
               ) : null,
             )}
         </Col>
