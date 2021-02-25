@@ -4,7 +4,6 @@ import { FiMapPin } from 'react-icons/fi';
 import { IoIosArrowDown } from 'react-icons/io';
 
 const Address = ({ user, defaultAddress }) => {
-  console.log(defaultAddress);
   return (
     <div className="address">
       <FiMapPin className="address-pin" />
