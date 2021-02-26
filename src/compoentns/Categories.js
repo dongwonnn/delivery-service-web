@@ -8,7 +8,11 @@ const Categories = ({ categories }) => {
       {categories.map((category) => (
         <Link to={`/category/${category.text}`} key={category.name}>
           <div className="hp-category">
-            <div className="hp-category-image"></div>
+            <img
+              src="/images/japan-food.jpg"
+              alt="food-category"
+              className="hp-category-image"
+            ></img>
             <p>{category.text}</p>
           </div>
         </Link>
