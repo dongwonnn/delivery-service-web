@@ -5,19 +5,20 @@
 ### 1. 메인 페이지
 
 - 카테고리, 프랜차이즈 음식점 검색
+  ![main-to-category](https://user-images.githubusercontent.com/59330828/109375857-60278e80-7903-11eb-8f1e-a62acc758ec4.gif)
+  ![main-to-franchise](https://user-images.githubusercontent.com/59330828/109375859-69b0f680-7903-11eb-872b-7041c701062b.gif)
+
 - 추천순, 배달비 순 정렬 기능
-  <img src="https://user-images.githubusercontent.com/60457112/102458079-114db500-4087-11eb-8e32-e1a5d828039b.gif"/>
+  ![main-sort](https://user-images.githubusercontent.com/59330828/109375863-73d2f500-7903-11eb-8d56-c0694570ea0d.gif)
 
 ---
 
-### 2. 가게 선택 ~ 장바구니 기능
+### 2. 가게 선택 ~ 장바구니, 주문 내역 조회 기능
 
 - 음식점 메뉴, 세부 메뉴 선택
 - 장바구니 기능
--
+- 주문 내역 조회 기능
 
-- 사용자 편리성 증진을 위해 **수식 추천 기능** 지원
-- '**@'** 입력 시, **수식 추천** 리스트 생성  
   <img src="https://user-images.githubusercontent.com/60457112/102458366-79040000-4087-11eb-9048-de2841928847.gif"/>
 
 ---
