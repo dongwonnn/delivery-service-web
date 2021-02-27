@@ -1,14 +1,14 @@
 .detail {
   background-color: white;
   box-sizing: border-box;
+  padding-bottom: 70px;
 
-  .detail-img {
+  .detail-header {
     width: 100%;
     height: 200px;
-    background-image: url('../images/coffee-5386871_1920.jpg');
+    background-image: url('../images/10000-lab.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
 
     margin-bottom: 50px;
 
@@ -49,6 +49,10 @@
 
         .info-grade {
           font-size: 1.2rem;
+        }
+
+        .info-review {
+          margin-left: 10px;
         }
 
         a {

@@ -48,7 +48,6 @@ const OrderListPage = ({
     const id = e.target.id;
 
     foodMenu.reqMenu[id].check = true;
-    console.log(foodMenu.reqMenu[id].check);
   };
 
   const onToggleSelBtn = (e) => {
@@ -117,7 +116,6 @@ const OrderListPage = ({
 
       setOrderList([...orderList, nextOrderList]);
 
-      console.log(nextOrderList);
       history.go(-1);
     }
   };
@@ -152,6 +150,7 @@ const OrderListPage = ({
       <Row>
         <div className="add-text">
           <p>맛 선택</p>
+          <p className="add-require">필수 선택</p>
         </div>
       </Row>
       <Row>

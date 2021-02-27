@@ -129,8 +129,8 @@ const AddressPage = ({ user, setDefaultAddress }) => {
           {user.addrList.length > 0 &&
             user.addrList.map((addr, idx) =>
               addr.addrCat === '기타' ? (
-                <Link to="/">
-                  <div className="address-page-add-etc" key={idx}>
+                <Link to="/" key={idx}>
+                  <div className="address-page-add-etc">
                     <FiMapPin />
                     <div className="address-page-etc">
                       <div

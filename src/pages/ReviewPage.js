@@ -48,8 +48,8 @@ const ReviewPage = ({ match, stores }) => {
             <label htmlFor="photo-check">포토리뷰</label>
           </div>
           <div className="sort-latest">
-            최신순
-            <IoIosArrowDown />
+            {/* 최신순
+            <IoIosArrowDown /> */}
           </div>
         </Col>
       </Row>

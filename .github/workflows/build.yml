@@ -1,87 +1,3 @@
-name: CI
-on:
-  push:
-    branches: [master]
-
-    workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      # 레파지토리 check out
-      - name: Checkout source code.
-        uses: actions/checkout@v2
-
-      # node.js 버전 12
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '12'
-
-      # 의존 파일 설치
-      - name: Install Dependencies
-        run: npm install
-
-      # 환경변수 설정하기
-      # https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions 에서 확인
-      # - name: Set Env
-      #   run: echo "action_state=yellow" >> $GITHUB_ENV
-
-      #환경변수 설정
-      - name: Set Env
-        run: echo "PUBLIC_URL=/${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
-
-      # 빌드
-      - name: Build
-        run: npm run build
-
-      # 폴더 이름 변경
-      - name: Change folder name build to docs
-        run: mv build docs
-
-      # git 인증
-      - uses: actions/labeler@v2
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-
-      # git remote update
-      - name: Remote Update
-        run: git remote update
-
-      # git fetch
-      - name: Fetch
-        run: git fetch --all
-
-      # git stash
-      - name: Stash
-        run: git stash
-
-      # create branch and move
-      - name: create release branch
-        run: git checkout -b release
-
-      # apply stash
-      - name: Apply stash
-        run: git stash pop
-
-      # Author identity
-      - name: Github auth and commit
-        env:
-          MY_EMAIL: kkum9408@gmail.com
-          MY_NAME: dongwon
-        run: |
-          git config --global user.email $MY_EMAIL
-          git config --global user.name $MY_NAME
-
-      # add and commit
-      - name: git commit
-        run: |
-          git add .
-          git commit -m "Build done!"
-
-      # push
-      - name: git push
-        run: git push -f --set-upstream origin release
 # name: CI
 # on:
 #   push:
@@ -106,23 +22,107 @@ jobs:
 #       - name: Install Dependencies
 #         run: npm install
 
+#       # 환경변수 설정하기
+#       # https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions 에서 확인
+#       # - name: Set Env
+#       #   run: echo "action_state=yellow" >> $GITHUB_ENV
+
+#       #환경변수 설정
+#       - name: Set Env
+#         run: echo "PUBLIC_URL=/${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
+
 #       # 빌드
 #       - name: Build
 #         run: npm run build
 
-#       # docs 비우기
-#       - name: delete docs files
-#         run: rm -r docs/*
+#       # 폴더 이름 변경
+#       - name: Change folder name build to docs
+#         run: mv build docs
 
-#       # build -> docs 복사
-#       - name: copy build to docs
-#         run: cp -r build/* docs
-
-#       # release 브랜치 이동
-#       - name: Push to built branch
-#         uses: Automattic/action-commit-to-branch@master
+#       # git 인증
+#       - uses: actions/labeler@v2
 #         with:
-#           branch: 'release'
-#           commit_message: 'Build done!'
+#           repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+#       # git remote update
+#       - name: Remote Update
+#         run: git remote update
+
+#       # git fetch
+#       - name: Fetch
+#         run: git fetch --all
+
+#       # git stash
+#       - name: Stash
+#         run: git stash
+
+#       # create branch and move
+#       - name: create release branch
+#         run: git checkout -b release
+
+#       # apply stash
+#       - name: Apply stash
+#         run: git stash pop
+
+#       # Author identity
+#       - name: Github auth and commit
 #         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           MY_EMAIL: kkum9408@gmail.com
+#           MY_NAME: dongwon
+#         run: |
+#           git config --global user.email $MY_EMAIL
+#           git config --global user.name $MY_NAME
+
+#       # add and commit
+#       - name: git commit
+#         run: |
+#           git add .
+#           git commit -m "Build done!"
+
+#       # push
+#       - name: git push
+#         run: git push -f --set-upstream origin release
+# # name: CI
+# # on:
+# #   push:
+# #     branches: [master]
+
+# #     workflow_dispatch:
+
+# # jobs:
+# #   build:
+# #     runs-on: ubuntu-latest
+# #     steps:
+# #       # 레파지토리 check out
+# #       - name: Checkout source code.
+# #         uses: actions/checkout@v2
+
+# #       # node.js 버전 12
+# #       - uses: actions/setup-node@v2
+# #         with:
+# #           node-version: '12'
+
+# #       # 의존 파일 설치
+# #       - name: Install Dependencies
+# #         run: npm install
+
+# #       # 빌드
+# #       - name: Build
+# #         run: npm run build
+
+# #       # docs 비우기
+# #       - name: delete docs files
+# #         run: rm -r docs/*
+
+# #       # build -> docs 복사
+# #       - name: copy build to docs
+# #         run: cp -r build/* docs
+
+# #       # release 브랜치 이동
+# #       - name: Push to built branch
+# #         uses: Automattic/action-commit-to-branch@master
+# #         with:
+# #           branch: 'release'
+# #           commit_message: 'Build done!'
+# #         env:
+# #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

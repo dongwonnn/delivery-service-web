@@ -10,7 +10,7 @@ const users = [
       {
         building: '둔촌신동아아파트',
         address: '서울 강동구 양재대로 96길 79',
-        subAddress: '103동 1201호',
+        subAddress: '101동 1001호',
         addrCat: '집',
       },
       {

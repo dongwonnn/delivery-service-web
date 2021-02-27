@@ -35,7 +35,7 @@ const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
   return (
     <Container className="detail">
       <Row>
-        <div className="detail-img">
+        <div className="detail-header">
           <Col>
             <span className="detail-favorite">
               {user ? (
@@ -50,9 +50,9 @@ const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
               <p className="info-name">{detailItem.name}</p>
               <div className="info-detail">
                 <AiFillStar />
-                <p className="info-grade">{detailItem.grade}</p>
+                <p className="info-grade">{detailItem.grade} </p>
                 <Link to={`/detail/${store}/review`}>
-                  <p>
+                  <p className="info-review">
                     리뷰 <strong>{detailItem.feedNum}</strong>개 &gt;
                   </p>
                 </Link>

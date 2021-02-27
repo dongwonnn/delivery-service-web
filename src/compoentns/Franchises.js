@@ -5,9 +5,10 @@ import './Franchises.scss';
 import { Link } from 'react-router-dom';
 // import axios from 'axios';
 import { store } from '../data/stores';
+const franchise = [...store];
 
 const Franchises = () => {
-  const [stores, setStores] = useState(store);
+  // const [stores, setStores] = useState(store);
 
   // useEffect(() => {
   //   const fetchData = async () => {
@@ -26,22 +27,28 @@ const Franchises = () => {
     <div className="hp-recommand">
       <div className="hp-recommand-header">
         <p>인기 프랜차이즈</p>
-        <BsArrowRight className="arrow-right" />
       </div>
       <div className="hp-recommand-lists">
-        {stores.map(
+        {franchise.map(
           (store) =>
             store.franchise && (
               <Link to={`/detail/${store.name}`} key={store.name}>
                 <div className="hp-recommand-list">
-                  <div className="list-img"></div>
+                  <img
+                    src={store.imgSrc}
+                    alt="franchise"
+                    className="list-img"
+                  ></img>
                   <p className="list-name">{store.name}</p>
                   <div className="list-detail">
                     <AiFillStar />
                     <p>
-                      {store.grade} ({store.feedNum})
+                      {store.grade} ({store.feedNum})<br />
                     </p>
                   </div>
+                  <p className="list-delivery-cost">
+                    배달비 {store.deliveryCost}
+                  </p>
                 </div>
               </Link>
             ),

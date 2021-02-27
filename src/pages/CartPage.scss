@@ -39,6 +39,8 @@
 
     .main-body {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       .main-count {
         margin-right: 5px;
@@ -100,7 +102,7 @@
         button {
           width: 25%;
           background-color: white;
-          border: 1px solid rgb(113, 203, 255);
+          border: 1px solid #4eacf8;
           border-radius: 3px;
           color: rgb(113, 203, 255);
           font-weight: bold;

@@ -58,7 +58,7 @@ const CartPage = ({
           <div className="cart-header">
             <h4>카트</h4>
             <p className="header-building">{defaultAddress} (으)로 배달</p>
-            <p className="header-address">주소</p>
+            <p className="header-address">101동 1001호</p>
           </div>
         </Col>
       </Row>
@@ -80,8 +80,8 @@ const CartPage = ({
                     <GrFormClose onClick={() => onCloseBtn(idx)} />
                   </div>
                 </div>
-                <p>{list.reqMenu}</p>
-                <p>{list.selMenu}</p>
+                {/* <p>{list.reqMenu}</p>
+                <p>{list.selMenu}</p> */}
               </div>
             ))}
             <hr />

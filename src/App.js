@@ -130,6 +130,7 @@ const App = () => {
               setOrderList={setOrderList}
               setUser={setUser}
               user={user}
+              defaultAddress={defaultAddress}
               {...props}
             />
           )}

@@ -9,7 +9,7 @@ const Categories = ({ categories }) => {
         <Link to={`/category/${category.text}`} key={category.name}>
           <div className="hp-category">
             <img
-              src="/images/japan-food.jpg"
+              src={category.imgSrc}
               alt="food-category"
               className="hp-category-image"
             ></img>
