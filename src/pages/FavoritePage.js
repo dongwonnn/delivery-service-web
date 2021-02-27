@@ -6,9 +6,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { AiFillStar } from 'react-icons/ai';
 import { IoIosArrowDown } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 const FavoritePage = ({ user }) => {
-  console.log(user.likesList);
   if (user.likesList.length === 0) {
     return (
       <div className="favorite-empty">
@@ -47,26 +47,28 @@ const FavoritePage = ({ user }) => {
         <div className="favorite-block"></div>
       </Row>
 
-      {user.likesList.map((list) => (
-        <Row>
-          <Col>
-            <div className="favorite-body" key={list.id}>
-              <div className="favorite-img"></div>
-              <div className="favorite-info">
-                <p className="info-store">{list.name}</p>
-                <p className="info-grade">
-                  <AiFillStar />
-                  {list.grade}({list.feedNum})
-                </p>
-                <p className="info-dist">
-                  0.8km · 21-31분 · {list.deliveryCost}원
-                </p>
+      <Row>
+        <Col>
+          {user.likesList.map((list) => (
+            <Link to={`/detail/${list.name}`} key={list.id}>
+              <div className="favorite-body">
+                <div className="favorite-img"></div>
+                <div className="favorite-info">
+                  <p className="info-store">{list.name}</p>
+                  <p className="info-grade">
+                    <AiFillStar />
+                    {list.grade}({list.feedNum})
+                  </p>
+                  <p className="info-dist">
+                    0.8km · 21-31분 · {list.deliveryCost}원
+                  </p>
+                </div>
               </div>
-            </div>
-            <hr />
-          </Col>
-        </Row>
-      ))}
+            </Link>
+          ))}
+          <hr />
+        </Col>
+      </Row>
 
       <Row>
         <Col></Col>

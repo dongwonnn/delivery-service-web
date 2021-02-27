@@ -48,7 +48,11 @@
       }
 
       .body-img {
-        background-color: #eeeeee;
+        background-image: url('../images/10000-lab.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
         width: 30%;
         padding-bottom: 30%;
       }

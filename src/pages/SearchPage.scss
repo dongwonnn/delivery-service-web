@@ -29,18 +29,23 @@
     .category-card {
       width: 48%;
       height: 100%;
+      margin-bottom: 15px;
 
       .category-img {
         width: 100%;
-        padding-bottom: 100%;
 
-        background-image: url('../images/korean-food.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        img {
+          width: inherit;
+          height: 165.69px;
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
       }
       p {
         text-align: center;
+        font-weight: boldcategory-card;
       }
     }
   }

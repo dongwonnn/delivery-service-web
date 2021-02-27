@@ -54,7 +54,9 @@ const SearchPage = ({ categories, stores }) => {
               {categories.map((cat) => (
                 <div className="category-card" key={cat.name}>
                   <Link to={`/category/${cat.text}`}>
-                    <div className="category-img"></div>
+                    <div className="category-img">
+                      <img src={cat.imgSrc} alt="category"></img>
+                    </div>
                     <p className="category-text">{cat.text}</p>
                   </Link>
                 </div>
