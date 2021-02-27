@@ -4,10 +4,10 @@
 
 ### 1. 메인 페이지
 
-- 카테고리, 프랜차이즈 음식점 검색
+- 카테고리 검색
   <img src="https://user-images.githubusercontent.com/59330828/109375857-60278e80-7903-11eb-8f1e-a62acc758ec4.gif"/>
+- 프랜차이즈 검색
   <img src="https://user-images.githubusercontent.com/59330828/109375859-69b0f680-7903-11eb-872b-7041c701062b.gif"/>
-
 - 추천순, 배달비 순 정렬 기능
   <img src="https://user-images.githubusercontent.com/59330828/109375863-73d2f500-7903-11eb-8d56-c0694570ea0d.gif"/>
 
