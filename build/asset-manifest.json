@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/delivery-service-web/static/css/main.42a6a440.chunk.css",
-    "main.js": "/delivery-service-web/static/js/main.f0de161c.chunk.js",
-    "main.js.map": "/delivery-service-web/static/js/main.f0de161c.chunk.js.map",
-    "runtime-main.js": "/delivery-service-web/static/js/runtime-main.af5451df.js",
-    "runtime-main.js.map": "/delivery-service-web/static/js/runtime-main.af5451df.js.map",
-    "static/js/2.6fbb51e3.chunk.js": "/delivery-service-web/static/js/2.6fbb51e3.chunk.js",
-    "static/js/2.6fbb51e3.chunk.js.map": "/delivery-service-web/static/js/2.6fbb51e3.chunk.js.map",
-    "static/js/3.cea71a0f.chunk.js": "/delivery-service-web/static/js/3.cea71a0f.chunk.js",
-    "static/js/3.cea71a0f.chunk.js.map": "/delivery-service-web/static/js/3.cea71a0f.chunk.js.map",
-    "index.html": "/delivery-service-web/index.html",
-    "static/css/main.42a6a440.chunk.css.map": "/delivery-service-web/static/css/main.42a6a440.chunk.css.map",
-    "static/js/2.6fbb51e3.chunk.js.LICENSE.txt": "/delivery-service-web/static/js/2.6fbb51e3.chunk.js.LICENSE.txt",
-    "static/media/DetailPage.scss": "/delivery-service-web/static/media/coffee-5386871_1920.89691000.jpg",
-    "static/media/OrderListPage.scss": "/delivery-service-web/static/media/coffee-983955_640.5fcf9266.jpg",
-    "static/media/Banner.scss": "/delivery-service-web/static/media/home-banner.41a0afc3.jpg",
-    "static/media/Franchises.scss": "/delivery-service-web/static/media/japanese-food-2199962_1920.e4ac9d90.jpg",
-    "static/media/SearchPage.scss": "/delivery-service-web/static/media/korean-food.df09393a.jpg",
-    "static/media/Stores.scss": "/delivery-service-web/static/media/meat-4813261_1920.b5f0e8c5.jpg"
+    "main.css": "/static/css/main.bb5e4c8e.chunk.css",
+    "main.js": "/static/js/main.4ff08c51.chunk.js",
+    "main.js.map": "/static/js/main.4ff08c51.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4d1ca473.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4d1ca473.js.map",
+    "static/js/2.a68dc1e6.chunk.js": "/static/js/2.a68dc1e6.chunk.js",
+    "static/js/2.a68dc1e6.chunk.js.map": "/static/js/2.a68dc1e6.chunk.js.map",
+    "static/js/3.cea71a0f.chunk.js": "/static/js/3.cea71a0f.chunk.js",
+    "static/js/3.cea71a0f.chunk.js.map": "/static/js/3.cea71a0f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.bb5e4c8e.chunk.css.map": "/static/css/main.bb5e4c8e.chunk.css.map",
+    "static/js/2.a68dc1e6.chunk.js.LICENSE.txt": "/static/js/2.a68dc1e6.chunk.js.LICENSE.txt",
+    "static/media/OrderHistoryPage.scss": "/static/media/10000-lab.cdf95575.jpg",
+    "static/media/OrderListPage.scss": "/static/media/coffee-983955_640.5fcf9266.jpg",
+    "static/media/Banner.scss": "/static/media/home-banner.41a0afc3.jpg",
+    "static/media/Franchises.scss": "/static/media/japanese-food-2199962_1920.e4ac9d90.jpg",
+    "static/media/FavoritePage.scss": "/static/media/meat-4813261_1920.b5f0e8c5.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.af5451df.js",
-    "static/js/2.6fbb51e3.chunk.js",
-    "static/css/main.42a6a440.chunk.css",
-    "static/js/main.f0de161c.chunk.js"
+    "static/js/runtime-main.4d1ca473.js",
+    "static/js/2.a68dc1e6.chunk.js",
+    "static/css/main.bb5e4c8e.chunk.css",
+    "static/js/main.4ff08c51.chunk.js"
   ]
 }
