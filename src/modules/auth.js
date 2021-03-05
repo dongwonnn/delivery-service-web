@@ -3,7 +3,7 @@ const users = [
     email: 'kkum9408@gmail.com',
     password: '123',
     name: '김동원',
-    phoneNum: '010-6366-6585',
+    phoneNum: '010-****-****',
     likesList: [],
     orderHistory: [],
     addrList: [
