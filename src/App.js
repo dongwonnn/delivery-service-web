@@ -224,9 +224,7 @@ const App = () => {
         />
         <Route
           path="/login"
-          render={(props) => (
-            <LoginPage authenticated={authenticated} login={login} {...props} />
-          )}
+          render={(props) => <LoginPage login={login} {...props} />}
         />
         <Route render={({ location }) => <div>존재하지 않는 페이지</div>} />
       </Switch>
