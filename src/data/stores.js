@@ -3,7 +3,8 @@ export const store = [
     id: 0,
     name: '만랩커피 강남점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '카페',
     grade: 2.1,
     feedNum: 2526,

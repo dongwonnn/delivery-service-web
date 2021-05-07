@@ -27,11 +27,7 @@ const HomePage = ({
 }) => {
   return (
     <Container className="homepage">
-      <Row>
-        <Col>
-          <Navigation />
-        </Col>
-      </Row>
+      <Navigation />
       <Row>
         <Col>
           <div className="homepage-header">
@@ -82,34 +78,6 @@ const HomePage = ({
       {/* xs < 768 md < 1024 xl >= 1024 */}
       <Stores stores={stores} />
     </Container>
-
-    // <div className="hompage">
-    //   <div className="hp-header">
-    //     <Link to="/address">
-    //       <Address user={user} defaultAddress={defaultAddress} />
-    //     </Link>
-    //     <Link to="/search">
-    //       <Search />
-    //     </Link>
-    //   </div>
-    //   <Banner />
-    //   <Categories categories={categories} />
-    //   {orderList.totalPrice && (
-    //     <div>
-    //       <div>카트보기</div>
-    //       <div>{orderList.totalPrice}</div>
-    //     </div>
-    //   )}
-    //   <Franchises />
-    //   <hr />
-    //   <Sort
-    //     onRecommand={onRecommand}
-    //     onDeliveryCost={onDeliveryCost}
-    //     recommand={recommand}
-    //     cost={cost}
-    //   />
-    //   <Stores stores={stores} />
-    // </div>
   );
 };
 

@@ -127,35 +127,3 @@ const SetAddressPage = ({ user, setDefaultAddress }) => {
 };
 
 export default SetAddressPage;
-
-// <div>
-//   <h1>배달지 상세 정보</h1>
-//   {apiToggle ? (
-//     <Postcode
-//       onAddressChange={setAddr}
-//       onClose={() => setApiToggle(false)}
-//     />
-//   ) : (
-//     <div>
-//       <div>{addr}</div>
-//       <div>메인 주소</div>
-//       <input
-//         type="text"
-//         placeholder="상세주소(아파트/동/호)"
-//         value={text}
-//         onChange={onInputText}
-//       />
-//       <div>상세 주소</div>
-//       <ul onClick={onAddrCat}>
-//         <li>집</li>
-//         <li>회사</li>
-//         <li>기타</li>
-//       </ul>
-//      <div>지도에서 확인하기</div>
-
-//       <Link to="/">
-//         <button onClick={onAddAddress}>완료</button>
-//       </Link>
-//     </div>
-//   )}
-// </div>

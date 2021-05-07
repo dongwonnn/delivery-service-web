@@ -2,7 +2,8 @@ export const category = [
   {
     name: 'kor',
     text: '한식',
-    imgSrc: '/images/categories/korean-food.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115354716-e3bf7680-a1f4-11eb-9270-36b6b4147cc3.jpg',
   },
   {
     name: 'jap',

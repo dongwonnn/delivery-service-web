@@ -1,4 +1,7 @@
-# 쿠팡이츠 클론코딩
+# 배달 서비스 클론코딩
+
+https://dongwonnn.github.io/delivery-service-web/
+TEST ID / PW : kkum9408@gmail.com / 123
 
 ## ⚙️ 주요 기능.
 

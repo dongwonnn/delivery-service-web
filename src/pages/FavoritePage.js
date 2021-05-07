@@ -74,25 +74,6 @@ const FavoritePage = ({ user }) => {
         <Col></Col>
       </Row>
     </Container>
-
-    // <div className="favorite">
-    //   <p className="favorite-header">즐겨찾기</p>
-    //   <div className="favorite-sort">
-    //     <p>총 {user.likesList.length}개</p>
-    //     <p>최근 주문순</p>
-    //   </div>
-
-    //   {user.likesList.map((list) => (
-    //     <div className="favorite-body" key={list.id}>
-    //       <div className="favorite-img">이미지</div>
-    //       <div className="favorite-info">
-    //         <p className="info-store"></p>
-    //         <p className="info-grade"></p>
-    //         <p className="info-dist">0.8km · 21-31분 · {list.deliveryCost}</p>
-    //       </div>
-    //     </div>
-    //   ))}
-    // </div>
   );
 };
 

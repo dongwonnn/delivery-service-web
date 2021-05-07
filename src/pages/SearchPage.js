@@ -70,38 +70,6 @@ const SearchPage = ({ categories, stores }) => {
         </Col>
       </Row>
     </Container>
-
-    // <div className="searchPage">
-    //   <div className="sp-header">
-    //     <input
-    //       type="text"
-    //       placeholder="검색어를 입력하세요."
-    //       name="inputValue"
-    //       value={inputValue}
-    //       onChange={onChangeInput}
-    //     />
-    //     <BsSearch />
-    //   </div>
-
-    //   {inputValue === '' ? (
-    //     <div className="sp-categories">
-    //       {categories.map((cat) => (
-    //         <Link to={`/category/${cat.text}`} key={cat.name}>
-    //           <div key={cat.name}>
-    //             <div className="category-card">
-    //               <div className="category-img"></div>
-    //               <p className="category-text">{cat.text}</p>
-    //             </div>
-    //           </div>
-    //         </Link>
-    //       ))}
-    //     </div>
-    //   ) : (
-    //     <div>
-    //       <Stores stores={sortStores} />
-    //     </div>
-    //   )}
-    // </div>
   );
 };
 

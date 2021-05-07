@@ -21,7 +21,7 @@
   .hp-recommand-lists {
     display: flex;
 
-    overflow-x: scroll;
+    overflow-x: hidden;
     white-space: nowrap;
 
     .hp-recommand-list {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import FavoritePage from './pages/FavoritePage';
 import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
@@ -226,7 +226,8 @@ const App = () => {
           path="/login"
           render={(props) => <LoginPage login={login} {...props} />}
         />
-        <Route render={({ location }) => <div>존재하지 않는 페이지</div>} />
+        <Redirect from="*" to="/" />
+        {/* <Route render={({ location }) => <div>존재하지 않는 페이지</div>} /> */}
       </Switch>
     </div>
   );

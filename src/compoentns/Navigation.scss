@@ -1,8 +1,9 @@
 .nav-main {
+  max-width: 468px;
+  width: 100%;
   position: fixed;
+  margin: 0 auto;
   bottom: 0;
-  left: 0;
-  right: 0;
   z-index: 1;
   background-color: white;
   border-top: 1px solid #eeeeee;

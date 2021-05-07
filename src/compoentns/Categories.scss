@@ -3,7 +3,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin: 10px 0;
 
   .hp-category {
@@ -36,4 +36,8 @@
       border: 2px solid #4eacf8;
     }
   }
+}
+
+.hp-categorys::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }

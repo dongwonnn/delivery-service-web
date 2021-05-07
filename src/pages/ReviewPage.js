@@ -101,30 +101,6 @@ const ReviewPage = ({ match, stores }) => {
         </Col>
       </Row>
     </Container>
-
-    // <div>
-    //   <p>{store} 리뷰</p>
-    //   <div>
-    //     <div>
-    //       <input type="checkbox" />
-    //       <label htmlFor="photo-check">포토리뷰</label>
-    //     </div>
-    //     <div>최신순</div>
-    //   </div>
-    //   <div>
-    //     {details.review.length > 0 &&
-    //       details.review.map((review) => (
-    //         <div key={review.id}>
-    //           <p>이름 : {review.user}</p>
-    //           <p>날짜 : {review.date}</p>
-    //           <p>별점 : {review.grade}</p>
-    //           <div>텍스트 : {review.text}</div>
-    //           <div>주문 음식 : {review.orderdMenu}</div>
-    //           <p>추천수 : {review.recommand}</p>
-    //         </div>
-    //       ))}
-    //   </div>
-    // </div>
   );
 };
 

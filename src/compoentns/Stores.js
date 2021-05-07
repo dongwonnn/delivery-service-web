@@ -10,8 +10,8 @@ const Stores = ({ stores }) => {
     <Row className="hp-items">
       <Col>
         {stores.map((store) => (
-          <Link to={`/detail/${store.name}`} key={store.name}>
-            <div className="item-card">
+          <div className="item-card" key={store.name}>
+            <Link to={`/detail/${store.name}`}>
               <img src={store.imgSrc} alt="store" className="card-img"></img>
               <div className="card-text">
                 <div className="card-name">{store.name}</div>
@@ -23,8 +23,8 @@ const Stores = ({ stores }) => {
                   </p>
                 </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         ))}
       </Col>
     </Row>

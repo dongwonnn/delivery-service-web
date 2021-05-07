@@ -150,42 +150,6 @@ const AddressPage = ({ user, setDefaultAddress }) => {
         </Col>
       </Row>
     </Container>
-
-    //   <div>
-    //     <h1>주소 페이지</h1>
-    //     <Link to="/setAddress">
-    //       <div>새 배달 주소 추가</div>
-    //     </Link>
-    //     {hasHomeAddress ? (
-    //       <div onClick={() => setDefaultAddress(hasHomeAddress.address)}>
-    //         {hasHomeAddress.address}
-    //       </div>
-    //     ) : (
-    //       <Link to="/setAddress">
-    //         <div>집 추가</div>
-    //       </Link>
-    //     )}
-    //     {hasWorkAddress ? (
-    //       <div onClick={() => setDefaultAddress(hasWorkAddress.address)}>
-    //         {hasWorkAddress.address}
-    //       </div>
-    //     ) : (
-    //       <Link to="/setAddress">
-    //         <div>회사 추가</div>
-    //       </Link>
-    //     )}
-    //     {user.addrList.length > 0 &&
-    //       user.addrList.map((addr) =>
-    //         addr.addrCat === '기타' ? (
-    //           <div
-    //             key={addr.address}
-    //             onClick={() => setDefaultAddress(addr.address)}
-    //           >
-    //             {addr.address}
-    //           </div>
-    //         ) : null,
-    //       )}
-    //   </div>
   );
 };
 
