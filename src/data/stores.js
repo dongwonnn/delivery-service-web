@@ -193,7 +193,8 @@ export const store = [
     id: 1,
     name: '내가찜한닭 강남역점',
     franchise: true,
-    imgSrc: '/images/stores/steamed-chicken.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/117425635-ebee1480-af5d-11eb-9236-d45704beb3ef.jpg',
     category: '찜',
     grade: 3.3,
     feedNum: 2526,
@@ -381,7 +382,8 @@ export const store = [
     id: 2,
     name: '호떡당',
     franchise: false,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/117425627-ea245100-af5d-11eb-8332-5f24f0212078.jpg',
     category: '분식',
     grade: 3.1,
     feedNum: 2526,
@@ -569,7 +571,8 @@ export const store = [
     id: 3,
     name: '그 우동집 강남점',
     franchise: true,
-    imgSrc: '/images/stores/udon.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/117425639-ec86ab00-af5d-11eb-87c0-7ef51afd5d2b.jpg',
     category: '분식',
     grade: 1.8,
     feedNum: 2526,
@@ -757,7 +760,8 @@ export const store = [
     id: 4,
     name: '아우어커피 강남점',
     franchise: false,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '카페',
     grade: 3.2,
     feedNum: 2526,
@@ -945,7 +949,8 @@ export const store = [
     id: 5,
     name: '맘스터치 논현아이파크점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '패스트푸드',
     grade: 2.7,
     feedNum: 2526,
@@ -1133,7 +1138,8 @@ export const store = [
     id: 6,
     name: '용봉대반점 서초점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '중식',
     grade: 3.7,
     feedNum: 2526,
@@ -1321,7 +1327,8 @@ export const store = [
     id: 7,
     name: '파스파스타 강남역점',
     franchise: false,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '양식',
     grade: 2.6,
     feedNum: 2526,
@@ -1509,7 +1516,8 @@ export const store = [
     id: 8,
     name: '돈카살롱 강남점',
     franchise: true,
-    imgSrc: '/images/stores/fork.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/117425633-eb557e00-af5d-11eb-9fd3-79643bd661e7.jpg',
     category: '돈가스',
     grade: 4,
     feedNum: 2526,
@@ -1697,7 +1705,8 @@ export const store = [
     id: 9,
     name: '나무인생초밥 삼성타운점',
     franchise: true,
-    imgSrc: '/images/stores/sushi.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/117425637-ec86ab00-af5d-11eb-9b76-e3c19b7512d2.jpg',
     category: '일식',
     grade: 4.2,
     feedNum: 2526,
@@ -1885,7 +1894,8 @@ export const store = [
     id: 10,
     name: '만랩커피 논현점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '카페',
     grade: 2.1,
     feedNum: 2526,
@@ -2074,7 +2084,8 @@ export const store = [
     id: 11,
     name: '이천쌀밥 강남점',
     franchise: true,
-    imgSrc: '/images/stores/licheon.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/117425634-eb557e00-af5d-11eb-9f41-756f1053ebc4.jpg',
     category: '한식',
     grade: 2.0,
     feedNum: 2526,
@@ -2263,7 +2274,8 @@ export const store = [
     id: 12,
     name: '산들해 강남점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '한식',
     grade: 3.0,
     feedNum: 2526,
@@ -2452,7 +2464,8 @@ export const store = [
     id: 13,
     name: '라연',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '한식',
     grade: 2.1,
     feedNum: 2526,
@@ -2641,7 +2654,8 @@ export const store = [
     id: 14,
     name: '서서갈비 강남점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '한식',
     grade: 2.1,
     feedNum: 2526,
@@ -2830,7 +2844,8 @@ export const store = [
     id: 15,
     name: '쿠우쿠우 강남점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '한식',
     grade: 2.1,
     feedNum: 2526,
@@ -3019,7 +3034,8 @@ export const store = [
     id: 16,
     name: '미소야 강남점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '한식',
     grade: 2.1,
     feedNum: 2526,
@@ -3208,7 +3224,8 @@ export const store = [
     id: 17,
     name: '김밥천국 강남점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '1인분',
     grade: 2.1,
     feedNum: 2526,
@@ -3397,7 +3414,8 @@ export const store = [
     id: 18,
     name: '교촌치킨 강남점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '치킨',
     grade: 2.1,
     feedNum: 2526,
@@ -3586,7 +3604,8 @@ export const store = [
     id: 19,
     name: '가장맛있는 족발 강남점',
     franchise: true,
-    imgSrc: '/images/stores/10000-lab.jpg',
+    imgSrc:
+      'https://user-images.githubusercontent.com/59330828/115355061-44e74a00-a1f5-11eb-91a2-fe10a8f05035.jpg',
     category: '족발',
     grade: 2.1,
     feedNum: 2526,

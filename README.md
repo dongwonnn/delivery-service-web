@@ -1,14 +1,14 @@
 # 배달 서비스 클론코딩
 
-배포 link : https://dongwonnn.github.io/delivery-service-web/</br>
+배포 : https://dongwonnn.github.io/delivery-service-web/</br>
 
-test용 아이디/비밀번호 : kkum9408@gmail.com / 123</br>
+Test ID/PW : kkum9408@gmail.com / 123</br>
 
 json 서버 : json-server ./data.json --port 4000.</br>
 
-react 서버 : yarn start</br>
+React 서버 : yarn start</br>
 
-## ⚙️ 주요 기능.
+## ⚙️ 주요 기능
 
 #### 1. 메인 페이지
 
@@ -68,13 +68,21 @@ react 서버 : yarn start</br>
 
 ---
 
+<details>
+
+|                                      ✔ 마이페이지 - 주소, 즐겨찾기, 로그아웃                                       |
+| :----------------------------------------------------------------------------------------------------------------: |
+| <img src="https://user-images.githubusercontent.com/59330828/110119967-caf33100-7dff-11eb-9c11-6ddc1255be2a.gif"/> |
+
+---
+
 </details>
 
 ## 📘 개발스택
 
 <details>
 
-#### React, React Router, SCSS, Webpack & Babel
+#### React, React Router, SCSS, Bootstrap
 
 </details>
 

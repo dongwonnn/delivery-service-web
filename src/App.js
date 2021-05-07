@@ -39,32 +39,6 @@ const App = () => {
 
   const login = ({ email, password }) => setUser(singIn({ email, password }));
   const logout = () => setUser(null);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get('http://localhost:4000/stores');
-
-  //       setStores(response.data);
-  //     } catch (e) {
-  //       console.log(e);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get('http://localhost:4000/categories');
-  //       setCategories(response.data);
-  //     } catch (e) {
-  //       console.log(e);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
-
   const onRecommand = useCallback(() => {
     recommand
       ? setStores([...stores.sort((a, b) => b.grade - a.grade)])
