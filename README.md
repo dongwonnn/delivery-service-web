@@ -1,7 +1,12 @@
 # 배달 서비스 클론코딩
 
-https://dongwonnn.github.io/delivery-service-web/
-TEST ID / PW : kkum9408@gmail.com / 123
+배포 link : https://dongwonnn.github.io/delivery-service-web/</br>
+
+test용 아이디/비밀번호 : kkum9408@gmail.com / 123</br>
+
+json 서버 : json-server ./data.json --port 4000.</br>
+
+react 서버 : yarn start</br>
 
 ## ⚙️ 주요 기능.
 
@@ -94,16 +99,6 @@ TEST ID / PW : kkum9408@gmail.com / 123
 
   </div>
 </details>
-
-<!-- ## Deliver Service Web Version
-
-### props와 state 만으로 구현한 react 웹 서비스 입니다.
-
-### json 서버 : json-server ./data.json --port 4000.
-
-### react 서버 : yarn start
-
-### test용 아이디/비밀번호 : kkum9408@gmail.com / 123 -->
 
 ### 📄 개발 일지
 
