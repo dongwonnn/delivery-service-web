@@ -106,10 +106,13 @@
   }
 
   .orderList-cart {
-    width: 100%;
-    height: 70px;
+    margin: 0 auto;
+    width: 468px;
+    height: 60px;
     background-color: #4eacf8;
     color: white;
+
+    cursor: pointer;
 
     position: fixed;
     bottom: 0;

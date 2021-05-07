@@ -117,30 +117,22 @@ const DetailPage = ({ match, setDetail, orderList, user, stores }) => {
         </Col>
       </Row>
       <Row>
-        <div className="detail-cart">
-          {orderList.length > 0 && (
-            <Link to={`/detail/${store}/cart`}>
-              <button className="detail-addBtn">
-                <p className="order-length">{orderList.length} </p>
-                <p>카트보기</p>
-                <p className="order-price">{payment}원</p>
-              </button>
-            </Link>
-          )}
-        </div>
+        <Col>
+          <div className="detail-cart">
+            {orderList.length > 0 && (
+              <Link to={`/detail/${store}/cart`}>
+                <button className="detail-addBtn">
+                  <p className="order-length">{orderList.length} </p>
+                  <p>카트보기</p>
+                  <p className="order-price">{payment}원</p>
+                </button>
+              </Link>
+            )}
+          </div>
+        </Col>
       </Row>
     </Container>
   );
 };
 
 export default DetailPage;
-
-// {
-//    {user ? (
-//           <LikeList user={user} store={store} detailItem={detailItem} />
-//         ) : (
-//           <Link to="/login">
-//             <AiOutlineHeart />
-//           </Link>
-//         )}
-// }

@@ -1,6 +1,6 @@
 .favorite {
   .favorite-title {
-    margin: 20px;
+    margin: 20px 0;
     background-color: white;
     text-align: center;
     font-size: 1.3rem;
@@ -69,10 +69,7 @@
 }
 
 .favorite-empty {
-  padding-bottom: 60px;
-
   .favorite-title {
-    margin: 20px;
     background-color: white;
     text-align: center;
     font-size: 1.3rem;
@@ -80,8 +77,8 @@
   }
 
   .favorite-empty-text {
-    height: 100vh;
-    width: 100vw;
+    height: 60vh;
+    width: 100%;
 
     background-color: #eeeeee;
     position: absolute;

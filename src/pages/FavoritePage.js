@@ -11,16 +11,22 @@ import { Link } from 'react-router-dom';
 const FavoritePage = ({ user }) => {
   if (user.likesList.length === 0) {
     return (
-      <div className="favorite-empty">
-        <h1 className="favorite-title">즐겨찾기</h1>
+      <Container className="favorite">
+        <Row>
+          <Col>
+            <div className="favorite-empty">
+              <h1 className="favorite-title">즐겨찾기</h1>
 
-        <div className="favorite-empty-text">
-          <p>즐겨찾는 맛집이 없습니다.</p>
-          <p>
-            좋아하는 맛집에 <AiFillHeart />를 눌러주세요.
-          </p>
-        </div>
-      </div>
+              <div className="favorite-empty-text">
+                <p>즐겨찾는 맛집이 없습니다.</p>
+                <p>
+                  좋아하는 맛집에 <AiFillHeart />를 눌러주세요.
+                </p>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 

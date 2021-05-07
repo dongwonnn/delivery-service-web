@@ -115,9 +115,8 @@ const OrderListPage = ({
       };
 
       setOrderList([...orderList, nextOrderList]);
-
-      history.go(-1);
     }
+    history.go(-1);
   };
 
   return (

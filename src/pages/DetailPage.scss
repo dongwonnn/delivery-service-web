@@ -101,8 +101,9 @@
 
   .detail-cart {
     position: fixed;
-    width: 100%;
-    height: 70px;
+    margin: 0 auto;
+    max-width: 468px;
+    height: 60px;
     bottom: 0;
     left: 0;
     right: 0;
