@@ -32,15 +32,6 @@ const LoginPage = ({ login, history }) => {
     <Container className="loginPage">
       <Row>
         <Col>
-          <header className="login-title">
-            <h1 className="login-logo">
-              <img src="/images/coupang-logo.jpg" alt="coupang logo" />
-            </h1>
-          </header>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
           <main className="login-main">
             <div className="login-content">
               <input
