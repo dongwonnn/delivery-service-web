@@ -8,6 +8,21 @@ json 서버 : json-server ./data.json --port 4000.</br>
 
 React 서버 : yarn start</br>
 
+## 👨‍💻 기술 스택
+
+<h3 align="center">  
+  FrontEnd
+</h3>
+<p align="center">  
+  <img src="https://img.shields.io/badge/HTML-white?logo=html5"/>
+  <img src= "https://img.shields.io/badge/CSS-blue?logo=css3"/>
+  <img src= "https://img.shields.io/badge/SCSS-pink?logo=sass"/>
+  <img src= "https://img.shields.io/badge/React-blue?logo=react"/>
+  <img src= "https://img.shields.io/badge/Redux-593D88?logo=Redux&logoColor=white"/>
+  <img src= "https://img.shields.io/badge/ReduxSaga-white?logo=Redux-saga&logoColor=green"/>
+  <img src= "https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript"/>
+</p>
+
 ## ⚙️ 주요 기능
 
 #### 1. 메인 페이지
@@ -67,22 +82,6 @@ React 서버 : yarn start</br>
 | <img src="https://user-images.githubusercontent.com/59330828/110119967-caf33100-7dff-11eb-9c11-6ddc1255be2a.gif" width="150px"/> |
 
 ---
-
-<details>
-
-|                                             ✔ 마이페이지 - 주소, 즐겨찾기, 로그아웃                                              |
-| :------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://user-images.githubusercontent.com/59330828/110119967-caf33100-7dff-11eb-9c11-6ddc1255be2a.gif" width="150px"/> |
-
----
-
-</details>
-
-## 📘 개발스택
-
-<details>
-
-#### React, React Router, SCSS, Bootstrap
 
 </details>
 
