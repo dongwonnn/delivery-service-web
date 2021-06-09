@@ -23,7 +23,7 @@ const Postcode = ({ onAddressChange, onClose, vh }) => {
 
   return (
     <div>
-      <DaumPostcode onComplete={handleComplete} height={vh - 30} />;
+      <DaumPostcode onComplete={handleComplete} height={vh - 30} />
     </div>
   );
 };
