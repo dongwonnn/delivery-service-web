@@ -6,8 +6,6 @@ Test ID/PW : kkum9408@gmail.com / 123</br>
 
 json 서버 : json-server ./data.json --port 4000.</br>
 
-React 서버 : yarn start</br>
-
 ## 👨‍💻 기술 스택
 
 <h3 align="center">  
@@ -17,10 +15,8 @@ React 서버 : yarn start</br>
   <img src="https://img.shields.io/badge/HTML-white?logo=html5"/>
   <img src= "https://img.shields.io/badge/CSS-blue?logo=css3"/>
   <img src= "https://img.shields.io/badge/SCSS-pink?logo=sass"/>
-  <img src= "https://img.shields.io/badge/React-blue?logo=react"/>
-  <img src= "https://img.shields.io/badge/Redux-593D88?logo=Redux&logoColor=white"/>
-  <img src= "https://img.shields.io/badge/ReduxSaga-white?logo=Redux-saga&logoColor=green"/>
   <img src= "https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript"/>
+  <img src= "https://img.shields.io/badge/React-blue?logo=react"/>
 </p>
 
 ## 📜 주요 페이지
@@ -85,7 +81,7 @@ React 서버 : yarn start</br>
 
 </details>
 
-## 📁 주요 기능 코드
+## ⚙️ 주요 기능 코드
 
 #### 1. 로그인, 로그아웃, 회원가입, 페이지 인증 기능
 
@@ -501,7 +497,7 @@ const onChangeInput = (e) => {
 
   </details>
 
-### 📄 개발 일지
+## 📄 개발 일지
 
 <details>
 - [21.01.28]
